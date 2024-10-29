@@ -1,0 +1,64 @@
+
+.md-grid {
+    max-width: 1920px !important;
+}
+
+.md-header {
+    box-shadow: none !important;
+}
+
+/* Font and typography adjustments */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Paragraph and link styles */
+.md-typeset  {
+    font-family: 'Inter', sans-serif !important;
+    line-height: 1.6;
+}
+
+/* Set link color to match text for minimal design */
+a {
+    color: inherit !important;
+    text-decoration: underline;
+}
+
+/* Hover effect */
+a:hover {
+    text-decoration: underline;
+    color: #e0e0e0;
+}
+
+.md-nav__item .md-nav__link--active,
+.md-nav__item .md-nav__link--active code {
+    text-decoration: none;
+}
+
+/* Dark mode background customization */
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: #000 !important;
+    --md-footer-bg-color: #000 !important;
+    --md-code-bg-color: #111 !important;
+}
+
+body[data-md-color-scheme="slate"] {
+    background-color: var(--md-default-bg-color) !important;
+}
+
+/* Navigation link styles */
+.md-nav__link {
+    color: inherit !important; /* Inherit theme color */
+    text-decoration: none; /* No underline by default */
+}
+
+/* Add underline on hover */
+.md-nav__link:hover {
+    text-decoration: underline;
+    color: inherit !important; /* Maintain the same color as the theme */
+}
