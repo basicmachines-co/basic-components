@@ -1,0 +1,57 @@
+{#def
+  title
+#}
+<!doctype html>
+<html
+  class="h-full dark:bg-black"
+  lang="en"
+  x-data="{
+        mode: localStorage.getItem('mode') || 'system',
+        init() {
+            this.applyMode();
+        },
+        applyMode() {
+            if (this.mode === 'dark') {
+                document.documentElement.classList.add('dark');
+            } else if (this.mode === 'light') {
+                document.documentElement.classList.remove('dark');
+            } else {
+                // System preference
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (prefersDark) {
+                    document.documentElement.classList.add('dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                }
+            }
+        },
+        toggleMode(mode) {
+            this.mode = mode;
+            localStorage.setItem('mode', mode);
+            this.applyMode();
+        }
+    }"
+  x-init="init()"
+>
+<head>
+  <meta charset="UTF-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>{{ title }}</title>
+  <!-- Include the Alpine.js library -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+  <!-- Include the TailwindCSS library -->
+  <link href="/static/dist/output.css" rel="stylesheet" />
+  <!-- tailwind inter font -->
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <!-- htmx -->
+  <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+  <script src="https://unpkg.com/htmx.org@1.9.12/dist/ext/response-targets.js"></script>
+  <script>
+    htmx.logAll();
+  </script>
+</head>
+<body class="min-h-screen bg-white dark:bg-black text-black dark:text-white" hx-ext="response-targets">
+{{ content }}
+</body>
+</html>

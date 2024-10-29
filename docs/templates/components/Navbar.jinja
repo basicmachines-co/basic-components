@@ -1,0 +1,40 @@
+<header class="sticky top-0 flex h-16 items-center gap-4 border-b bg-white px-4 md:px-6 dark:bg-zinc-950 dark:border-b-zinc-700">
+    <nav class="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
+        <Link href="#">
+        <Package2 className="h-6 w-6"/>
+        <span class="sr-only">Components</span></Link>
+        <Link href="#"
+              className="text-zinc-500 transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50">
+        Docs</Link>
+        <Link href="#"
+              className="text-zinc-500 transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50">
+        Components</Link>
+        <Link href="#"
+              className="text-zinc-500 transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50">
+        Examples</Link></nav>
+    <Sheet>
+        <SheetTrigger>
+            <Button variant="outline" size="icon" className="shrink-0 md:hidden">
+                <Menu className="h-5 w-5"/>
+                <span class="sr-only">Toggle navigation menu</span></Button>
+        </SheetTrigger>
+        <SheetContent side="left">
+            <nav class="grid gap-6 text-lg font-medium">
+                <Link href="#" className="flex items-center gap-2 text-lg font-semibold">
+                <Package2 className="h-6 w-6"/>
+                <span class="sr-only">Components</span></Link>
+                <Link href="#" className="text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50">
+                Docs</Link>
+                <Link href="#" className="text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50">
+                Components</Link>
+                <Link href="#" className="text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50">
+                Examples</Link></nav>
+        </SheetContent>
+    </Sheet>
+    <div class="ml-auto">
+        <Button variant="ghost" size="icon" className="ml-2" @click="toggleMode(mode === 'dark' ? 'light' : 'dark')">
+            <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"/>
+            <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"/>
+            <span class="sr-only">Toggle theme</span></Button>
+    </div>
+</header>

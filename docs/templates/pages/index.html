@@ -1,0 +1,10 @@
+
+<!-- Hot reload script -->
+{% if DEBUG %}
+    {{ hotreload.script(url_for('hot-reload')) | safe }}
+{% endif %}
+
+<DocLayout page_title="Home">
+<p>docs
+</p>
+</DocLayout>

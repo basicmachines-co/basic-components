@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 app = FastAPI()
 
 app.add_middleware(
-    CORSMiddleware,
+    CORSMiddleware,  #
     allow_origins=["https://basicmachines-co.github.io", "http://localhost:8000", "http://127.0.0.1:8000"],
     allow_methods=["*"],
     allow_credentials=True,
@@ -65,11 +65,12 @@ async def render_component(request: Request, component_name: str, option: Option
     return templates.TemplateResponse(
         request=request,
         name="component.html",
-        context = {
+        context={
             "component_name": component_name,
             "option": option
         }
     )
+
 
 @app.get("/table", response_class=HTMLResponse)
 async def table_sort(request: Request):
@@ -148,7 +149,7 @@ async def display_wtform(request: Request):
     return templates.TemplateResponse(
         request=request,
         name="component.html",
-        context = {
+        context={
             "component_name": "wtform",
             "form": form
         }
@@ -174,7 +175,7 @@ async def post_wtform(request: Request):
         return templates.TemplateResponse(
             request=request,
             name="component.html",
-            context = {
+            context={
                 "component_name": "wtform",
                 "form": form
             }

@@ -32,3 +32,7 @@ docs-tailwind-watch:
 
 docs-backend-prod:
 	$(UV) run fastapi run documentation/backend/app.py  --port 10000
+
+
+docs-run:
+	$(UV) run fastapi dev docs/app.py
