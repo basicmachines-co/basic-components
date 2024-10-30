@@ -43,7 +43,9 @@ def parse_markdown(file_path: Path):
             html_content = md.render(text)
             return post.metadata, Markup(html_content)
     except FileNotFoundError:
-        raise HTTPException(status_code=404, detail="Page not found")
+        raise HTTPException(
+            status_code=404, detail=f"Markdown not found for {file_path}"
+        )
 
 
 @router.get("/{path:path}")
