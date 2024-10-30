@@ -2,13 +2,16 @@ site_name: Basic Components
 repo_url: https://github.com/basicmachines-co/basic-components
 
 nav:
-  - Home: index.md
-  - Docs:
-      - Installation:
-          - Fastapi: docs/fastapi.md
-      - Usage:
-          - Copy/Paste: docs/copy_paste.md
-          - Vendoring: docs/vendoring.md
+  - Getting Started:
+      - Introduction: docs/introduction
+      - Installation: docs/installation
+      - JinjaX: docs/jinajx
+      - htmx: docs/htmx
+      - Dark mode: docs/dark_mode
+  - Installation:
+      - Fastapi: docs/fastapi
+      - Copy/Paste: docs/copy_paste.md
+      - Vendoring: docs/vendoring.md
   - Components:
       - Accordion: components/accordion.md
       - Alert: components/alert.md

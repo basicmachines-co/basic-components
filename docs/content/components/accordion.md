@@ -4,13 +4,6 @@ description: A vertically stacked set of interactive headings that each reveal a
 ---
 
 
-## Props
-
-| Name      | Type    | Default     | Description                                            |
-|-----------|---------|-------------|--------------------------------------------------------|
-| className | String  |             | Additional tailwind classes to apply to the component. |
-
-## Components
 
 
 

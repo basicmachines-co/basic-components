@@ -4,11 +4,13 @@ from typing import List, Union, Any
 
 
 class NavItem(BaseModel):
+    type: str = "item"
     name: str
     path: str
 
 
 class NavGroup(BaseModel):
+    type: str = "group"
     name: str
     items: List[Union[NavItem, "NavGroup"]]
 

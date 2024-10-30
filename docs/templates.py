@@ -21,9 +21,7 @@ DOCS_LAYOUT_DIR = f"{TEMPLATE_DIR}/layouts"
 # hot reloading for local env
 hotreload = arel.HotReload(
     paths=[
-        arel.Path(TEMPLATE_DIR),
-        arel.Path(DOCS_LAYOUT_DIR),
-        arel.Path(COMPONENT_DIR),
+        arel.Path(f"{BASE_DIR}"),
     ],
 )
 

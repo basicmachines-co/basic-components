@@ -64,6 +64,7 @@ dependencies = [
     { name = "python-frontmatter" },
     { name = "starlette-wtf" },
     { name = "uvicorn" },
+    { name = "watchfiles" },
     { name = "websockets" },
     { name = "wtforms" },
 ]
@@ -87,6 +88,7 @@ requires-dist = [
     { name = "python-frontmatter", specifier = ">=1.1.0" },
     { name = "starlette-wtf", specifier = ">=0.4.5" },
     { name = "uvicorn", specifier = ">=0.32.0" },
+    { name = "watchfiles", specifier = ">=0.24.0" },
     { name = "websockets", specifier = ">=13.1" },
     { name = "wtforms", specifier = ">=3.2.1" },
 ]

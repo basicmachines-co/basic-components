@@ -1,11 +1,14 @@
 {# def
     nav: List[NavItem | NavGroup]
 #}
-<!-- Sidebar for larger screens -->
-<aside class="hidden md:flex md:min-w-64 flex-col border-r bg-white dark:bg-zinc-950 dark:border-zinc-800 p-4">
-    <nav class="flex flex-col space-y-4">
-        <a href="#accordion" class="text-sm hover:text-zinc-900 dark:hover:text-zinc-50">Accordion</a>
-        <a href="#button" class="text-sm hover:text-zinc-900 dark:hover:text-zinc-50">Button</a>
-        <a href="#card" class="text-sm hover:text-zinc-900 dark:hover:text-zinc-50">Card</a>
+<aside class="hidden md:flex md:min-w-64 flex-col border-r bg-white dark:bg-zinc-950 dark:border-zinc-800 py-4 pl-8">
+    <nav class="py-4">
+        {% for item in nav %}
+            {% if item.type == "item" %}
+                <NavItem :item="{{ item }}" />
+            {% else %}
+                <NavGroup :group="{{ item }}" />
+            {% endif %}
+        {% endfor %}
     </nav>
 </aside>

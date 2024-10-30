@@ -1,0 +1,18 @@
+{# def
+    group: NavGroup
+#}
+<!-- Render NavGroup -->
+<div>
+    <h2 class="text-sm font-semibold text-zinc-500">{{ group.name }}</h2>
+    <div class="py-4">
+        <nav class="flex flex-col space-y-2">
+        {% for item in group.items %}
+            {% if item.type == "item" %}
+                <NavItem :item="{{ item }}" />
+            {% else %}
+                <NavGroup :group="{{ item }}" />
+            {% endif %}
+        {% endfor %}
+        </nav>
+    </div>
+</div>

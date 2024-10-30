@@ -29,6 +29,7 @@ dependencies = [
     "markdown-it-py[plugins]>=3.0.0",
     "markdown>=3.7",
     "markupsafe>=3.0.2",
+    "watchfiles>=0.24.0",
 ]
 
 [build-system]
