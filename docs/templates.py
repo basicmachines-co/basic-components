@@ -30,7 +30,6 @@ templates = Jinja2Templates(directory=f"{TEMPLATE_DIR}")
 templates.env.add_extension(DebugExtension)
 templates.env.globals["hotreload"] = hotreload
 templates.env.globals["DEBUG"] = docs.config.settings.ENVIRONMENT == "local"
-templates.env.autoescape = False
 
 
 # configure JinjaX component catalog
