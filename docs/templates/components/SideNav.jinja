@@ -1,0 +1,17 @@
+{# def
+    current_path: str = "",
+    side: str = "left"
+#}
+
+{% set className = {
+    'left': 'hidden md:flex md:min-w-64 flex-col border-r bg-white dark:bg-zinc-950 dark:border-zinc-800 py-4 pl-8',
+    'right': 'hidden lg:flex lg:min-w-64 flex-col border-l bg-white dark:bg-zinc-950 dark:border-zinc-800 py-4 pr-8',
+}[side] %}
+
+
+<aside class="{{ className }}">
+    <nav class="p-4">
+        {{ content }}
+    </nav>
+</aside>
+
