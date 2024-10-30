@@ -9,7 +9,7 @@ Client side interactivity is implemented via [Alpine.js](https://alpinejs.dev/) 
 The goal is to equip developers using server-side rendering frameworks, such as FastAPI or Flask, with high-quality,
 responsive components that behave similarly to their React counterparts. Components can be further extended with [HTMX](https://htmx.org/) to create dynamic interfaces.
 
-Features
+## Features
 
 - **JinjaX**: Components are implemented with JinjaX for use with server-rendered applications
 - **Tailwind CSS Styling**: All components use Tailwind’s utility-based styling

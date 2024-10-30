@@ -28,7 +28,6 @@ async def on_startup(app: FastAPI):
     await hotreload.shutdown()
 
 
-
 app = FastAPI(title=settings.APP_NAME, lifespan=on_startup)
 
 
@@ -43,7 +42,6 @@ app.mount(
     name="static",
 )
 
+
 # include routes for docs
 app.include_router(router)
-
-

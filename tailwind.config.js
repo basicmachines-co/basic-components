@@ -5,13 +5,15 @@ module.exports = {
   content: [
     "./components/ui/*.jinja",
     "./components/icons/*.jinja",
-    "./docs/templates/pages/*.html",
+    "./docs/content/*.md",
+    "./docs/templates/*.html",
     "./docs/templates/layouts/*.html",
     "./docs/templates/components/*.jinja",
   ],
   plugins: [
     require("@tailwindcss/forms"),
     require("tailwindcss-animate"),
+    require("@tailwindcss/typography"),
   ],
   theme: {
     extend: {

@@ -1,0 +1,36 @@
+site_name: Basic Components
+repo_url: https://github.com/basicmachines-co/basic-components
+
+nav:
+  - Home: index.md
+  - Docs:
+      - Installation:
+          - Fastapi: docs/fastapi.md
+      - Usage:
+          - Copy/Paste: docs/copy_paste.md
+          - Vendoring: docs/vendoring.md
+  - Components:
+      - Accordion: components/accordion.md
+      - Alert: components/alert.md
+      - Badge: components/badge.md
+      - Button: components/button.md
+      - Card: components/card.md
+      - Checkbox: components/checkbox.md
+      - Dialog: components/dialog.md
+      - Dropdown Menu: components/dropdown_menu.md
+      - Form: components/form.md
+      - Input: components/input.md
+      - Label: components/label.md
+      - Link: components/link.md
+      - Mode Toggle: components/mode_toggle.md
+      - Popover: components/popover.md
+      - Radio Group: components/radio_group.md
+      - Select: components/select.md
+      - Sheet: components/sheet.md
+      - Table: components/table.md
+      - Textarea: components/textarea.md
+      - Toast: components/toast.md
+      - WTForm: components/wtform.md
+  - Examples:
+      - Login: examples/login.md
+      - Dashboard: examples/dashboard.md
