@@ -6,7 +6,21 @@ from mdit_py_plugins.footnote import footnote_plugin
 
 import frontmatter
 
+
+def add_id_to_header(self, tokens, idx, options, env):
+    token = tokens[idx]
+    # Find the next inline token to generate an ID
+    next_token = tokens[idx + 1]
+
+    if next_token.type == "inline":
+        heading_id = next_token.content.lower().replace(" ", "-")
+        token.attrs["id"] = heading_id
+
+    return self.renderToken(tokens, idx, options, env)
+
+
 md = MarkdownIt().use(front_matter_plugin).use(footnote_plugin).enable("table")
+md.add_render_rule("heading_open", add_id_to_header)
 
 
 def parse_markdown(file_path: Path):
