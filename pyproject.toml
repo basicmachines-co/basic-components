@@ -27,6 +27,8 @@ dependencies = [
     "arel>=0.3.0",
     "websockets>=13.1",
     "markdown-it-py[plugins]>=3.0.0",
+    "markdown>=3.7",
+    "markupsafe>=3.0.2",
 ]
 
 [build-system]

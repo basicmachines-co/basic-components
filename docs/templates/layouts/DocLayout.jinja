@@ -1,10 +1,23 @@
 {#def
-  page_title
+  site_config
 #}
 
-<BaseLayout :title="{{ page_title }}">
+<BaseLayout :title="{{ site_config.site_name }}">
     <Navbar />
-    <main class="bg-white dark:bg-black text-black dark:text-white">
-        {{ content }}
-    </main>
+    <div class="flex min-h-screen">
+        <!-- Sidebar for larger screens -->
+        <aside class="hidden md:flex md:min-w-64 flex-col border-r bg-white dark:bg-zinc-950 dark:border-zinc-800 p-4">
+            <nav class="flex flex-col space-y-4">
+                <a href="#accordion" class="text-sm hover:text-zinc-900 dark:hover:text-zinc-50">Accordion</a>
+                <a href="#button" class="text-sm hover:text-zinc-900 dark:hover:text-zinc-50">Button</a>
+                <a href="#card" class="text-sm hover:text-zinc-900 dark:hover:text-zinc-50">Card</a>
+            </nav>
+        </aside>
+        <!-- Main content area -->
+        <div class="flex-1 p-6">
+            <main class="bg-white dark:bg-black text-black dark:text-white">
+                {{ content }}
+            </main>
+        </div>
+    </div>
 </BaseLayout>

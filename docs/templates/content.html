@@ -1,11 +1,52 @@
-
 <!-- Hot reload script -->
 {% if DEBUG %}
     {{ hotreload.script(url_for('hot-reload')) | safe }}
 {% endif %}
 
-<DocLayout page_title="Home">
+
+<DocLayout :site_config="{{ config }}">
+
+    <h3 class="text-2xl font-semibold leading-none tracking-tight pb-4">
+        {{ metadata.title }}
+    </h3>
+
+    <p class="text-sm text-zinc-500 dark:text-zinc-400">
+        {{ metadata.description }}
+    </p>
+
+
+    <div class="flex flex-col items-center justify-center ">
+        <Card className="border rounded-lg m-10 min-w-96 w-1/2">
+            <CardContent>
+
+                <Accordion>
+                    <AccordionItem value="item-1">
+                        <AccordionTrigger>Can I keep my options open?</AccordionTrigger>
+                        <AccordionContent>
+                            Yes, it's good to have options.
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-2">
+                        <AccordionTrigger>Do I have to choose just one?</AccordionTrigger>
+                        <AccordionContent>
+                            Yes, everyone must choose.
+                        </AccordionContent>
+                    </AccordionItem>
+                </Accordion>
+
+
+            </CardContent>
+        </Card>
+
+    </div>
+
     <article class="prose prose-zinc dark:prose-invert max-w-none">
-        {{ content | safe }}
+        {{ content }}
     </article>
 </DocLayout>
+
+
+<pre>
+{{ metadata | pprint }}
+{{ config | pprint }}
+</pre>

@@ -1,13 +1,17 @@
 from pathlib import Path
-import frontmatter
 from fastapi import APIRouter, Request, HTTPException
+from jinja2 import Template
 from loguru import logger
 from markdown_it import MarkdownIt
+from markupsafe import Markup
 from starlette.responses import HTMLResponse
+from mdit_py_plugins.front_matter import front_matter_plugin
+from mdit_py_plugins.footnote import footnote_plugin
 
 from docs.config import BASE_DIR
 from docs.templates import templates, hotreload
 from docs.site import load_site_config
+import frontmatter
 
 
 class HTMLRouter(APIRouter):
@@ -21,24 +25,60 @@ router = HTMLRouter()
 
 router.add_websocket_route("/hot-reload", endpoint=hotreload, name="hot-reload")
 
-md = MarkdownIt()
+
+from markdown_it.renderer import RendererHTML
+import re
+
+
+class CustomHTMLRenderer(RendererHTML):
+    def render_html_block(self, tokens, idx, options, env):
+        token = tokens[idx]
+        return self._preserve_case(token.content)
+
+    def render_html_inline(self, tokens, idx, options, env):
+        token = tokens[idx]
+        return self._preserve_case(token.content)
+
+    def _preserve_case(self, content: str) -> str:
+        """Ensure that HTML tags remain case-sensitive."""
+        # Regex to find component-like tags with optional attributes
+        tag_pattern = r"(<\/?\w+\b(?:\s*[^>]*?)?>)"
+        matches = re.finditer(tag_pattern, content)
+        result = ""
+        last_index = 0
+
+        # Rebuild the string by keeping the original case of the tags
+        for match in matches:
+            start, end = match.span()
+            result += content[last_index:start] + match.group(1)
+            last_index = end
+
+        result += content[last_index:]
+        return result
+
+
+md = (
+    MarkdownIt(renderer_cls=CustomHTMLRenderer)
+    .use(front_matter_plugin)
+    .use(footnote_plugin)
+    .enable("table")
+)
+
 site_config = load_site_config(f"{BASE_DIR}/docs/site_config.yml")
 routes = site_config.routes()
 logger.info(f"routes: {routes}")
 
 
-def parse_markdown_with_frontmatter(file_path: Path):
+def parse_markdown(file_path: Path):
     try:
         with open(file_path, "r", encoding="utf-8") as f:
-            post = frontmatter.load(f)
-            return post.metadata, post.content
+            text = f.read()
+
+            post = frontmatter.loads(text)
+            html_text = md.render(text)
+            return post.metadata, Markup(html_text)
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Page not found")
-
-
-def convert_markdown_to_html(markdown_content: str) -> str:
-    """Convert markdown content to HTML."""
-    return md.render(markdown_content)
 
 
 @router.get("/{path:path}")
@@ -51,15 +91,16 @@ async def catch_all(request: Request, path: str = None):
 
     # Ensure the Markdown file exists
     md_path = Path(f"{BASE_DIR}/docs/content/{path}.md")
-    metadata, markdown_content = parse_markdown_with_frontmatter(md_path)
+    metadata, html_content = parse_markdown(md_path)
 
-    # Convert markdown content to HTML
-    html_content = convert_markdown_to_html(markdown_content)
+    # Process the HTML through Jinja
+    template = Template(html_content)
+    rendered_content = template.render()
 
     # Prepare the context for the template
     context = {
         "metadata": metadata,
-        "content": html_content,
+        "content": rendered_content,
         "config": site_config,
         "current_path": f"/{path}",
         "routes": routes,

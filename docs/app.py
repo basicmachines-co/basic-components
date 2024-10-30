@@ -10,7 +10,7 @@ from starlette_wtf import CSRFProtectMiddleware
 
 from docs.config import BASE_DIR, settings
 from docs.routes import router
-from docs.templates import hotreload
+from docs.templates import hotreload, setup_filters
 
 # delete all existing default loggers
 logger.remove()
@@ -24,6 +24,8 @@ async def on_startup(app: FastAPI):
     logging.getLogger("passlib").setLevel(logging.ERROR)
 
     await hotreload.startup()
+
+    setup_filters()
     yield
     await hotreload.shutdown()
 

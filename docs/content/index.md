@@ -21,7 +21,7 @@ responsive components that behave similarly to their React counterparts. Compone
 
 The `Button` component wraps options and behaviors for buttons and provides variants for different styles, similar to the [shadcn/ui version](https://ui.shadcn.com/docs/components/button).
 
-```jinja
+```html
 {#def
     type: str = "",
     className: str = "",

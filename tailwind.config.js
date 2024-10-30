@@ -7,7 +7,7 @@ module.exports = {
     "./components/icons/*.jinja",
     "./docs/content/*.md",
     "./docs/templates/*.html",
-    "./docs/templates/layouts/*.html",
+    "./docs/templates/layouts/*.jinja",
     "./docs/templates/components/*.jinja",
   ],
   plugins: [
