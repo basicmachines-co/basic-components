@@ -1,6 +1,13 @@
 {#  def
-    item: NavItem
+    item: NavItem,
+    current_path: str
 #}
-<a href="{{ item.path }}" class="text-sm text-zinc-500 hover:text-zinc-900 hover:underline dark:hover:text-zinc-200">
+
+
+{%- macro current_nav(current_path) -%}
+    {{ "text-black dark:text-white font-bold" if item.path == current_path else "text-zinc-500" }}
+{%- endmacro -%}
+
+<a href="{{ item.path }}" class="text-sm hover:text-zinc-900 hover:underline dark:hover:text-zinc-200 {{ current_nav(current_path) }}">
     {{ item.name }}
 </a>

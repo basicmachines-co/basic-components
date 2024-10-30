@@ -52,8 +52,10 @@ def parse_markdown(file_path: Path):
 async def catch_all(request: Request, path: str = None):
     path = path or "index"
 
+    current_path = f"/{path}"
+
     # Ensure the path exists in the routes
-    if f"{path}.md" not in site_config_routes:
+    if current_path not in site_config_routes:
         raise HTTPException(status_code=404, detail=f"No route for found for {path}")
 
     # Ensure the Markdown file exists
@@ -65,7 +67,7 @@ async def catch_all(request: Request, path: str = None):
         "metadata": metadata,
         "content": html_content,
         "config": site_config,
-        "current_path": f"/{path}",
+        "current_path": current_path,
         "routes": site_config_routes,
     }
 

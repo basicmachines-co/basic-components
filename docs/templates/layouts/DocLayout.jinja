@@ -1,11 +1,12 @@
 {#def
-  site_config
+    site_config: SiteConfig,
+    current_path: str
 #}
 
 <BaseLayout :title="{{ site_config.site_name }}">
     <Navbar />
     <div class="flex min-h-screen">
-        <LeftNav :nav="{{ site_config.nav }}" />
+        <LeftNav :nav="{{ site_config.nav }}" :current_path="{{ current_path }}" />
         <!-- Main content area -->
         <div class="flex-1 p-6">
             <main class="bg-white dark:bg-black text-black dark:text-white">
