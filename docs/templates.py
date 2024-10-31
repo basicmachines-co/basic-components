@@ -1,9 +1,11 @@
+import os
 import typing
 from pathlib import Path
 
 import arel
 
 import jinjax
+from jinja2 import pass_context
 from jinja2.ext import DebugExtension
 from starlette.requests import Request
 from starlette.templating import Jinja2Templates
@@ -25,12 +27,28 @@ hotreload = arel.HotReload(
     ],
 )
 
+
+@pass_context
+def include_file(context, path):
+    try:
+        with open(Path(path), "r", encoding="utf-8") as f:
+            return f.read()
+    except FileNotFoundError:
+        return f"<!-- {path} not found -->"
+
+
+def filename(value):
+    # Return only the filename with the extension
+    return os.path.basename(value)
+
+
 # configure Jinja template location
 templates = Jinja2Templates(directory=f"{TEMPLATE_DIR}")
 templates.env.add_extension(DebugExtension)
 templates.env.globals["hotreload"] = hotreload
 templates.env.globals["DEBUG"] = docs.config.settings.ENVIRONMENT == "local"
-
+templates.env.filters["include_file"] = include_file
+templates.env.filters["filename"] = filename
 
 # configure JinjaX component catalog
 templates.env.add_extension(jinjax.JinjaX)

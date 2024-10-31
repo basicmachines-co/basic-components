@@ -1,10 +1,12 @@
 ---
 title: Accordion
 description: A vertically stacked set of interactive headings that each reveal a section of content.
+components:  
+  - components/ui/Accordion.jinja
+  - components/ui/AccordionContent.jinja 
+  - components/ui/AccordionItem.jinja 
+  - components/ui/AccordionTrigger.jinja 
 ---
-
-
-
 
 
 ## Usage
@@ -26,10 +28,5 @@ description: A vertically stacked set of interactive headings that each reveal a
 </Accordion>
 ```
 
-
 ## Code
 
-
-## Examples 
-
-### Example1

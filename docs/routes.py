@@ -1,5 +1,6 @@
 from pathlib import Path
 from fastapi import APIRouter, Request, HTTPException
+from icecream import ic
 from loguru import logger
 from markdown_it import MarkdownIt
 from starlette.responses import HTMLResponse
@@ -54,6 +55,7 @@ async def catch_all(request: Request, path: str = None):
         "current_path": current_path,
         "toc": toc,
     }
+    ic(context)
 
     # Render the template with the given context
     return templates.TemplateResponse(request, "content.html", context=context)
