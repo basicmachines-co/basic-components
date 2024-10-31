@@ -1,66 +1,85 @@
 from pathlib import Path
 from fastapi import HTTPException
-from markdown_it import MarkdownIt
-from mdit_py_plugins.front_matter import front_matter_plugin
-from mdit_py_plugins.footnote import footnote_plugin
-
 import frontmatter
+import markdown
+from markdown.extensions import Extension
+from markdown.treeprocessors import Treeprocessor
+from pymdownx import superfences
+import re
 
 
-def add_id_to_header(self, tokens, idx, options, env):
-    token = tokens[idx]
-    # Find the next inline token to generate an ID
-    next_token = tokens[idx + 1]
+class HeadingExtractor(Treeprocessor):
+    def __init__(self, md):
+        super().__init__(md)
+        self.headings = []
 
-    if next_token.type == "inline":
-        heading_id = next_token.content.lower().replace(" ", "-")
-        token.attrs["id"] = heading_id
+    def run(self, root):
+        for element in root.iter():
+            if element.tag in ["h1", "h2", "h3", "h4", "h5", "h6"]:
+                heading_id = re.sub(
+                    r"\s+", "-", element.text.lower()
+                )  # Generate ID from heading text
+                element.set("id", heading_id)  # Add ID attribute to the heading
+                self.headings.append(
+                    {
+                        "level": int(element.tag[1]),
+                        "content": element.text,
+                        "id": heading_id,  # Store the generated ID for reference
+                    }
+                )
+        return root
 
-    return self.renderToken(tokens, idx, options, env)
+
+class HeadingExtractorExtension(Extension):
+    def extendMarkdown(self, md):
+        heading_extractor = HeadingExtractor(md)
+        md.treeprocessors.register(heading_extractor, "heading_extractor", 15)
+        md.heading_extractor = heading_extractor
 
 
-md = MarkdownIt().use(front_matter_plugin).use(footnote_plugin).enable("table")
-md.add_render_rule("heading_open", add_id_to_header)
+extensions = [
+    "pymdownx.superfences",
+    "pymdownx.blocks.tab",
+    HeadingExtractorExtension(),
+]
+extension_configs = {
+    "pymdownx.superfences": {
+        "custom_fences": [
+            {
+                "name": "html",
+                "class": "language-html",
+                "format": superfences.fence_code_format,
+            }
+        ]
+    },
+}
+
+md = markdown.Markdown(extensions=extensions, extension_configs=extension_configs)
+
+
+def extract_headings(markdown_text):
+    md.convert(markdown_text)
+    return md.heading_extractor.headings
 
 
 def parse_markdown(file_path: Path):
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             text = f.read()
-            # frontmatter
-            post = frontmatter.loads(text)
+            post = frontmatter.loads(text)  # Load frontmatter
 
-            # headings from markdown
-            headings = extract_headings(text)
+            # Get metadata and stripped Markdown content
+            metadata = post.metadata
+            stripped_content = post.content
 
-            # content as html
-            html_content = md.render(text)
+            # Extract headings
+            headings = extract_headings(stripped_content)
 
-            return post.metadata, headings, html_content
+            # Convert content to HTML
+            html_content = md.convert(stripped_content)
+
+            return metadata, headings, html_content
     except FileNotFoundError:
         raise HTTPException(
             status_code=404, detail=f"Markdown not found for {file_path}"
         )
-
-
-def extract_headings(markdown_content):
-    tokens = md.parse(markdown_content)
-    headings = []
-
-    for token in tokens:
-        if token.type == "heading_open":
-            heading_level = int(token.tag[1])  # Extract heading level (e.g., h2 -> 2)
-            heading_content = extract_heading_content(tokens, token)
-            if heading_content:
-                headings.append({"level": heading_level, "content": heading_content})
-
-    return headings
-
-
-def extract_heading_content(tokens, heading_token):
-    content_token = tokens[
-        tokens.index(heading_token) + 1
-    ]  # The next token is the text content
-    if content_token.type == "inline":
-        return content_token.content
-    return None

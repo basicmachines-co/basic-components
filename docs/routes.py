@@ -2,10 +2,7 @@ from pathlib import Path
 from fastapi import APIRouter, Request, HTTPException
 from icecream import ic
 from loguru import logger
-from markdown_it import MarkdownIt
 from starlette.responses import HTMLResponse
-from mdit_py_plugins.front_matter import front_matter_plugin
-from mdit_py_plugins.footnote import footnote_plugin
 
 from docs.config import BASE_DIR
 from docs.markdown import parse_markdown
@@ -25,8 +22,6 @@ router = HTMLRouter()
 # web socket for hot reload
 router.add_websocket_route("/hot-reload", endpoint=hotreload, name="hot-reload")
 
-
-md = MarkdownIt().use(front_matter_plugin).use(footnote_plugin).enable("table")
 
 site_config = load_site_config(f"{BASE_DIR}/docs/site_config.yml")
 site_config_routes = site_config.routes()

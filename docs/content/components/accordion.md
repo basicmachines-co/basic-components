@@ -11,7 +11,9 @@ components:
 
 ## Usage
 
-```html
+
+
+```html 
 <Accordion>
     <AccordionItem value="item-1">
         <AccordionTrigger>Can I keep my options open?</AccordionTrigger>
@@ -29,4 +31,19 @@ components:
 ```
 
 ## Code
+
+
+/// tab | Tab A title
+Tab A content
+///
+
+/// tab | Tab B title
+Tab B content
+///
+
+/// tab | Tab C Title
+new: true
+
+Will be part of a separate, new tab group.
+///
 
