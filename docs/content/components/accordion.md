@@ -34,7 +34,24 @@ components:
 
 
 /// tab | Tab A title
-Tab A content
+```html
+{#def
+    className: str = ""
+#}
+<div
+    x-data="{
+      activeItem: undefined,
+      toggleItem(value) {
+        this.activeItem = this.activeItem === value ? undefined : value;
+      }
+    }"
+    x-init="console.log('initial state:', activeItem);"
+    class="{{ className }} w-full"
+    {{ attrs.render() }}
+>
+  {{ content }}
+</div>
+```
 ///
 
 /// tab | Tab B title

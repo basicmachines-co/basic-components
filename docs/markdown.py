@@ -16,15 +16,13 @@ class HeadingExtractor(Treeprocessor):
     def run(self, root):
         for element in root.iter():
             if element.tag in ["h1", "h2", "h3", "h4", "h5", "h6"]:
-                heading_id = re.sub(
-                    r"\s+", "-", element.text.lower()
-                )  # Generate ID from heading text
-                element.set("id", heading_id)  # Add ID attribute to the heading
+                heading_id = re.sub(r"\s+", "-", element.text.lower())
+                element.set("id", heading_id)
                 self.headings.append(
                     {
                         "level": int(element.tag[1]),
                         "content": element.text,
-                        "id": heading_id,  # Store the generated ID for reference
+                        "id": heading_id,
                     }
                 )
         return root
@@ -37,27 +35,28 @@ class HeadingExtractorExtension(Extension):
         md.heading_extractor = heading_extractor
 
 
-extensions = [
-    "pymdownx.superfences",
-    "pymdownx.blocks.tab",
-    HeadingExtractorExtension(),
-]
-extension_configs = {
-    "pymdownx.superfences": {
-        "custom_fences": [
-            {
-                "name": "html",
-                "class": "language-html",
-                "format": superfences.fence_code_format,
-            }
-        ]
-    },
-}
-
-md = markdown.Markdown(extensions=extensions, extension_configs=extension_configs)
+def create_markdown():
+    extensions = [
+        "pymdownx.superfences",
+        "pymdownx.blocks.tab",
+        HeadingExtractorExtension(),
+    ]
+    extension_configs = {
+        "pymdownx.superfences": {
+            "custom_fences": [
+                {
+                    "name": "html",
+                    "class": "language-html",
+                    "format": superfences.fence_code_format,
+                }
+            ]
+        },
+    }
+    return markdown.Markdown(extensions=extensions, extension_configs=extension_configs)
 
 
 def extract_headings(markdown_text):
+    md = create_markdown()
     md.convert(markdown_text)
     return md.heading_extractor.headings
 
@@ -66,16 +65,14 @@ def parse_markdown(file_path: Path):
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             text = f.read()
-            post = frontmatter.loads(text)  # Load frontmatter
+            post = frontmatter.loads(text)
 
-            # Get metadata and stripped Markdown content
             metadata = post.metadata
             stripped_content = post.content
 
-            # Extract headings
             headings = extract_headings(stripped_content)
 
-            # Convert content to HTML
+            md = create_markdown()
             html_content = md.convert(stripped_content)
 
             return metadata, headings, html_content

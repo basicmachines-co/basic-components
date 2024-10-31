@@ -1,0 +1,93 @@
+/* Tab style with ShadCN Zinc theme and dark mode */
+.tabbed-set {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 0;
+    border-radius: 0.1rem;
+}
+
+.tabbed-set > input {
+    display: none;
+}
+
+.tabbed-set label {
+    width: auto;
+    padding: 0.9375em 1.25em 0.78125em;
+    font-weight: 700;
+    font-size: 0.84em;
+    white-space: nowrap;
+    border-bottom: 0.15rem solid transparent;
+    border-top-left-radius: 0.1rem;
+    border-top-right-radius: 0.1rem;
+    cursor: pointer;
+    transition: background-color 250ms, color 250ms;
+    color: var(--zinc-500); /* Light mode inactive text color */
+}
+
+.tabbed-set label:hover {
+    color: var(--zinc-900); /* Hover text color */
+}
+
+.tabbed-set .tabbed-content {
+    width: 100%;
+    display: none;
+    padding: 1em;
+    box-shadow: 0 -0.05rem var(--zinc-200); /* Light shadow for content */
+}
+
+.tabbed-set input:checked:nth-child(n+1) + label {
+    color: var(--zinc-900); /* Light mode active tab text color */
+    border-color: var(--zinc-400); /* Active tab border color */
+}
+
+/* Dark Mode with prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+    .tabbed-set label {
+        color: var(--zinc-600) !important; /* Dark mode inactive text color */
+    }
+
+    .tabbed-set label:hover {
+        color: var(--zinc-100) !important; /* Dark hover text color */
+    }
+
+    .tabbed-set .tabbed-content {
+        box-shadow: 0 -0.05rem var(--zinc-800) !important; /* Dark content shadow */
+    }
+
+    .tabbed-set input:checked:nth-child(n+1) + label {
+        color: var(--zinc-50) !important; /* Active dark tab text color */
+        border-color: var(--zinc-50) !important; /* Active dark tab border */
+    }
+}
+
+/* Dark Mode with .dark class */
+.dark .tabbed-set label {
+    color: var(--zinc-400) !important; /* Dark mode inactive text color */
+}
+
+.dark .tabbed-set label:hover {
+    color: var(--zinc-100) !important; /* Dark hover text color */
+}
+
+.dark .tabbed-set .tabbed-content {
+    box-shadow: 0 -0.05rem var(--zinc-800) !important; /* Dark content shadow */
+}
+
+.dark .tabbed-set input:checked:nth-child(n+1) + label {
+    color: var(--zinc-50) !important; /* Active dark tab text color */
+    border-color: var(--zinc-50) !important; /* Active dark tab border */
+}
+
+@media screen {
+    .tabbed-set input:nth-child(n+1):checked + label + .tabbed-content {
+        order: 99;
+        display: block;
+    }
+}
+
+@media print {
+    .tabbed-content {
+        display: contents;
+    }
+}

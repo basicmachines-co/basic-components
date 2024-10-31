@@ -19,10 +19,38 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 47.4% 11.2%;
     --ring: 215 20.2% 65.1%;
+
+    --zinc-50: #f9fafb;
+    --zinc-100: #f3f4f6;
+    --zinc-200: #e5e7eb;
+    --zinc-300: #d1d5db;
+    --zinc-400: #9ca3af;
+    --zinc-500: #6b7280;
+    --zinc-600: #4b5563;
+    --zinc-700: #374151;
+    --zinc-800: #1f2937;
+    --zinc-900: #111827;
+
   }
 
   .dark {
     --background: 222.2 47.4% 11.2%;
     --foreground: 210 40% 98%;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --zinc-50: #1f2937;
+    --zinc-100: #374151;
+    --zinc-200: #4b5563;
+    --zinc-300: #6b7280;
+    --zinc-400: #9ca3af;
+    --zinc-500: #d1d5db;
+    --zinc-600: #e5e7eb;
+    --zinc-700: #f3f4f6;
+    --zinc-800: #f9fafb;
+    --zinc-900: #ffffff;
   }
 }
