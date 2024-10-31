@@ -39,6 +39,7 @@ def create_markdown():
     extensions = [
         "pymdownx.superfences",
         "pymdownx.blocks.tab",
+        "pymdownx.snippets",
         HeadingExtractorExtension(),
     ]
     extension_configs = {

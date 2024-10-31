@@ -62,7 +62,7 @@
 
 
     <!--component demo -->
-    <div class="flex flex-col justify-center mx-auto">
+    <div class="flex flex-col justify-center max-w-screen-lg mx-auto">
         <Card className="border rounded-lg my-8 min-w-96 md:px-40 md:py-20">
             <CardContent>
 
@@ -88,42 +88,42 @@
     </div>
 
     <!-- markdown content -->
-    <article class="prose prose-zinc dark:prose-invert max-w-none">
+    <article class="prose prose-zinc dark:prose-invert max-w-screen-xlg max-w-none">
         {{ content | safe }}
     </article>
 
 
-    <div x-data="{ activeTab: '{{ metadata.components[0] }}' }" class="border rounded-md shadow">
-        <nav class="flex border-b">
-            {%- for component in metadata.components -%}
-                <button
-                        @click="activeTab = '{{ component }}'"
-                        :class="{
-                    'text-zinc-900 font-semibold dark:text-zinc-100 border-b-2 border-zinc-900 dark:border-zinc-100': activeTab === '{{ component }}',
-                    'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100': activeTab !== '{{ component }}'
-                }"
-                        class="py-2 px-4"
-                >
-                    {{ component | filename }}
-                </button>
-            {%- endfor -%}
-        </nav>
-
-        <div class="p-4">
-            {%- for component in metadata.components -%}
-                <div x-show="activeTab === '{{ component }}'" x-transition:enter="transition-opacity duration-300 ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="relative">
-                    <!-- Copy Button -->
-                    <button
-                            @click="navigator.clipboard.writeText($refs.code{{ loop.index }}.textContent)"
-                            class="absolute top-2 right-2 bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-sm px-2 py-1 border rounded-md transition"
-                    >
-                        Copy
-                    </button>
-
-                    <!-- Code Block -->
-                    <pre class="language-html"><code class="language-html" x-ref="code{{ loop.index }}">{{ component | include_file }}</code></pre>
-                </div>
-            {%- endfor -%}
-        </div>
-    </div>
+{#    <div x-data="{ activeTab: '{{ metadata.components[0] }}' }" class="border rounded-md shadow">#}
+{#        <nav class="flex border-b">#}
+{#            {%- for component in metadata.components -%}#}
+{#                <button#}
+{#                        @click="activeTab = '{{ component }}'"#}
+{#                        :class="{#}
+{#                    'text-zinc-900 font-semibold dark:text-zinc-100 border-b-2 border-zinc-900 dark:border-zinc-100': activeTab === '{{ component }}',#}
+{#                    'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100': activeTab !== '{{ component }}'#}
+{#                }"#}
+{#                        class="py-2 px-4"#}
+{#                >#}
+{#                    {{ component | filename }}#}
+{#                </button>#}
+{#            {%- endfor -%}#}
+{#        </nav>#}
+{##}
+{#        <div class="p-4">#}
+{#            {%- for component in metadata.components -%}#}
+{#                <div x-show="activeTab === '{{ component }}'" x-transition:enter="transition-opacity duration-300 ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="relative">#}
+{#                    <!-- Copy Button -->#}
+{#                    <button#}
+{#                            @click="navigator.clipboard.writeText($refs.code{{ loop.index }}.textContent)"#}
+{#                            class="absolute top-2 right-2 bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-sm px-2 py-1 border rounded-md transition"#}
+{#                    >#}
+{#                        Copy#}
+{#                    </button>#}
+{##}
+{#                    <!-- Code Block -->#}
+{#                    <pre class="language-html"><code class="language-html" x-ref="code{{ loop.index }}">{{ component | include_file }}</code></pre>#}
+{#                </div>#}
+{#            {%- endfor -%}#}
+{#        </div>#}
+{#    </div>#}
 </DocLayout>

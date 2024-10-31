@@ -33,34 +33,27 @@ components:
 ## Code
 
 
-/// tab | Tab A title
+/// tab | Accordion.jinja
 ```html
-{#def
-    className: str = ""
-#}
-<div
-    x-data="{
-      activeItem: undefined,
-      toggleItem(value) {
-        this.activeItem = this.activeItem === value ? undefined : value;
-      }
-    }"
-    x-init="console.log('initial state:', activeItem);"
-    class="{{ className }} w-full"
-    {{ attrs.render() }}
->
-  {{ content }}
-</div>
+--8<-- "components/ui/Accordion.jinja"
 ```
 ///
 
-/// tab | Tab B title
-Tab B content
+/// tab | AccordionContent.jinja
+```html
+--8<-- "components/ui/AccordionContent.jinja"
+```
 ///
 
-/// tab | Tab C Title
-new: true
+/// tab | AccordionItem.jinja
+```html
+--8<-- "components/ui/AccordionItem.jinja"
+```
+///
 
-Will be part of a separate, new tab group.
+/// tab | AccordionTrigger.jinja
+```html
+--8<-- "components/ui/AccordionTrigger.jinja"
+```
 ///
 
