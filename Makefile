@@ -11,12 +11,13 @@ $(VENV)/bin/uv:
 
 install: $(VENV)/bin/uv
 	$(UV) sync
+	cd docs && npm install
 
 docs-tailwind:
-	cd documentation && npm install && npx tailwindcss init && npm link tailwindcss && npm run build
+	npx tailwindcss init  && npm run build
 
 docs-tailwind-watch:
-	cd documentation && npm install && npx tailwindcss init && npm link tailwindcss && npm run watch
+	npx tailwindcss init && npm link tailwindcss && npm run watch
 
 docs-dev:
 	$(UV) run fastapi dev docs/app.py --reload --reload-include *.yml
