@@ -18,7 +18,7 @@ install-node:
 	cd docs && npm install
 
 docs-tailwind:
-	npx tailwindcss init  && npm run build
+	npx tailwindcss init && npm link tailwindcss && npm run build
 
 docs-tailwind-watch:
 	npx tailwindcss init && npm link tailwindcss && npm run watch
