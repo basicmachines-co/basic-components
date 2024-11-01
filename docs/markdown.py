@@ -11,11 +11,13 @@ from docs.templates import templates
 
 
 class HeadingExtractor(Treeprocessor):
-    def __init__(self, md):
+    def __init__(self, md, examples=None):
         super().__init__(md)
         self.headings = []
+        self.examples = examples or []
 
     def run(self, root):
+        # Extract regular headings
         for element in root.iter():
             if element.tag in ["h1", "h2", "h3", "h4", "h5", "h6"]:
                 heading_id = re.sub(r"\s+", "-", element.text.lower())
@@ -27,22 +29,49 @@ class HeadingExtractor(Treeprocessor):
                         "id": heading_id,
                     }
                 )
+
+        # Add "Examples" top-level heading if examples exist
+        if self.examples:
+            self.headings.append(
+                {
+                    "level": 2,  # Set the level to 1 for the top-level "Examples" heading
+                    "content": "Examples",
+                    "id": "examples",
+                }
+            )
+            # Add each example as a subheading under "Examples"
+            for example in self.examples:
+                for name, path in example.items():
+                    example_id = re.sub(r"\s+", "-", name.lower())
+                    self.headings.append(
+                        {
+                            "level": 3,  # Set the level as appropriate for TOC depth under "Examples"
+                            "content": name,
+                            "id": example_id,
+                        }
+                    )
+
         return root
 
 
 class HeadingExtractorExtension(Extension):
+    def __init__(self, **kwargs):
+        self.config = {"examples": [[], "List of examples from metadata"]}
+        super().__init__(**kwargs)
+
     def extendMarkdown(self, md):
-        heading_extractor = HeadingExtractor(md)
+        examples = self.getConfig("examples")
+        heading_extractor = HeadingExtractor(md, examples)
         md.treeprocessors.register(heading_extractor, "heading_extractor", 15)
         md.heading_extractor = heading_extractor
 
 
-def create_markdown():
+def create_markdown(examples=None):
     extensions = [
         "pymdownx.superfences",
         "pymdownx.blocks.tab",
         "pymdownx.snippets",
-        HeadingExtractorExtension(),
+        HeadingExtractorExtension(examples=examples),
     ]
     extension_configs = {
         "pymdownx.superfences": {
@@ -58,8 +87,8 @@ def create_markdown():
     return markdown.Markdown(extensions=extensions, extension_configs=extension_configs)
 
 
-def extract_headings(markdown_text):
-    md = create_markdown()
+def extract_headings(markdown_text, examples=None):
+    md = create_markdown(examples=examples)
     md.convert(markdown_text)
     return md.heading_extractor.headings
 
@@ -72,13 +101,14 @@ def parse_markdown(file_path: Path):
 
             metadata = post.metadata
             stripped_content = post.content
-            headings = extract_headings(stripped_content)
+            examples = metadata.get("examples", [])
+            headings = extract_headings(stripped_content, examples=examples)
 
             template = templates.env.from_string(stripped_content)
-            # Render that template. Be sure to pass in the context (post in this instance).
+            # Render the template with context
             template_processed_markdown = template.render()
 
-            md = create_markdown()
+            md = create_markdown(examples=examples)
             html_content = md.convert(template_processed_markdown)
 
             return metadata, headings, html_content
