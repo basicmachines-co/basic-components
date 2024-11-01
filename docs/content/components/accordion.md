@@ -1,17 +1,18 @@
 ---
 title: Accordion
 description: A vertically stacked set of interactive headings that each reveal a section of content.
+examples:  
+  - Example1: examples/accordion.html 
 ---
 
 
 ## Usage
 
 ```html
---8<-- "docs/content/components/Accordion.html"
+--8<-- "docs/templates/examples/accordion.html"
 ```
 
 ## Code
-
 
 /// tab | Accordion.jinja
 ```html
@@ -37,14 +38,4 @@ description: A vertically stacked set of interactive headings that each reveal a
 ```
 ///
 
-## Examples
 
-/// tab | preview
-<Button variant="secondary">Secondary</Button>
-///
-
-/// tab | code
-```html
-<Button variant="secondary">Secondary</Button>
-```
-///

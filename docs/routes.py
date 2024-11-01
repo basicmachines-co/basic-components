@@ -40,6 +40,7 @@ async def catch_all(request: Request, path: str = None):
 
     # Ensure the Markdown file exists
     md_path = Path(f"{BASE_DIR}/docs/content/{path}.md")
+
     metadata, toc, html_content = parse_markdown(md_path)
 
     # Prepare the context for the template

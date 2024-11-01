@@ -7,6 +7,8 @@ from markdown.treeprocessors import Treeprocessor
 from pymdownx import superfences
 import re
 
+from docs.templates import templates
+
 
 class HeadingExtractor(Treeprocessor):
     def __init__(self, md):
@@ -70,11 +72,14 @@ def parse_markdown(file_path: Path):
 
             metadata = post.metadata
             stripped_content = post.content
-
             headings = extract_headings(stripped_content)
 
+            template = templates.env.from_string(stripped_content)
+            # Render that template. Be sure to pass in the context (post in this instance).
+            template_processed_markdown = template.render()
+
             md = create_markdown()
-            html_content = md.convert(stripped_content)
+            html_content = md.convert(template_processed_markdown)
 
             return metadata, headings, html_content
     except FileNotFoundError:
