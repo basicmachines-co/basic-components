@@ -18,7 +18,7 @@ examples:
 | Name        | Type    | Default   | Description                                                   |
 |-------------|---------|-----------|---------------------------------------------------------------|
 | `className` | String  |           | Additional tailwind classes to apply to the component.        |
-| `variant`   | String  | `default` | Specify variant style, valid values: `default`, `destructive` |
+| `variant`   | String  | `default` | Sets the component style. Available: `default`, `destructive` |
 
 ## Code
 
