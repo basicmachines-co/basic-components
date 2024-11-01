@@ -1,6 +1,6 @@
 
 {% set error=True %}
-{% set error_message="invalid email" %}
+{% set error_message="Invalid email" %}
 
 <Form method="GET" action="">
   <FormItem id="email-field">
@@ -8,6 +8,7 @@
     <Input
         id="email"
         type="email"
+        value="not@email"
         :error="{{ error }}"
     />
     <FormDescription id="email-description">We'll never share your email.</FormDescription>

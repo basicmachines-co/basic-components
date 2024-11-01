@@ -92,26 +92,28 @@
                         <button @click="activeTab = 'Preview'"
                                 :class="{
                     'text-zinc-900 font-semibold dark:text-zinc-100 border-b-2 border-zinc-900 dark:border-zinc-100': activeTab === 'Preview',
-                    'text-zinc-600 font-semibold dark:text-zinc-400': activeTab !== 'Preview'
-                }"
+                    'text-zinc-600 font-semibold dark:text-zinc-400': activeTab !== 'Preview'}"
                                 class="py-2 px-4 text-sm transition-colors hover:text-zinc-900 dark:hover:text-zinc-100">
                             Preview
                         </button>
                         <button @click="activeTab = 'Code'"
                                 :class="{
                     'text-zinc-900 font-semibold dark:text-zinc-100 border-b-2 border-zinc-900 dark:border-zinc-100': activeTab === 'Code',
-                    'text-zinc-500 font-semibold dark:text-zinc-400': activeTab !== 'Code'
-                }"
+                    'text-zinc-500 font-semibold dark:text-zinc-400': activeTab !== 'Code'}"
                                 class="py-2 px-4 text-sm transition-colors hover:text-zinc-900 dark:hover:text-zinc-100">
                             Code
                         </button>
                     </nav>
 
                     <!-- Tab Content -->
-                    <div class="mt-4 p-10">
+                    <div class="mt-4 p-2">
                         <div x-show="activeTab === 'Preview'" class="relative">
-                            <!-- Include the example preview content here -->
-                            {% include template %}
+                            <Card className="border rounded-lg my-4 min-w-96 md:px-40 md:py-20">
+                                <CardContent>
+                                    <!-- Include the example preview  -->
+                                    {% include template %}
+                                </CardContent>
+                            </Card>
                         </div>
 
                         <div x-show="activeTab === 'Code'" class="relative">

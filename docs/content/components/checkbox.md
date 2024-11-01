@@ -1,13 +1,15 @@
-# Checkbox
+---
+title: Checkbox
+description: A control that allows the user to toggle between checked and not checked.
+component: checkbox
+---
 
-A control that allows the user to toggle between checked and not checked.
 
-## Preview
+## Usage
 
-<iframe
-src="{{ preview_url}}/components/checkbox"
-style="width: 100%; height: 200px; border: none;">
-</iframe>
+```html
+--8<-- "docs/templates/examples/checkbox.html"
+```
 
 ## Props
 
@@ -20,15 +22,8 @@ style="width: 100%; height: 200px; border: none;">
 
 ## Components
 
-=== "Checkbox.jinja"
-{% raw %}
-```jinja
-{% include-markdown "../../../components/ui/Checkbox.jinja" %}
-```
-{% endraw %}
-
-## Usage
-
+/// tab | Checkbox.jinja
 ```html
-{% include-markdown "../../backend/templates/checkbox.html" %}
+--8<-- "components/ui/Checkbox.jinja"
 ```
+///
