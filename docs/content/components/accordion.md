@@ -1,6 +1,7 @@
 ---
 title: Accordion
 description: A vertically stacked set of interactive headings that each reveal a section of content.
+component: accordion
 examples:  
   - Example1: examples/accordion.html 
 ---

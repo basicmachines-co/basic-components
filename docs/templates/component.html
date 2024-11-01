@@ -47,7 +47,7 @@
 </script>
 
 
-<DocLayout :site_config="{{ config }}" :current_path="{{ current_path }}" :toc="{{ toc }}">
+<ComponentLayout :site_config="{{ config }}" :current_path="{{ current_path }}" :toc="{{ toc }}">
 
     <!--component title -->
     <h1 class="text-2xl font-semibold leading-none tracking-tight pb-4">
@@ -60,10 +60,11 @@
     </p>
 
     <!--component demo -->
-    <div class="flex flex-col justify-center max-w-screen-lg mx-auto">
+    <div class="flex flex-col justify-center w-full">
         <Card className="border rounded-lg my-8 min-w-96 md:px-40 md:py-20">
             <CardContent>
-                {% include "examples/accordion.html" %}
+                {% set template_path = "examples/" + metadata.component + ".html" %}
+                {% include template_path %}
             </CardContent>
         </Card>
     </div>
@@ -128,4 +129,4 @@
             {% endfor %}
         {%- endfor -%}
     </div>
-</DocLayout>
+</ComponentLayout>

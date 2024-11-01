@@ -91,3 +91,19 @@
         display: contents;
     }
 }
+
+
+.prose pre {
+    max-width: 1248px;  /* Or set a maximum fixed width if preferred */
+    overflow-x: auto;  /* Enable horizontal scrolling if content exceeds max-width */
+    word-wrap: normal; /* Prevent code from wrapping */
+    white-space: pre;  /* Preserve whitespace */
+    padding: 1em;      /* Add padding for readability */
+    border-radius: 0.375rem; /* Round edges for better appearance */
+    background-color: #1e1e1e; /* Optional: background color for dark mode */
+}
+
+.prose code {
+    white-space: pre-wrap; /* Allow wrapping for inline code */
+}
+

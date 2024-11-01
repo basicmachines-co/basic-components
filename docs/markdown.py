@@ -71,6 +71,7 @@ def create_markdown(examples=None):
         "pymdownx.superfences",
         "pymdownx.blocks.tab",
         "pymdownx.snippets",
+        "markdown.extensions.tables",
         HeadingExtractorExtension(examples=examples),
     ]
     extension_configs = {

@@ -54,4 +54,4 @@ async def catch_all(request: Request, path: str = None):
     ic(context)
 
     # Render the template with the given context
-    return templates.TemplateResponse(request, "content.html", context=context)
+    return templates.TemplateResponse(request, "component.html", context=context)
