@@ -5,3 +5,11 @@
 - [ ] copy/paste button position
 - [ ] component tab scroll 
 - [ ] site heading
+- [ ] smaller font for code blocks
+- [ ] mode toggle dropdown link whole item
+- [ ] code blocks scroll above nav
+- [ ] popover content demo
+- [ ] component arg descriptions
+- [ ] table sorting example
+- [ ] toast min width
+- [ ] wtform demo

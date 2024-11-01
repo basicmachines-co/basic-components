@@ -1,5 +1,5 @@
 {#def
-    href: str = "#",
+    href: str = "",
     className: str = "",
 #}
-<a href="{{ href }}" class="{{ className }}">{{ content }}</a>
+<a href="{{ href }}" class="hover:underline {{ className }}">{{ content }}</a>

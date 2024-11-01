@@ -1,27 +1,31 @@
-# Mode Toggle
-
-A dropdown menu with options to switch between light and dark modes.
-
-## Preview
-
-<iframe
-src="{{ preview_url}}/components/mode_toggle"
-style="width: 100%; height: 400px; border: none;">
-</iframe>
-
-## Components
-
-=== "ModeToggle.jinja"
-{% raw %}
-```jinja
-{% include '../../../components/ui/ModeToggle.jinja' %}
-```
-{% endraw %}
+---
+title: Mode Toggle
+description: A dropdown menu with options to switch between light and dark modes.
+component: mode_toggle
+examples:  
+  - Button: examples/mode_toggle_button.html 
+---
 
 ## Usage
 
-The mode is toggled by setting a 'mode' value in localStorage. Add the following logic to the `html` element on the page
-to perform toggling logic. Any component can call the `toggleMode` function to switch the mode. 
+```html
+--8<-- "docs/templates/examples/mode_toggle.html"
+```
+
+## Code
+
+/// tab | ModeToggle.jinja
+```html
+--8<-- "components/ui/ModeToggle.jinja"
+```
+///
+
+
+
+The mode is toggled by setting a 'mode' value in localStorage and setting the `dark` utility style on the `body` tag. 
+Add the following logic to the `html` element on the page to perform toggling logic. 
+Any component can call the `toggleMode` function to switch the mode. 
+
 ```html
 <html
     class="h-full"
@@ -56,17 +60,3 @@ to perform toggling logic. Any component can call the `toggleMode` function to s
 >
 ```
 
-## Examples
-
-### Button
-
-=== "Preview"
-    <iframe
-    src="{{ preview_url}}/components/mode_toggle?option=button"
-    style="width: 100%; height: 100px; border: none;">
-    </iframe>
-
-=== "Code"
-    ```html
-    {% include-markdown "../../backend/templates/mode_toggle_button.html" %}
-    ```
