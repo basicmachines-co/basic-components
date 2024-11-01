@@ -1,0 +1,19 @@
+<Dialog>
+  <DialogTrigger>Open Alert Dialog</DialogTrigger>
+  <DialogOverlay />
+  <AlertDialogContent>
+    <DialogHeader>
+      <DialogTitle>Dialog Title</DialogTitle>
+      <DialogDescription>
+        This must be acknowledged and can only be closed by confirm/cancel.
+      </DialogDescription>
+    </DialogHeader>
+    <DialogBody>
+      Some helpful information
+    </DialogBody>
+    <DialogFooter>
+      <Button variant="outline" @click="open = false">Cancel</Button>
+      <Button @click="open = false">Confirm</Button>
+    </DialogFooter>
+  </AlertDialogContent>
+</Dialog>
