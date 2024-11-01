@@ -9,8 +9,12 @@ $(VENV)/bin/uv:
 	python -m venv $(VENV)
 	$(PYTHON) -m pip install uv
 
-install: $(VENV)/bin/uv
+install: install-python install-node
+
+install-python: $(VENV)/bin/uv
 	$(UV) sync
+
+install-node:
 	cd docs && npm install
 
 docs-tailwind:
