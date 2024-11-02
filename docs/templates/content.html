@@ -47,7 +47,7 @@
 </script>
 
 
-<ComponentLayout :site_config="{{ config }}" :current_path="{{ current_path }}" :toc="{{ toc }}">
+<ComponentLayout :site_config="{{ config }}" :current_path="{{ path }}" :toc="{{ toc }}">
 
     <!--component title -->
     <h1 class="text-2xl font-semibold leading-none tracking-tight pb-4">
@@ -59,15 +59,17 @@
         {{ metadata.description }}
     </p>
 
-    <!--component demo -->
-    <div class="flex flex-col justify-center w-full">
-        <Card className="border rounded-lg my-8 min-w-96 md:px-40 md:py-20">
-            <CardContent>
-                {% set template_path = "examples/" + metadata.component + ".html" %}
-                {% include template_path %}
-            </CardContent>
-        </Card>
-    </div>
+    {% if metadata.component %}
+        <!--component demo -->
+        <div class="flex flex-col justify-center w-full">
+            <Card className="border rounded-lg my-8 min-w-96 md:px-40 md:py-20">
+                <CardContent>
+                    {% set template_path = "examples/" + metadata.component + ".html" %}
+                    {% include template_path %}
+                </CardContent>
+            </Card>
+        </div>
+    {% endif %}
 
     <!-- markdown content -->
     <article class="prose prose-zinc dark:prose-invert max-w-screen-xlg max-w-none">
@@ -123,7 +125,8 @@
                                         class="absolute top-2 right-2 bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-sm px-2 py-1 border rounded-md transition">
                                     <ClipboardCopy className="h-4- w-4 bg-zinc-100"/>
                                 </button>
-                                <pre class="language-html p-4 bg-zinc-50 dark:bg-zinc-900 rounded-md"><code x-ref="code" class="language-html">{{ ("docs/templates/" + template) | include_file }}</code></pre>
+                                <pre class="language-html p-4 bg-zinc-50 dark:bg-zinc-900 rounded-md"><code x-ref="code"
+                                                                                                            class="language-html">{{ ("docs/templates/" + template) | include_file }}</code></pre>
                             </div>
                         </div>
                     </div>

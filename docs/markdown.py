@@ -1,5 +1,4 @@
 from pathlib import Path
-from fastapi import HTTPException
 import frontmatter
 import markdown
 from markdown.extensions import Extension
@@ -94,26 +93,36 @@ def extract_headings(markdown_text, examples=None):
     return md.heading_extractor.headings
 
 
-def parse_markdown(file_path: Path):
-    try:
-        with open(file_path, "r", encoding="utf-8") as f:
-            text = f.read()
-            post = frontmatter.loads(text)
+def parse_jinja_markdown(file_path: Path):
+    with open(file_path, "r", encoding="utf-8") as f:
+        text = f.read()
+        post = frontmatter.loads(text)
 
-            metadata = post.metadata
-            stripped_content = post.content
-            examples = metadata.get("examples", [])
-            headings = extract_headings(stripped_content, examples=examples)
+        metadata = post.metadata
+        stripped_content = post.content
+        examples = metadata.get("examples", [])
+        headings = extract_headings(stripped_content, examples=examples)
 
-            template = templates.env.from_string(stripped_content)
-            # Render the template with context
-            template_processed_markdown = template.render()
+        template = templates.env.from_string(stripped_content)
+        # Render the template with context
+        template_processed_markdown = template.render()
 
-            md = create_markdown(examples=examples)
-            html_content = md.convert(template_processed_markdown)
+        md = create_markdown(examples=examples)
+        html_content = md.convert(template_processed_markdown)
 
-            return metadata, headings, html_content
-    except FileNotFoundError:
-        raise HTTPException(
-            status_code=404, detail=f"Markdown not found for {file_path}"
-        )
+        return metadata, headings, html_content
+
+
+def doc_markdown(file_path: Path):
+    with open(file_path, "r", encoding="utf-8") as f:
+        text = f.read()
+        post = frontmatter.loads(text)
+
+        metadata = post.metadata
+        stripped_content = post.content
+        headings = extract_headings(stripped_content)
+
+        md = create_markdown()
+        html_content = md.convert(stripped_content)
+
+        return metadata, headings, html_content

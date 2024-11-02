@@ -3,7 +3,6 @@
     current_path: str
 #}
 
-
 {%- macro current_nav(current_path) -%}
     {{ "text-black dark:text-white font-bold" if item.path == current_path else "text-zinc-500" }}
 {%- endmacro -%}

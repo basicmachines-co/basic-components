@@ -5,7 +5,7 @@ from loguru import logger
 from starlette.responses import HTMLResponse
 
 from docs.config import BASE_DIR
-from docs.markdown import parse_markdown
+from docs.markdown import parse_jinja_markdown
 from docs.templates import templates, hotreload
 from docs.site import load_site_config
 
@@ -24,34 +24,48 @@ router.add_websocket_route("/hot-reload", endpoint=hotreload, name="hot-reload")
 
 
 site_config = load_site_config(f"{BASE_DIR}/docs/site_config.yml")
-site_config_routes = site_config.routes()
-logger.info(f"routes: {site_config_routes}")
+logger.info(f"routes: {site_config.routes()}")
 
 
-@router.get("/{path:path}")
-async def catch_all(request: Request, path: str = None):
-    path = path or "index"
-
-    current_path = f"/{path}"
-
-    # Ensure the path exists in the routes
-    if current_path not in site_config_routes:
-        raise HTTPException(status_code=404, detail=f"No route for found for {path}")
-
+async def get_markdown_file(path, default="index"):
     # Ensure the Markdown file exists
-    md_path = Path(f"{BASE_DIR}/docs/content/{path}.md")
+    md_file_path = Path(f"{BASE_DIR}/docs/content/{path}")
 
-    metadata, toc, html_content = parse_markdown(md_path)
+    # if its a dir, look for the index.md
+    if md_file_path.is_dir():
+        md_file_path = Path(f"{BASE_DIR}/docs/content/{path}/{default}")
 
+    md_file_path = md_file_path.with_suffix(".md")
+
+    if not md_file_path.exists():
+        raise HTTPException(
+            status_code=404, detail=f"Markdown file {md_file_path} not found for {path}"
+        )
+    logger.info(f"Path '{path}' resolved to markdown file '{md_file_path}'")
+    return md_file_path
+
+
+async def render_content(path, md_file_path, request):
+    metadata, toc, html_content = parse_jinja_markdown(md_file_path)
     # Prepare the context for the template
     context = {
         "metadata": metadata,
         "content": html_content,
         "config": site_config,
-        "current_path": current_path,
+        "path": f"/{path}",
         "toc": toc,
     }
     ic(context)
-
     # Render the template with the given context
-    return templates.TemplateResponse(request, "component.html", context=context)
+    return templates.TemplateResponse(request, "content.html", context=context)
+
+
+@router.get("/")
+async def index(request: Request, path: str = None):
+    return await render_content("/index", request)
+
+
+@router.get("/{path:path}")
+async def content(request: Request, path: str):
+    md_path = await get_markdown_file(path)
+    return await render_content(path, md_path, request)

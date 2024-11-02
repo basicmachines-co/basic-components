@@ -30,7 +30,7 @@ async def on_startup(app: FastAPI):
     await hotreload.shutdown()
 
 
-app = FastAPI(title=settings.APP_NAME, lifespan=on_startup)
+app = FastAPI(docs_url=None, redoc_url=None, lifespan=on_startup)
 
 
 # Add middleware for sessions and CSRF protection
