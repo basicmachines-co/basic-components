@@ -1,0 +1,49 @@
+<!-- Hot reload script -->
+{% if DEBUG %}
+    {{ hotreload.script(url_for('hot-reload')) | safe }}
+{% endif %}
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.prose pre').forEach((preBlock) => {
+            const codeBlock = preBlock.querySelector('code');
+
+            // Create a wrapper for the pre block and move the pre inside it
+            const wrapper = document.createElement('div');
+            wrapper.classList.add('relative');
+            preBlock.parentNode.insertBefore(wrapper, preBlock);
+            wrapper.appendChild(preBlock);
+
+            // Create the copy button
+            const copyButton = document.createElement('button');
+            copyButton.classList.add(
+                'absolute', 'top-2', 'right-2', 'bg-zinc-100',
+                'hover:bg-zinc-200', 'dark:bg-zinc-800',
+                'dark:hover:bg-zinc-700', 'text-sm', 'px-2',
+                'py-1', 'border', 'rounded-md'
+            );
+
+            // Use the custom SVG component icons in the innerHTML of the button
+            copyButton.innerHTML = `<ClipboardCopy className="h-4- w-4 bg-zinc-100"/>`;
+
+            wrapper.appendChild(copyButton);
+
+            // Add copy functionality to the button
+            copyButton.addEventListener('click', () => {
+                navigator.clipboard.writeText(codeBlock.textContent).then(() => {
+                    // Change the icon to a checkmark on success
+                    copyButton.innerHTML = `<ClipboardCheck className="h-4- w-4 bg-zinc-100"/>`;
+                    setTimeout(() => {
+                        // Revert back to the original clipboard icon
+                        copyButton.innerHTML = `<ClipboardCopy className="h-4- w-4 bg-zinc-100"/>`;
+                    }, 2000);
+                }).catch(err => console.error('Failed to copy text: ', err));
+            });
+        });
+    });
+</script>
+
+
+<SiteLayout :site_config="{{ config }}" :current_path="{{ path }}" :toc="{{ toc }}">
+     {{ content  }}
+</SiteLayout>

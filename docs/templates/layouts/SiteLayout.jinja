@@ -1,0 +1,50 @@
+{#def
+    site_config: SiteConfig,
+    current_path: str,
+    toc: list
+#}
+
+{% macro left_nav(nav) %}
+        {% for item in nav %}
+            {% if item.type == "item" %}
+                <NavItem :item="{{ item }}" :current_path="{{ current_path }}"/>
+            {% else %}
+                <NavGroup :group="{{ item }}" :current_path="{{ current_path }}"/>
+            {% endif %}
+        {% endfor %}
+{% endmacro %}
+
+{% macro right_nav(headings) %}
+    {% for heading in headings %}
+        <a href="#{{ heading.content | lower | replace(' ', '-') }}"
+           class="block text-sm text-zinc-500 hover:text-zinc-900 hover:underline dark:hover:text-zinc-200 pt-2"
+           style="margin-left: {{ (heading.level - 2) * 16 }}px;">
+            {{ heading.content }}
+        </a>
+    {% endfor %}
+{% endmacro %}
+
+<BaseLayout :title="{{ site_config.site_name }}">
+    <!-- top navbar -->
+    <Navbar />
+    <div class="flex min-h-screen max-w-screen-xlg " >
+        <!-- left sidebar -->
+        <SideNav side="left" :current_path="{{ current_path }}">
+            {{ left_nav(site_config.nav) }}
+        </SideNav>
+        <!-- Main content area -->
+        <div class="flex-1 p-6">
+            <main class="bg-white dark:bg-black text-black dark:text-white ">
+                {{ content }}
+            </main>
+        </div>
+        <!-- right sidebar -->
+        <SideNav side="right" :current_path="{{ current_path }}">
+            <h2 class="text-sm font-semibold text-zinc-500 dark:text-zinc-400">On this page</h2>
+            {{ right_nav(toc) }}
+        </SideNav>
+    </div>
+
+</BaseLayout>
+
+

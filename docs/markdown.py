@@ -1,6 +1,7 @@
 from pathlib import Path
 import frontmatter
 import markdown
+from icecream import ic
 from markdown.extensions import Extension
 from markdown.treeprocessors import Treeprocessor
 from pymdownx import superfences
@@ -103,26 +104,13 @@ def parse_jinja_markdown(file_path: Path):
         examples = metadata.get("examples", [])
         headings = extract_headings(stripped_content, examples=examples)
 
-        template = templates.env.from_string(stripped_content)
-        # Render the template with context
-        template_processed_markdown = template.render()
-
         md = create_markdown(examples=examples)
-        html_content = md.convert(template_processed_markdown)
-
-        return metadata, headings, html_content
-
-
-def doc_markdown(file_path: Path):
-    with open(file_path, "r", encoding="utf-8") as f:
-        text = f.read()
-        post = frontmatter.loads(text)
-
-        metadata = post.metadata
-        stripped_content = post.content
-        headings = extract_headings(stripped_content)
-
-        md = create_markdown()
         html_content = md.convert(stripped_content)
+        ic(html_content)
 
-        return metadata, headings, html_content
+        template = templates.env.from_string(html_content)
+        # Render the template with context
+        rendered_template = template.render()
+
+        ic(rendered_template)
+        return metadata, headings, rendered_template

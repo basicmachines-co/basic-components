@@ -57,12 +57,7 @@ async def render_content(path, md_file_path, request):
     }
     ic(context)
     # Render the template with the given context
-    return templates.TemplateResponse(request, "content.html", context=context)
-
-
-@router.get("/")
-async def index(request: Request, path: str = None):
-    return await render_content("/index", request)
+    return templates.TemplateResponse(request, "content2.html", context=context)
 
 
 @router.get("/{path:path}")

@@ -49,6 +49,7 @@ templates.env.globals["hotreload"] = hotreload
 templates.env.globals["DEBUG"] = docs.config.settings.ENVIRONMENT == "local"
 templates.env.filters["include_file"] = include_file
 templates.env.filters["filename"] = filename
+templates.env.autoescape = False
 
 # configure JinjaX component catalog
 templates.env.add_extension(jinjax.JinjaX)
