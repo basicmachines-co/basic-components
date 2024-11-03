@@ -1,3 +1,6 @@
-<article class="prose prose-zinc dark:prose-invert max-w-screen-xlg max-w-none">
+{#  def
+    className: str = "",
+#}
+<article class="prose prose-zinc dark:prose-invert max-w-screen-xlg max-w-none {{ className }}">
     {{ content | safe }}
 </article>
