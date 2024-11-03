@@ -1,0 +1,50 @@
+{#  def
+    component: str,
+    template: str
+#}
+
+<Prose>
+    <h3>{{ component }}</h3>
+</Prose>
+
+<div x-data="{ activeTab: 'Preview' }" class="my-8">
+    <!-- Tab Navigation -->
+    <nav class="flex border-b">
+        <button @click="activeTab = 'Preview'"
+                :class="{
+                    'text-zinc-900 font-semibold dark:text-zinc-100 border-b-2 border-zinc-900 dark:border-zinc-100': activeTab === 'Preview',
+                    'text-zinc-600 font-semibold dark:text-zinc-400': activeTab !== 'Preview'}"
+                class="py-2 px-4 text-sm transition-colors hover:text-zinc-900 dark:hover:text-zinc-100">
+            Preview
+        </button>
+        <button @click="activeTab = 'Code'"
+                :class="{
+                    'text-zinc-900 font-semibold dark:text-zinc-100 border-b-2 border-zinc-900 dark:border-zinc-100': activeTab === 'Code',
+                    'text-zinc-500 font-semibold dark:text-zinc-400': activeTab !== 'Code'}"
+                class="py-2 px-4 text-sm transition-colors hover:text-zinc-900 dark:hover:text-zinc-100">
+            Code
+        </button>
+    </nav>
+
+    <!-- Tab Content -->
+    <div class="mt-4 p-2">
+        <!-- preview  -->
+        <div x-show="activeTab === 'Preview'" class="relative">
+            <Card className="border rounded-lg my-4 min-w-96 md:px-40 md:py-20">
+                <CardContent>
+                    {% include "examples/accordion.html" %}
+                </CardContent>
+            </Card>
+        </div>
+
+        <div x-show="activeTab === 'Code'" class="relative">
+            <!-- code content with copy button -->
+            <div class="relative">
+                <button @click="navigator.clipboard.writeText($refs.code.textContent)"
+                        class="absolute top-2 right-2 bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-sm px-2 py-1 border rounded-md transition">
+                    <ClipboardCopy className="h-4- w-4 bg-zinc-100"/>
+                </button><pre class="language-html p-4 bg-zinc-50 dark:bg-zinc-900 rounded-md"><code x-ref="code" class="language-html">{{ ("docs/templates/" + template) | include_file|trim|e }}</code></pre>
+            </div>
+        </div>
+    </div>
+</div>

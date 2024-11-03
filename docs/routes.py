@@ -1,6 +1,5 @@
 from pathlib import Path
 from fastapi import APIRouter, Request, HTTPException
-from icecream import ic
 from loguru import logger
 from starlette.responses import HTMLResponse
 
@@ -55,7 +54,6 @@ async def render_content(path, md_file_path, request):
         "path": f"/{path}",
         "toc": toc,
     }
-    ic(context)
     # Render the template with the given context
     return templates.TemplateResponse(request, "content2.html", context=context)
 

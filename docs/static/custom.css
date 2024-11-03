@@ -1,98 +1,24 @@
-/* Tab style with ShadCN Zinc theme and dark mode */
-.tabbed-set {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1em 0;
-    border-radius: 0.1rem;
-}
-
-.tabbed-set > input {
-    display: none;
-}
-
-.tabbed-set label {
-    width: auto;
-    padding: 0.9375em 1.25em 0.78125em;
-    font-weight: 600;
-    font-size: 0.84em;
-    white-space: nowrap;
-    border-bottom: 0.15rem solid transparent;
-    border-top-left-radius: 0.1rem;
-    border-top-right-radius: 0.1rem;
-    cursor: pointer;
-    transition: background-color 250ms, color 250ms;
-    color: var(--zinc-700); /* Light mode inactive text color */
-}
-
-.tabbed-set label:hover {
-    color: var(--zinc-900); /* Hover text color */
-}
-
-.tabbed-set .tabbed-content {
-    width: 100%;
-    display: none;
-    padding: 1em;
-    box-shadow: 0 -0.05rem var(--zinc-200); /* Light shadow for content */
-}
-
-.tabbed-set input:checked:nth-child(n+1) + label {
-    color: var(--zinc-600); /* Light mode active tab text color */
-    border-color: var(--zinc-400); /* Active tab border color */
-}
-
-/* Dark Mode with prefers-color-scheme */
-@media (prefers-color-scheme: dark) {
-    .tabbed-set label {
-        color: var(--zinc-400) !important; /* Dark mode inactive text color */
-    }
-
-    .tabbed-set label:hover {
-        color: var(--zinc-100) !important; /* Dark hover text color */
-    }
-
-    .tabbed-set .tabbed-content {
-        box-shadow: 0 -0.05rem var(--zinc-800) !important; /* Dark content shadow */
-    }
-
-    .tabbed-set input:checked:nth-child(n+1) + label {
-        color: var(--zinc-50) !important; /* Active dark tab text color */
-        border-color: var(--zinc-50) !important; /* Active dark tab border */
-    }
-}
-
-/* Dark Mode with .dark class */
-.dark .tabbed-set label {
-    color: var(--zinc-400) !important; /* Dark mode inactive text color */
-}
-
-.dark .tabbed-set label:hover {
-    color: var(--zinc-100) !important; /* Dark hover text color */
-}
-
-.dark .tabbed-set .tabbed-content {
-    box-shadow: 0 -0.05rem var(--zinc-800) !important; /* Dark content shadow */
-}
-
-.dark .tabbed-set input:checked:nth-child(n+1) + label {
-    color: var(--zinc-900) !important; /* Active dark tab text color */
-    border-color: var(--zinc-50) !important; /* Active dark tab border */
-}
-
-@media screen {
-    .tabbed-set input:nth-child(n+1):checked + label + .tabbed-content {
-        order: 99;
-        display: block;
-    }
-}
-
-@media print {
-    .tabbed-content {
-        display: contents;
-    }
-}
-
-
 header {
-    z-index: 100; /* Sets a lower stacking order */
+    z-index: 100;
+}
+
+.toc a {
+    font-size: 0.875rem; /* equivalent to text-sm */
+    color: #71717a; /* equivalent to text-zinc-500 */
+    transition: color 0.2s;
+}
+
+.toc a:hover {
+    color: #1f2937; /* equivalent to text-zinc-900 */
+    text-decoration: underline;
+}
+
+.dark .toc a {
+    color: #a1a1aa; /* equivalent to dark:text-zinc-200 */
+}
+
+
+pre, code {
+    margin: 0;
+    padding: 0;
 }

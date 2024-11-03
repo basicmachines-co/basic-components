@@ -1,7 +1,7 @@
 {#def
     site_config: SiteConfig,
     current_path: str,
-    toc: list
+    toc: str
 #}
 
 {% macro left_nav(nav) %}
@@ -41,7 +41,7 @@
         <!-- right sidebar -->
         <SideNav side="right" :current_path="{{ current_path }}">
             <h2 class="text-sm font-semibold text-zinc-500 dark:text-zinc-400">On this page</h2>
-            {{ right_nav(toc) }}
+            {{ toc }}
         </SideNav>
     </div>
 

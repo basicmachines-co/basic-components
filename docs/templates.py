@@ -54,6 +54,7 @@ templates.env.autoescape = False
 # configure JinjaX component catalog
 templates.env.add_extension(jinjax.JinjaX)
 catalog = jinjax.Catalog(jinja_env=templates.env)
+catalog.add_folder(f"{TEMPLATE_DIR}")
 catalog.add_folder(f"{COMPONENT_DIR}/ui")
 catalog.add_folder(f"{COMPONENT_DIR}/icons")
 catalog.add_folder(f"{DOCS_COMPONENT_DIR}")
