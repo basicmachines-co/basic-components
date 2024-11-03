@@ -17,8 +17,9 @@ header {
     color: #a1a1aa; /* equivalent to dark:text-zinc-200 */
 }
 
-
-pre, code {
-    margin: 0;
-    padding: 0;
+pre {
+    white-space: pre-wrap; /* Allow code wrapping */
+    word-wrap: break-word; /* Break long words */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    max-width: 100%; /* Keep within parent container width */
 }

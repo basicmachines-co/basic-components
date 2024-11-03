@@ -2,25 +2,32 @@
 title: WTForm
 description: Render a WTForm with validation, error handling and csrf protection.
 component: wtform
+templates:
+  - WTForm.jinja
 ---
+
+<TabPreview component="WTForm" template="examples/wtform.html"/>
+
+<Prose>
 
 ## Usage
 
-```html
---8<-- "docs/templates/examples/wtform.html"
-```
+</Prose>
+
+<IncludeTemplate template="examples/wtform.html"/>
+
+<Prose>
 
 The WTForm component makes it very easy to render, validate and handle form processing when using a form instance from  the [startlette-wtf](https://github.com/kubetail-org/starlette-wtf) lib. 
 Using `starlette-wtf` you can add CSRF protection and declaritive validation to your forms.
+
 ## Code
+</Prose>
 
-/// tab | WTForm.jinja
-```html
---8<-- "components/ui/WTForm.jinja"
-```
-///
+<IncludeComponents :components="{{ metadata.templates }}" />
 
-/// tab | SampleForm.py
+SampleForm.py
+
 ```python
 from starlette_wtf import StarletteForm
 from wtforms import (
@@ -96,5 +103,5 @@ class SampleForm(StarletteForm):
         description="Upload your profile picture (optional).",
     )
 ```
-///
+
 

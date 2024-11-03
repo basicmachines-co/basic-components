@@ -2,25 +2,22 @@
 title: Mode Toggle
 description: A dropdown menu with options to switch between light and dark modes.
 component: mode_toggle
-examples:  
-  - Button: examples/mode_toggle_button.html 
+templates:
+  - ModeToggle.jinja
+
 ---
+
+<TabPreview component="ModeToggle" template="examples/mode_toggle.html"/>
+
+<Prose>
 
 ## Usage
 
-```html
---8<-- "docs/templates/examples/mode_toggle.html"
-```
+</Prose>
 
-## Code
+<IncludeTemplate template="examples/mode_toggle.html"/>
 
-/// tab | ModeToggle.jinja
-```html
---8<-- "components/ui/ModeToggle.jinja"
-```
-///
-
-
+<Prose>
 
 The mode is toggled by setting a 'mode' value in localStorage and setting the `dark` utility style on the `body` tag. 
 Add the following logic to the `html` element on the page to perform toggling logic. 
@@ -60,3 +57,14 @@ Any component can call the `toggleMode` function to switch the mode.
 >
 ```
 
+## Code
+</Prose>
+
+<IncludeComponents :components="{{ metadata.templates }}" />
+
+<Prose>
+
+## Examples
+</Prose>
+
+<TabPreview component="Button" template="examples/mode_toggle_button.html"/>

@@ -1,44 +1,41 @@
 ---
 title: Popover
 description: Displays rich content in a portal, triggered by a button.
-component: popover
-examples:  
-  - Content: examples/popover_content.html 
+templates:
+  - Popover.jinja
+  - PopoverContent.jinja
+  - PopoverTrigger.jinja
 ---
+
+<TabPreview component="Popover" template="examples/popover.html"/>
+
+<Prose>
 
 ## Usage
 
-```html
---8<-- "docs/templates/examples/popover.html"
-```
+</Prose>
 
-## Props
+<IncludeTemplate template="examples/popover.html"/>
+
+<Prose>
+
+## Attributes
 
 | Name        | Type    | Default     | Description                                                           |
 |-------------|---------|-------------|-----------------------------------------------------------------------|
-| `className` | String  |             | Additional tailwind classes to apply to the component.                |
 | `variant`   | String  | `"default"` | Sets the button style. Available: `default`, `outline`, `ghost`, etc. |
 
 
 ## Code
+</Prose>
 
-/// tab | Popover.jinja
-```html
---8<-- "components/ui/Popover.jinja"
-```
-///
+<IncludeComponents :components="{{ metadata.templates }}" />
 
-/// tab | PopoverContent.jinja
-```html
---8<-- "components/ui/PopoverContent.jinja"
-```
-///
+<Prose>
 
-/// tab | PopoverTrigger.jinja
-```html
---8<-- "components/ui/PopoverTrigger.jinja"
-```
-///
+## Examples
+</Prose>
 
+<TabPreview component="Content" template="examples/popover_content.html"/>
 
 

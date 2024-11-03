@@ -7,11 +7,6 @@ component: accordion
 <TabPreview component="Accordion" template="examples/accordion.html"/>
 
 <Prose>
-## Installation
-
-```bash
-copier ... 
-```
 
 ## Usage
 </Prose>

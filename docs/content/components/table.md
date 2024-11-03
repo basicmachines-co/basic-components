@@ -1,18 +1,30 @@
 ---
 title: Table
 description: A responsive table component.
-component: table
-examples:  
-  - Sorting: examples/table_sorting.html 
+templates:
+  - Table.jinja
+  - TableBody.jinja
+  - TableCaption.jinja
+  - TableCell.jinja
+  - TableFooter.jinja
+  - TableHead.jinja
+  - TableHeader.jinja
+  - TableRow.jinja
 ---
+
+<TabPreview component="Table" template="examples/table.html"/>
+
+<Prose>
 
 ## Usage
 
-```html
---8<-- "docs/templates/examples/table.html"
-```
+</Prose>
 
-## Props
+<IncludeTemplate template="examples/table.html"/>
+
+<Prose>
+
+## Attributes
 
 | Component    | Prop        | Type   | Default | Description                                                |
 |--------------|-------------|--------|---------|------------------------------------------------------------|
@@ -20,55 +32,11 @@ examples:
 | TableHead    | `ascending` | bool   | `True`  | True if the order is ascending.                            |
 
 ## Code
+</Prose>
 
-/// tab | Table.jinja
-```html
---8<-- "components/ui/Table.jinja"
-```
-///
+<IncludeComponents :components="{{ metadata.templates }}" />
 
-/// tab | TableBody.jinja
-```html
---8<-- "components/ui/TableBody.jinja"
-```
-///
-
-/// tab | TableCaption.jinja
-```html
---8<-- "components/ui/TableCaption.jinja"
-```
-///
-
-/// tab | TableCell.jinja
-```html
---8<-- "components/ui/TableCell.jinja"
-```
-///
-
-/// tab | TableFooter.jinja
-```html
---8<-- "components/ui/TableFooter.jinja"
-```
-///
-
-/// tab | TableHead.jinja
-```html
---8<-- "components/ui/TableHead.jinja"
-```
-///
-
-/// tab | TableHeader.jinja
-```html
---8<-- "components/ui/TableHeader.jinja"
-```
-///
-
-/// tab | TableRow.jinja
-```html
---8<-- "components/ui/TableRow.jinja"
-```
-///
-
+<Prose>
 
 Server side sorting is enabled via htmx using `hx-get`
 ```html
@@ -80,3 +48,9 @@ Server side sorting is enabled via htmx using `hx-get`
 ```
 
 The server side endpoint returns the html content to swap. 
+
+## Examples
+</Prose>
+
+
+[//]: # (<TabPreview component="Sorting" template="examples/table_sorting.html"/>)

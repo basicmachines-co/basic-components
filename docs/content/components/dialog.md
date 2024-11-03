@@ -1,72 +1,36 @@
 ---
 title: Dialog
-description: The `Dialog` component provides a modal interface for important interactions, confirmations, or notifications.
-component: dialog
+description: A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.
+templates:
+  - Dialog.jinja
+  - DialogBody.jinja
+  - DialogClose.jinja
+  - DialogFooter.jinja
+  - DialogHeader.jinja
+  - DialogOverlay.jinja
+  - DialogTitle.jinja
+  - DialogTrigger.jinja
 ---
+
+<TabPreview component="Dialog" template="examples/dialog.html"/>
+
+<Prose>
 
 ## Usage
 
-```html
---8<-- "docs/templates/examples/dialog.html"
-```
+</Prose>
 
+<IncludeTemplate template="examples/dialog.html"/>
 
-## Props
+<Prose>
+
+## Attributes
 
 | Prop      | Type   | Default  | Description                            |
 |-----------|--------|----------|----------------------------------------|
 | `open`    | Bool   | `False`  | Controls the visibility of the dialog. |
 
-## Components
+## Code
+</Prose>
 
-/// tab | Dialog.jinja"
-```html
---8<-- "components/ui/Dialog.jinja"
-```
-///
-/// tab | DialogBody.jinja"
-```html
---8<-- "components/ui/DialogBody.jinja"
-```
-///
-/// tab | DialogClose.jinja"
-```html
---8<-- "components/ui/DialogClose.jinja"
-```
-///
-/// tab | DialogContent.jinja"
-```html
---8<-- "components/ui/DialogContent.jinja"
-```
-///
-/// tab | DialogDescription.jinja"
-```html
---8<-- "components/ui/DialogDescription.jinja"
-```
-///
-/// tab | DialogFooter.jinja"
-```html
---8<-- "components/ui/DialogFooter.jinja"
-```
-///
-/// tab | DialogHeader.jinja"
-```html
---8<-- "components/ui/DialogHeader.jinja"
-```
-///
-/// tab | DialogOverlay.jinja"
-```html
---8<-- "components/ui/DialogOverlay.jinja"
-```
-///
-/// tab | DialogTitle.jinja"
-```html
---8<-- "components/ui/DialogTitle.jinja"
-```
-///
-/// tab | DialogTrigger.jinja"
-```html
---8<-- "components/ui/DialogTrigger.jinja"
-```
-///
-
+<IncludeComponents :components="{{ metadata.templates }}" />

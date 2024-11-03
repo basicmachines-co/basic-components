@@ -1,42 +1,39 @@
 ---
 title: Alert
 description: Displays a callout for user attention.
-component: alert
-examples:  
-  - Destructive: examples/alert_destructive.html 
+templates:
+  - Alert.jinja
+  - AlertDescription.jinja
+  - AlertDialogContent.jinja
 ---
 
+<TabPreview component="Alert" template="examples/alert.html"/>
+
+<Prose>
 
 ## Usage
 
-```html
---8<-- "docs/templates/examples/alert.html"
-```
+</Prose>
 
-## Props
+<IncludeTemplate template="examples/alert.html"/>
 
-| Name        | Type    | Default   | Description                                                   |
-|-------------|---------|-----------|---------------------------------------------------------------|
-| `className` | String  |           | Additional tailwind classes to apply to the component.        |
-| `variant`   | String  | `default` | Sets the component style. Available: `default`, `destructive` |
+<Prose>
+
+## Attributes
+
+| Component | Name      | Type   | Default   | Description                                                   |
+|-----------|-----------|--------|-----------|---------------------------------------------------------------|
+| Alert     | `variant` | String | `default` | Sets the component style. Available: `default`, `destructive` |
+
 
 ## Code
+</Prose>
 
-/// tab | Alert.jinja
-```html
---8<-- "components/ui/Alert.jinja"
-```
-///
+<IncludeComponents :components="{{ metadata.templates }}" />
 
-/// tab | AlertDescription.jinja
-```html
---8<-- "components/ui/AlertDescription.jinja"
-```
-///
+<Prose>
 
-/// tab | AlertDialogContent.jinja
-```html
---8<-- "components/ui/AlertDialogContent.jinja"
-```
-///
+## Examples 
+</Prose>
 
+<TabPreview component="Destructive" template="examples/alert_destructive.html"/>

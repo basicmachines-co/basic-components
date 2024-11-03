@@ -2,55 +2,42 @@
 title: Card
 description: Displays a callout for user attention.
 component: card
-examples:  
-  - Example: examples/card_example.html 
+templates:
+  - Card.jinja
+  - CardContent.jinja
+  - CardDescription.jinja
+  - CardFooter.jinja
+  - CardHeader.jinja
+  - CardTitle.jinja
 ---
 
+<TabPreview component="Card" template="examples/card.html"/>
+
+<Prose>
 
 ## Usage
 
-```html
---8<--  "docs/templates/examples/card.html"
-```
+</Prose>
 
-## Props
+<IncludeTemplate template="examples/card.html"/>
+
+<Prose>
+
+## Attributes
+
 
 | Name        | Type    | Default     | Description                                            |
 |-------------|---------|-------------|--------------------------------------------------------|
 | `className` | String  |             | Additional tailwind classes to apply to the component. |
 
 ## Code
+</Prose>
 
-/// tab | Card.jinja
-```html
---8<-- "components/ui/Card.jinja"
-```
-///
+<IncludeComponents :components="{{ metadata.templates }}" />
 
-/// tab | CardContent.jinja
-```html
---8<-- "components/ui/CardContent.jinja"
-```
-///
+<Prose>
 
-/// tab | CardDescription.jinja
-```html
---8<-- "components/ui/CardDescription.jinja"
-```
-///
+## Examples
+</Prose>
 
-/// tab | CardFooter.jinja
-```html
---8<-- "components/ui/CardFooter.jinja"
-```
-
-/// tab | CardHeader.jinja
-```html
---8<-- "components/ui/CardHeader.jinja"
-```
-
-/// tab | CardTitle.jinja
-```html
---8<-- "components/ui/CardTitle.jinja"
-```
-
+<TabPreview component="Example" template="examples/card_example.html"/>

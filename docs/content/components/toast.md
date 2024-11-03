@@ -1,21 +1,25 @@
 ---
 title: Toast
 description: A succinct message that is displayed temporarily.
-component: toast
-examples:  
-  - Success: examples/toast_success.html 
-  - Warning: examples/toast_warning.html 
-  - Error: examples/toast_error.html 
-  - Destructive: examples/toast_destructive.html 
+templates:
+  - Toast.jinja
+  - ToastContent.jinja
+  - ToastTrigger.jinja
 ---
+
+<TabPreview component="Toast" template="examples/toast.html"/>
+
+<Prose>
 
 ## Usage
 
-```html
---8<-- "docs/templates/examples/toast.html"
-```
+</Prose>
 
-## Props
+<IncludeTemplate template="examples/toast.html"/>
+
+<Prose>
+
+## Attributes
 
 | Component    | Prop           | Type   | Default     | Description                                                                                             |
 |--------------|----------------|--------|-------------|---------------------------------------------------------------------------------------------------------|
@@ -30,22 +34,16 @@ examples:
 Toast components require an `id` so that the dispatch event can call the component to display it. 
 
 ## Code
+</Prose>
 
-/// tab | Toast.jinja
-```html
---8<-- "components/ui/Toast.jinja"
-```
-///
+<IncludeComponents :components="{{ metadata.templates }}" />
 
-/// tab | ToastContent.jinja
-```html
---8<-- "components/ui/ToastContent.jinja"
-```
-///
+<Prose>
 
-/// tab | ToastTrigger.jinja
-```html
---8<-- "components/ui/ToastTrigger.jinja"
-```
-///
+## Examples
+</Prose>
 
+<TabPreview component="Success" template="examples/toast_success.html"/>
+<TabPreview component="Warning" template="examples/toast_warning.html"/>
+<TabPreview component="Error" template="examples/toast_error.html"/>
+<TabPreview component="Destructive" template="examples/toast_destructive.html"/>

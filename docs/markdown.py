@@ -44,5 +44,5 @@ def parse_jinja_markdown(file_path: Path):
 
         # Render the template with context
         template = templates.env.from_string(html_content)
-        rendered_template = template.render()
+        rendered_template = template.render(metadata=metadata)
         return metadata, toc, rendered_template

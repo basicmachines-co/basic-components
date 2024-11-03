@@ -1,7 +1,9 @@
 ---
 title: Textarea
 description: Displays a resizable form textarea.
-component: textarea
+templates:
+  - Textarea.jinja
+
 examples:
   - Disabled: examples/textarea_disabled.html 
   - With Label: examples/textarea_label.html 
@@ -10,13 +12,19 @@ examples:
   - With Form: examples/textarea_form.html 
 ---
 
+<TabPreview component="TextArea" template="examples/textarea.html"/>
+
+<Prose>
+
 ## Usage
 
-```html
---8<-- "docs/templates/examples/textarea.html"
-```
+</Prose>
 
-## Props
+<IncludeTemplate template="examples/textarea.html"/>
+
+<Prose>
+
+## Attributes
 
 | Prop          | Type   | Default | Description                                 |
 |---------------|--------|---------|---------------------------------------------|
@@ -26,11 +34,18 @@ examples:
 | `disabled`    | bool   | `""`    | Disables the textarea                       |
 
 ## Code
+</Prose>
 
-/// tab | TextArea.jinja
-```html
---8<-- "components/ui/TextArea.jinja"
-```
-///
+<IncludeComponents :components="{{ metadata.templates }}" />
 
+<Prose>
+
+## Examples
+</Prose>
+
+<TabPreview component="Disabled" template="examples/textarea_disabled.html"/>
+<TabPreview component="With Label" template="examples/textarea_label.html"/>
+<TabPreview component="With Text" template="examples/textarea_text.html"/>
+<TabPreview component="With Button" template="examples/textarea_button.html"/>
+<TabPreview component="With Form" template="examples/textarea_form.html"/>
 

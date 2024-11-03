@@ -1,0 +1,26 @@
+{# def
+    components: List[str]
+#}
+
+<div x-data="{ activeTab: '{{ components[0] }}' }" class="max-w-screen-xl overflow-x-scroll">
+    <!-- Tab Navigation -->
+    <nav class="flex border-b border-zinc-200 dark:border-zinc-800 mb-4 ">
+        {% for template in components %}
+            <button @click="activeTab = '{{ template }}'"
+                    :class="{
+                    'text-zinc-900 font-semibold dark:text-zinc-100 border-b-2 border-zinc-900 dark:border-zinc-100': activeTab === '{{ template }}',
+                    'text-zinc-600 font-semibold dark:text-zinc-400': activeTab !== '{{ template }}'}"
+                    class="py-2 px-4 text-sm transition-colors hover:text-zinc-900 dark:hover:text-zinc-100">
+                {{ template }}
+            </button>
+        {% endfor %}
+    </nav>
+
+    <!-- Tab Content -->
+    {% for template in components %}
+        {% set template_file =  "components/ui/" + template %}
+        <div x-show="activeTab === '{{ template }}'" >
+        <pre class="language-html p-4 bg-zinc-50 dark:bg-zinc-900 rounded-md"><code x-ref="code" class="language-html">{{ template_file | include_file | trim | e }}</code></pre>
+        </div>
+    {% endfor %}
+</div>

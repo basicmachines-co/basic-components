@@ -2,21 +2,22 @@
 title: Button
 description: Displays a button.
 component: button
-examples:  
-  - Destructive: examples/button_destructive.html 
-  - Outline: examples/button_outline.html 
-  - Secondary: examples/button_secondary.html 
-  - Ghost: examples/button_ghost.html 
-  - Link: examples/button_link.html 
+templates:  
+  - Button.jinja 
 ---
 
+<TabPreview component="Button" template="examples/button.html"/>
+
+<Prose>
+
 ## Usage
+</Prose>
 
-```html
---8<-- "docs/templates/examples/button.html"
-```
+<IncludeTemplate template="examples/button.html"/>
 
-## Props
+<Prose>
+
+## Attributes
 
 | Name        | Type    | Default     | Description                                                           |
 |-------------|---------|-------------|-----------------------------------------------------------------------|
@@ -26,10 +27,18 @@ examples:
 | `disabled`  | Boolean | `False`     | Disables the button if `True`.                                        |
 
 ## Code
+</Prose>
 
-/// tab | Button.jinja
-```html
---8<-- "components/ui/Button.jinja"
-```
-///
+<IncludeComponents :components="{{ metadata.templates }}" />
+
+<Prose>
+
+## Examples
+</Prose>
+
+<TabPreview component="Destructive" template="examples/button_destructive.html"/>
+<TabPreview component="Outline" template="examples/button_outline.html"/>
+<TabPreview component="Secondary" template="examples/button_secondary.html"/>
+<TabPreview component="Ghost" template="examples/button_ghost.html"/>
+<TabPreview component="Link" template="examples/button_link.html"/>
 

@@ -49,6 +49,7 @@ templates.env.globals["hotreload"] = hotreload
 templates.env.globals["DEBUG"] = docs.config.settings.ENVIRONMENT == "local"
 templates.env.filters["include_file"] = include_file
 templates.env.filters["filename"] = filename
+templates.env.filters["include_file"] = include_file
 templates.env.autoescape = False
 
 # configure JinjaX component catalog
@@ -64,16 +65,6 @@ logger.info(f"template dir: {TEMPLATE_DIR}")
 logger.info(f"layout dir: {DOCS_LAYOUT_DIR}")
 logger.info(f"component dir: {COMPONENT_DIR}")
 logger.info(f"docs component dir: {DOCS_COMPONENT_DIR}")
-
-
-def setup_filters():
-    def include_file(path: str) -> str:
-        file_path = Path(path)
-        if not file_path.exists():
-            return f"<!-- {path} not found -->"
-        return file_path.read_text()
-
-    templates.env.filters["include_file"] = include_file
 
 
 def template(

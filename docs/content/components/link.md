@@ -1,19 +1,23 @@
 ---
 title: Link
 description: Displays a link.
-component: link
-examples:  
-  - Icon: examples/link_icon.html 
+templates:
+  - Link.jinja
 ---
 
-## Link
+<TabPreview component="Link" template="examples/link.html"/>
 
-```html
---8<-- "docs/templates/examples/link.html"
-```
+<Prose>
 
+## Usage
 
-## Props
+</Prose>
+
+<IncludeTemplate template="examples/link.html"/>
+
+<Prose>
+
+## Attributes
 
 | Prop        | Type    | Default | Description                               |
 |-------------|---------|--|-------------------------------------------|
@@ -22,10 +26,13 @@ examples:
 
 
 ## Code
+</Prose>
 
-/// tab | Link.jinja
-```html
---8<-- "components/ui/Link.jinja"
-```
-///
+<IncludeComponents :components="{{ metadata.templates }}" />
 
+<Prose>
+
+## Examples
+</Prose>
+
+<TabPreview component="Icon" template="examples/link_icon.html"/>

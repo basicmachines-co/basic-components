@@ -1,19 +1,23 @@
 ---
 title: Label
 description: Displays a label for a form field.
-component: label
+templates:
+  - Label.jinja
 ---
+
+<TabPreview component="Label" template="examples/label.html"/>
+
+<Prose>
 
 ## Usage
 
-```html
---8<-- "docs/templates/examples/label.html"
-```
+</Prose>
 
+<IncludeTemplate template="examples/label.html"/>
 
+<Prose>
 
-
-## Props
+## Attributes
 
 | Prop        | Type    | Default | Description                               |
 |-------------|---------|---------|-------------------------------------------|
@@ -22,9 +26,7 @@ component: label
 
 
 ## Code
+</Prose>
 
-/// tab | Label.jinja
-```html
---8<-- "components/ui/Label.jinja"
-```
-///
+<IncludeComponents :components="{{ metadata.templates }}" />
+

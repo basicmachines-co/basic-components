@@ -1,18 +1,31 @@
 ---
 title: Sheet
 description: Displays content on one side of the screen in a modal dialog.
-component: sheet
-examples:  
-  - Sides: examples/sheet_side.html 
+templates:
+  - Sheet.jinja
+  - SheetClose.jinja
+  - SheetContent.jinja
+  - SheetDescription.jinja
+  - SheetFooter.jinja
+  - SheetHeader.jinja
+  - SheetOverlay.jinja
+  - SheetTitle.jinja
+  - SheetTrigger.jinja
 ---
+
+<TabPreview component="Alert" template="examples/alert.html"/>
+
+<Prose>
 
 ## Usage
 
-```html
---8<-- "docs/templates/examples/sheet.html"
-```
+</Prose>
 
-## Props
+<IncludeTemplate template="examples/alert.html"/>
+
+<Prose>
+
+## Attributes
 
 | Component        | Prop        | Type   | Default           | Description                                    |
 |------------------|-------------|--------|-------------------|------------------------------------------------|
@@ -20,59 +33,13 @@ examples:
 
 
 ## Code
+</Prose>
 
-/// tab | Sheet.jinja
-```html
---8<-- "components/ui/Sheet.jinja"
-```
-///
+<IncludeComponents :components="{{ metadata.templates }}" />
 
-/// tab | SheetClose.jinja
-```html
---8<-- "components/ui/SheetClose.jinja"
-```
-///
+<Prose>
 
-/// tab | SheetContent.jinja
-```html
---8<-- "components/ui/SheetContent.jinja"
-```
-///
+## Examples
+</Prose>
 
-/// tab | SheetDescription.jinja
-```html
---8<-- "components/ui/SheetDescription.jinja"
-```
-///
-
-/// tab | SheetFooter.jinja
-```html
---8<-- "components/ui/SheetFooter.jinja"
-```
-///
-
-/// tab | SheetHeader.jinja
-```html
---8<-- "components/ui/SheetHeader.jinja"
-```
-///
-
-/// tab | SheetOverlay.jinja
-```html
---8<-- "components/ui/SheetOverlay.jinja"
-```
-///
-
-/// tab | SheetTitle.jinja
-```html
---8<-- "components/ui/SheetTitle.jinja"
-```
-///
-
-/// tab | SheetTrigger.jinja
-```html
---8<-- "components/ui/SheetTrigger.jinja"
-```
-///
-
-
+<TabPreview component="Sides" template="examples/sheet_side.html"/>

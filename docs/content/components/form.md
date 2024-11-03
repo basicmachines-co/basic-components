@@ -1,54 +1,35 @@
 ---
 title: Form
 description: Components for forms with inputs, labels and validation styling.
-component: form
-examples:  
-  - Errors: examples/form_errors.html 
+templates:
+  - Form.jinja
+  - FormControl.jinja
+  - FormDescription.jinja
+  - FormItem.jinja
+  - FormLabel.jinja
+  - FormMessage.jinja
 ---
 
+<TabPreview component="Form" template="examples/form.html"/>
+
+<Prose>
 
 ## Usage
 
-```html
---8<-- "docs/templates/examples/form.html"
-```
+</Prose>
 
+<IncludeTemplate template="examples/form.html"/>
+
+<Prose>
 
 ## Code
+</Prose>
 
-/// tab | Form.jinja
-```html
---8<-- "components/ui/Form.jinja"
-```
-///
+<IncludeComponents :components="{{ metadata.templates }}" />
 
-/// tab | FormControl.jinja
-```html
---8<-- "components/ui/FormControl.jinja"
-```
-///
+<Prose>
 
-/// tab | FormDescription.jinja
-```html
---8<-- "components/ui/FormDescription.jinja"
-```
-///
+## Examples
+</Prose>
 
-/// tab | FormItem.jinja
-```html
---8<-- "components/ui/FormItem.jinja"
-```
-///
-
-/// tab | FormLabel.jinja
-```html
---8<-- "components/ui/FormLabel.jinja"
-```
-///
-
-/// tab | FormMessage.jinja
-```html
---8<-- "components/ui/FormMessage.jinja"
-```
-///
-
+<TabPreview component="Errors" template="examples/form_errors.html"/>

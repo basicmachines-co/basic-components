@@ -1,7 +1,8 @@
 ---
 title: Input
 description: Displays a form input field.
-component: input
+templates:
+  - Input.jinja
 examples:  
   - Error: examples/input_error.html 
   - Disabled: examples/input_disabled.html 
@@ -11,14 +12,19 @@ examples:
   - Disabled: examples/input_disabled.html 
 ---
 
+<TabPreview component="Input" template="examples/input.html"/>
+
+<Prose>
+
 ## Usage
 
-```html
---8<-- "docs/templates/examples/input.html"
-```
+</Prose>
 
+<IncludeTemplate template="examples/input.html"/>
 
-## Props
+<Prose>
+
+## Attributes
 
 | Prop           | Type           | Default  | Description                                                    |
 |----------------|----------------|----------|----------------------------------------------------------------|
@@ -33,11 +39,18 @@ examples:
 | `error`        | Boolean        | `False`  | Applies error styling if `True`.                               |
 
 ## Code
+</Prose>
 
-/// tab | Input.jinja
-```html
---8<-- "components/ui/Input.jinja"
-```
-///
+<IncludeComponents :components="{{ metadata.templates }}" />
 
+<Prose>
 
+## Examples
+</Prose>
+
+<TabPreview component="Button" template="examples/input_button.html"/>
+<TabPreview component="Disabled" template="examples/input_disabled.html"/>
+<TabPreview component="Error" template="examples/input_error.html"/>
+<TabPreview component="File" template="examples/input_file.html"/>
+<TabPreview component="Label" template="examples/input_label.html"/>
+<TabPreview component="Peer Disabled" template="examples/input_peer_disabled.html"/>

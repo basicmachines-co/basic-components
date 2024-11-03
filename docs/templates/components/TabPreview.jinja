@@ -3,7 +3,6 @@
     template: str
 #}
 
-
 <div x-data="{ activeTab: 'Preview' }" class="my-8">
     <!-- Tab Navigation -->
     <nav class="flex border-b">
@@ -29,7 +28,7 @@
         <div x-show="activeTab === 'Preview'" class="relative">
             <Card className="border rounded-lg my-4 min-w-96 md:px-40 md:py-20">
                 <CardContent>
-                    {% include "examples/accordion.html" %}
+                    {% include template %}
                 </CardContent>
             </Card>
         </div>
