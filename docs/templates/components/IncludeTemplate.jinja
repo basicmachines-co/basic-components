@@ -1,0 +1,6 @@
+{# def
+    template: str
+#}
+
+{% set template_file = "docs/templates/" + template %}
+<pre class="language-html p-4 bg-zinc-50 dark:bg-zinc-900 rounded-md"><code x-ref="code" class="language-html">{{ template_file | include_file|trim|e }}</code></pre>

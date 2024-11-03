@@ -3,9 +3,6 @@
     template: str
 #}
 
-<Prose>
-    <h3>{{ component }}</h3>
-</Prose>
 
 <div x-data="{ activeTab: 'Preview' }" class="my-8">
     <!-- Tab Navigation -->
@@ -43,7 +40,7 @@
                 <button @click="navigator.clipboard.writeText($refs.code.textContent)"
                         class="absolute top-2 right-2 bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-sm px-2 py-1 border rounded-md transition">
                     <ClipboardCopy className="h-4- w-4 bg-zinc-100"/>
-                </button><pre class="language-html p-4 bg-zinc-50 dark:bg-zinc-900 rounded-md"><code x-ref="code" class="language-html">{{ ("docs/templates/" + template) | include_file|trim|e }}</code></pre>
+                </button><IncludeTemplate :template="{{ template }}" />
             </div>
         </div>
     </div>
