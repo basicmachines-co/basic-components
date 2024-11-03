@@ -4,7 +4,7 @@
 #}
 <!-- Render NavGroup -->
 <div x-data="{ open: true }">
-    <h2 @click="open = !open"  class="text-sm font-semibold text-zinc-500 dark:text-zinc-400 hover:underline">{{ group.name }}</h2>
+    <h2 @click="open = !open"  class="text-sm font-semibold text-zinc-500 dark:text-zinc-400 hover:underline">{{ group.title }}</h2>
     <div class="py-4">
         <nav x-show="open" class="flex flex-col space-y-2">
         {% for item in group.items %}

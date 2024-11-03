@@ -6,7 +6,7 @@ from starlette.responses import HTMLResponse
 from docs.config import BASE_DIR
 from docs.markdown import parse_jinja_markdown
 from docs.templates import templates, hotreload
-from docs.site import load_site_config
+from docs.site import site_config
 
 
 class HTMLRouter(APIRouter):
@@ -20,10 +20,6 @@ router = HTMLRouter()
 
 # web socket for hot reload
 router.add_websocket_route("/hot-reload", endpoint=hotreload, name="hot-reload")
-
-
-site_config = load_site_config(f"{BASE_DIR}/docs/site_config.yml")
-logger.info(f"routes: {site_config.routes()}")
 
 
 async def get_markdown_file(path, default="index"):

@@ -1,20 +1,30 @@
+{# def
+    title: str,
+    nav: List,
+#}
+{% macro logo() %}
+    <!-- logo icon -->
+    <Link href="/">
+        <LayoutDashboard className="h-8 w-8"/>
+        <span class="sr-only">Components</span>
+    </Link>
+{% endmacro %}
+
 <header class="sticky top-0 flex h-16 items-center gap-4 border-b bg-white px-4 md:px-6 dark:bg-zinc-950 dark:border-b-zinc-700">
     <nav class="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-        <Link href="#">
-        <LayoutDashboard className="h-8 w-8"/>
-        <span class="sr-only">Components</span></Link>
+
+        {{ logo() }}
+
+        <!-- title -->
         <Link href="/"
               className="text-black transition-colors hover:text-zinc-950 dark:text-white dark:hover:text-zinc-50 font-semibold uppercase">
         Basic Components</Link>
-        <Link href="/docs"
-              className="text-zinc-500 transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50">
-        Docs</Link>
-        <Link href="/components"
-              className="text-zinc-500 transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50">
-        Components</Link>
-        <Link href="/examples"
-              className="text-zinc-500 transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50">
-        Examples</Link>
+
+        <!-- nav -->
+        {% for item in nav %}
+            <Link :href="{{ item.href }}"
+                  className="text-zinc-500 transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50">{{ item.title }}</Link>
+        {% endfor  %}
     </nav>
     <Sheet>
         <SheetTrigger>
@@ -24,15 +34,13 @@
         </SheetTrigger>
         <SheetContent side="left">
             <nav class="grid gap-6 text-lg font-medium">
-                <Link href="#" className="flex items-center gap-2 text-lg font-semibold">
-                <Package2 className="h-6 w-6"/>
-                <span class="sr-only">Components</span></Link>
-                <Link href="#" className="text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50">
-                Docs</Link>
-                <Link href="#" className="text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50">
-                Components</Link>
-                <Link href="#" className="text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50">
-                Examples</Link></nav>
+
+                {{ logo() }}
+
+                {% for item in nav %}
+                    <Link :href="{{ item.href }}" className="text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50">{{ item.title }}</Link>
+                {% endfor %}
+            </nav>
         </SheetContent>
     </Sheet>
     <div class="ml-auto">
