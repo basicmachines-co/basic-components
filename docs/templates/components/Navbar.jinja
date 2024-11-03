@@ -1,6 +1,7 @@
 {# def
     title: str,
     nav: List,
+    current_path: str,
 #}
 {% macro logo() %}
     <!-- logo icon -->
@@ -9,6 +10,11 @@
         <span class="sr-only">Components</span>
     </Link>
 {% endmacro %}
+
+{%- macro current_nav(item) -%}
+    {{ "text-black dark:text-white font-bold IF" if item.group in current_path else "text-zinc-500 ELSE" }}
+{%- endmacro -%}
+
 
 <header class="sticky top-0 flex h-16 items-center gap-4 border-b bg-white px-4 md:px-6 dark:bg-zinc-950 dark:border-b-zinc-700">
     <nav class="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
@@ -22,8 +28,9 @@
 
         <!-- nav -->
         {% for item in nav %}
+            {% set class = current_nav(item) + "transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50"%}
             <Link :href="{{ item.href }}"
-                  className="text-zinc-500 transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50">{{ item.title }}</Link>
+                  :className="{{ class }}" >{{ item.title }}</Link>
         {% endfor  %}
     </nav>
     <Sheet>

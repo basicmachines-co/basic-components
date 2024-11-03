@@ -6,6 +6,7 @@ from docs.config import settings
 
 class NavItem(BaseModel):
     type: str = "item"
+    group: str = None
     title: str
     href: str
 
@@ -29,9 +30,13 @@ config = {
     "site_name": settings.APP_NAME,
     "repo_url": "https://github.com/basicmachines-co/basic-components",
     "mainNav": [
-        {"title": "Docs", "href": "/docs"},
-        {"title": "Components", "href": "/components"},
-        {"title": "Examples", "href": "/examples"},
+        {"title": "Docs", "group": "/docs", "href": "/docs/introduction"},
+        {
+            "title": "Components",
+            "group": "/components",
+            "href": "/components/accordion",
+        },
+        {"title": "Examples", "group": "/examples", "href": "/examples"},
     ],
     "sidebarNav": [
         {
