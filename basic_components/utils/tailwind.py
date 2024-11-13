@@ -147,6 +147,61 @@ class TailwindMerge:
 
 
 def tw(*classes: str) -> str:
-    """Convenience function for merging Tailwind classes."""
+    """Merge Tailwind CSS classes while handling conflicts and maintaining consistent ordering.
+
+    The function resolves conflicts between Tailwind classes by:
+    - Taking the last instance of conflicting classes
+    - Maintaining a consistent ordering of properties
+    - Preserving modifiers (responsive, state, etc.)
+    - Handling arbitrary values correctly
+
+    Args:
+        *classes: Variable number of strings containing space-separated Tailwind classes.
+                 Falsy values (None, False, empty strings) are ignored.
+
+    Returns:
+        str: Merged class string with conflicts resolved and consistent ordering
+
+    Examples:
+        Basic class merging:
+        >>> tw("p-4 bg-red-500", "p-8")
+        'bg-red-500 p-8'
+
+        With responsive modifiers:
+        >>> tw("sm:p-4 bg-red-500", "sm:p-8")
+        'bg-red-500 sm:p-8'
+
+        Using conditionals with 'and':
+        >>> is_active = True
+        >>> tw(
+        ...     "base-class",
+        ...     is_active and "active-class",  # Will include 'active-class' if is_active is True
+        ...     False and "never-shown"        # Will be ignored (evaluates to False)
+        ... )
+        'base-class active-class'
+
+        Multiple conditionals:
+        >>> is_active = True
+        >>> is_disabled = False
+        >>> tw(
+        ...     "btn",
+        ...     is_active and "bg-blue-500",   # Included
+        ...     is_disabled and "opacity-50"    # Ignored (False and "opacity-50" evaluates to False)
+        ... )
+        'btn bg-blue-500'
+
+        With arbitrary values:
+        >>> tw("grid grid-cols-[1fr,auto] p-4", "p-8")
+        'grid p-8 grid-cols-[1fr,auto]'
+
+    Notes:
+        The 'and' operator in Python returns its second operand if the first is True,
+        otherwise it returns the first operand. This allows for conditional classes:
+
+        True and "my-class"  -> "my-class"
+        False and "my-class" -> False
+
+        Since the function ignores falsy values, False and None are filtered out.
+    """
     merger = TailwindMerge()
     return merger.merge(*classes)

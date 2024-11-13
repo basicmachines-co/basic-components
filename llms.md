@@ -592,6 +592,113 @@ JinjaX/Alpine Conversion:
 </div>
 ```
 
+### Advanced Component Patterns
+
+#### Global State and Document Effects
+When porting components that affect the document body (like modals/dialogs):
+```jinja
+{#def
+    className: str = ""
+#}
+<div
+    x-data="{ 
+        open: false,
+        init() {
+            this.$watch('open', value => {
+                if (value) {
+                    document.body.classList.add('overflow-hidden');
+                } else {
+                    document.body.classList.remove('overflow-hidden');
+                }
+            });
+        }
+    }"
+>
+    {{ content }}
+</div>
+```
+- Use Alpine.js `init()` and `$watch` for managing body classes
+- Handle scroll locking appropriately
+- Clean up effects when component is closed
+- Consider z-index management for stacked modals
+
+#### Event Propagation and Overlays
+Different components require different overlay behaviors:
+```jinja
+{# Dialog - Closes on overlay click #}
+<div 
+    class="fixed inset-0"
+    x-show="open"
+    x-on:click="close"
+>
+    <div x-on:click.stop>
+        {{ content }}
+    </div>
+</div>
+
+{# AlertDialog - No close on overlay #}
+<div 
+    class="fixed inset-0"
+    x-show="open"
+>
+    {{ content }}
+</div>
+```
+
+#### Icon Integration
+When using Lucide icons:
+```jinja
+<button class="absolute right-4 top-4">
+    <X class="h-4 w-4"/>
+    <span class="sr-only">Close</span>
+</button>
+```
+- Import icons using the Lucide React syntax
+- Maintain consistent sizing and positioning
+- Add screen reader text for accessibility
+
+#### Class Management with cn()
+Use the utility for consistent class merging:
+```jinja
+{#def
+    variant: str = "default",
+    className: str = ""
+#}
+<div class="{{ cn(
+    'base-classes',
+    variant == 'primary' and 'primary-classes',
+    'sm:responsive-classes',
+    className
+) }}">
+    {{ content }}
+</div>
+```
+- Handles class conflicts
+- Supports conditional classes
+- Maintains responsive and state modifiers
+- Preserves arbitrary values
+
+#### Component Composition
+Complex components often require specific composition:
+```jinja
+<Dialog>
+    <DialogTrigger>
+        <Button>Open</Button>
+    </DialogTrigger>
+    <DialogContent>
+        <DialogHeader>
+            <DialogTitle>Title</DialogTitle>
+            <DialogDescription>Description</DialogDescription>
+        </DialogHeader>
+    </DialogContent>
+</Dialog>
+```
+- Maintain consistent component hierarchy
+- Preserve ARIA relationships
+- Share state between related components
+- Handle nested interactions correctly
+
+
 ### Best Practices for Attribute Handling
 
 1. **Always Include attrs.render()**
@@ -611,6 +718,22 @@ JinjaX/Alpine Conversion:
   - Connect error messages
   - Maintain ARIA attributes
   - Support screen readers
+  - Support keyboard navigation
+
+4. **State Management**
+    - Use Alpine.js for component-level state
+    - Manage document effects carefully
+    - Clean up side effects appropriately
+
+5. **Event Handling**
+    - Consider click propagation
+    - Handle keyboard interactions
+    - Maintain accessibility features
+
+6. **Styling**
+    - Use cn() for class management
+    - Preserve responsive classes
+    - Maintain dark mode support
 
 ### Testing Converted Components
 
