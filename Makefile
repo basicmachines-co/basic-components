@@ -28,3 +28,6 @@ docs-dev:
 
 docs-run:
 	$(UV) run fastapi run docs/app.py --port 10000
+
+build:
+	$(UV) build .

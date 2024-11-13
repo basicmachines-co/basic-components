@@ -3,7 +3,7 @@ name = "basic-components"
 version = "0.1.0"
 description = "Re-usable server-side components based on shadcn/ui with JinjaX, Alpine.js and Tailwind CSS"
 authors = [
-    { name = "phernandez", email = "phernandez@basicmachines.co" },
+    { name = "phernandez", email = "paul@basicmachines.co" },
 ]
 readme = "README.md"
 requires-python = ">=3.10"
@@ -30,7 +30,17 @@ dependencies = [
     "watchfiles>=0.24.0",
     "icecream>=2.1.3",
     "pymdown-extensions>=10.12",
+    "setuptools>=75.5.0",
+    "copier>=9.4.1",
+    "tomli>=2.0.2",
 ]
+
+[project.scripts]
+components = "basic_components.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/basicmachines-co/basic-components"
+Documentation = "https://components.basicmachines.co"
 
 [build-system]
 requires = ["hatchling"]
@@ -39,12 +49,19 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["basic_components"]
 
+[tool.hatch.build.targets.wheel.scripts]
+components = "basic_components.cli:main"
+
 [tool.hatch.build]
 include = [
     "basic_components/**/*.py",
     "components/**/*",
     "docs/**/*",
 ]
+
+[tool.basic-components]
+components_dir = "components"
+style = "default"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
