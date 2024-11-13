@@ -8,13 +8,14 @@ description: How to install dependencies.
 
 ## JinjaX
 
-Install the required JinjaX library into your project using your package manager.
+Install into your project using your package manager. Basic components includes several [helper functions](/docs/utilities) to setup the 
+JinjaX template environment and merge tailwind classes within components 
 
 ```bash
-pip install jinjax  
+pip install basic-components  
 ```
 
-Configure your Jinja environment to load the components according to the [JinjaX docs](https://jinjax.scaletti.dev/guide/).   
+Configure your Jinja environment to load the components according to the [JinjaX docs](https://jinjax.scaletti.dev/guide/). You can also refer to the examples for [FastAPI](/docs/fastapi), [Django](/docs/django), or [Flask](/docs/flask).
 
 ## Tailwind CSS
 

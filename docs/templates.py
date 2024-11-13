@@ -5,6 +5,7 @@ from pathlib import Path
 import arel
 
 import jinjax
+from icecream import ic
 from jinja2 import pass_context
 from jinja2.ext import DebugExtension
 from starlette.requests import Request
@@ -13,6 +14,8 @@ from starlette.templating import Jinja2Templates
 from loguru import logger
 
 import docs.config
+from basic_components.utils.jinjax import setup_component_catalog
+from basic_components.utils.tailwind import tw
 from docs.config import BASE_DIR
 
 COMPONENT_DIR = f"{BASE_DIR}/components"
@@ -42,21 +45,6 @@ def filename(value):
     return os.path.basename(value)
 
 
-def setup_component_catalog(catalog: jinjax.Catalog):
-    # basic components ui directory
-    components_dir = Path(f"{COMPONENT_DIR}/ui")
-
-    # Register each component subdirectory
-    for component_dir in components_dir.iterdir():
-        if component_dir.is_dir():
-            catalog.add_folder(component_dir)
-
-    # basic components icon directory
-    # icons_dir = Path(f"{COMPONENT_DIR}/icons")
-    # catalog.add_folder(icons_dir)
-    return catalog
-
-
 # configure Jinja template location
 templates = Jinja2Templates(directory=f"{TEMPLATE_DIR}")
 templates.env.add_extension(DebugExtension)
@@ -67,20 +55,22 @@ templates.env.filters["filename"] = filename
 templates.env.filters["include_file"] = include_file
 templates.env.autoescape = False
 
+# Add cn to globals
+templates.env.globals["cn"] = tw
+
 # configure JinjaX component catalog
 templates.env.add_extension(jinjax.JinjaX)
 catalog = jinjax.Catalog(jinja_env=templates.env)
-catalog = setup_component_catalog(catalog)
-catalog.add_folder(f"{TEMPLATE_DIR}")
-catalog.add_folder(f"{COMPONENT_DIR}/ui")
-catalog.add_folder(f"{COMPONENT_DIR}/ui/button")
-catalog.add_folder(f"{COMPONENT_DIR}/ui/sheet")
-catalog.add_folder(f"{COMPONENT_DIR}/icons")
+catalog = setup_component_catalog(
+    catalog, components_dir=COMPONENT_DIR, include_icons=True
+)
+catalog.add_folder(f"{TEMPLATE_DIR}")  # remove with IncludeTemplate
 catalog.add_folder(f"{DOCS_COMPONENT_DIR}")
 catalog.add_folder(f"{DOCS_LAYOUT_DIR}")
 
+
 logger.info(f"template dir: {TEMPLATE_DIR}")
-logger.info(f"catalog paths: {catalog.paths}")
+ic(f"catalog paths: {catalog.paths}")
 
 
 def template(

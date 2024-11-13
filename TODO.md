@@ -45,7 +45,7 @@
 - [ ] package components in sub dirs?
 - [ ] monetization strategy
 - [ ] tool to install component via copier
-
+- [ ] add basic-components dep to examples 
 
 
 ## 4. Project Management

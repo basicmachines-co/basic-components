@@ -1,8 +1,9 @@
 # app.py
-from pathlib import Path
 from flask import Flask
 import jinja2
 import jinjax
+from basic_components.utils.jinjax import setup_component_catalog
+from basic_components.utils.tailwind import tw
 
 # Initialize Flask
 app = Flask(__name__)
@@ -11,21 +12,12 @@ app = Flask(__name__)
 env = jinja2.Environment(
     loader=jinja2.FileSystemLoader("templates"), extensions=[jinjax.JinjaX]
 )
+# Add cn to globals
+env.globals["cn"] = tw
 
 # Setup JinjaX catalog
 catalog = jinjax.Catalog(jinja_env=env)
-
-# Base components directory
-components_dir = Path("components/ui")
-
-# Register each component subdirectory first
-for component_dir in components_dir.iterdir():
-    if component_dir.is_dir():
-        catalog.add_folder(str(component_dir))
-
-
-# Add catalog to Jinja globals
-env.globals["catalog"] = catalog
+setup_component_catalog(catalog)
 
 
 # Routes

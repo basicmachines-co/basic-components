@@ -71,11 +71,12 @@ config = {
             ],
         },
         {
-            "title": "Frameworks",
+            "title": "Installation",
             "items": [
                 {"title": "Fastapi", "href": "/docs/fastapi"},
                 {"title": "Flask", "href": "/docs/flask"},
                 {"title": "Django", "href": "/docs/django"},
+                {"title": "Utilities", "href": "/docs/utilities"},
             ],
         },
         {

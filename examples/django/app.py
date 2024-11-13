@@ -15,6 +15,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.core.wsgi import get_wsgi_application
 from django.http import HttpResponse
+from basic_components.utils.tailwind import tw
+from basic_components.utils.jinjax import setup_component_catalog
+
+
 import jinja2
 import jinjax
 
@@ -63,18 +67,13 @@ def environment(**options):
     env = jinja2.Environment(**options)
     env.add_extension(jinjax.JinjaX)
 
+    # Add cn to globals
+    env.globals["cn"] = tw
+
     # Setup JinjaX catalog
     catalog = jinjax.Catalog(jinja_env=env)
+    setup_component_catalog(catalog)
 
-    # Base components directory
-    components_dir = Path("components/ui")
-
-    # Register each component subdirectory
-    for component_dir in components_dir.iterdir():
-        if component_dir.is_dir():
-            catalog.add_folder(str(component_dir))
-
-    env.globals["catalog"] = catalog
     return env
 
 
