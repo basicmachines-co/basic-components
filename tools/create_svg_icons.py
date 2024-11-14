@@ -1,5 +1,7 @@
 import os
 import re
+from os import mkdir
+
 import typer
 import json
 
@@ -9,7 +11,7 @@ app = typer.Typer()
 component_template = """{{#def
     className: str = "h-4 w-4",
 #}}
-
+<!-- {component_name} -->
 <svg
   class="{{{{ className }}}}"
   viewBox="0 0 24 24"
@@ -40,11 +42,12 @@ def extract_svg_content(svg_text: str) -> str:
 
 
 @app.command()
-def creeate_icons(svg_dir: str, output_dir: str, json_output: str = "icons.json"):
+def create_icons(svg_dir: str, output_dir: str, json_output: str = "icons.json"):
     """
     Converts SVG files into JinjaX components and generates a JSON file with icon metadata.
     """
     icon_metadata = []
+    mkdir(output_dir)
 
     # Iterate over each SVG file in the directory
     for filename in os.listdir(svg_dir):
@@ -61,23 +64,25 @@ def creeate_icons(svg_dir: str, output_dir: str, json_output: str = "icons.json"
             svg_inner_content = extract_svg_content(svg_content)
 
             # Replace placeholder in the template with the actual SVG content
-            component_content = component_template.format(svg_content=svg_inner_content)
+            component_content = component_template.format(
+                component_name=component_name, svg_content=svg_inner_content
+            )
 
+            file_name = f"{component_name}Icon.jinja"
             # Define the output file path for the component
-            output_path = os.path.join(output_dir, f"{component_name}.jinja")
+            output_path = os.path.join(output_dir, file_name)
 
             # Write the component content to the output file
             with open(output_path, "w") as output_file:
                 output_file.write(component_content)
 
             # Add metadata to the JSON
-            icon_metadata.append(
-                {"name": component_name, "file": f"{component_name}.jinja"}
-            )
+            icon_metadata.append({"name": component_name, "file": file_name})
 
-            print(f"Component {component_name}.jinja created.")
+            print(f"Component {file_name} created.")
 
     output_path = os.path.join(output_dir, json_output)
+
     # Write metadata to a JSON file
     with open(output_path, "w") as json_file:
         json.dump(icon_metadata, json_file, indent=2)

@@ -61,9 +61,7 @@ templates.env.globals["cn"] = tw
 # configure JinjaX component catalog
 templates.env.add_extension(jinjax.JinjaX)
 catalog = jinjax.Catalog(jinja_env=templates.env)
-catalog = setup_component_catalog(
-    catalog, components_dir=COMPONENT_DIR, include_icons=True
-)
+catalog = setup_component_catalog(catalog, components_dir=COMPONENT_DIR)
 catalog.add_folder(f"{TEMPLATE_DIR}")  # remove with IncludeTemplate
 catalog.add_folder(f"{DOCS_COMPONENT_DIR}")
 catalog.add_folder(f"{DOCS_LAYOUT_DIR}")

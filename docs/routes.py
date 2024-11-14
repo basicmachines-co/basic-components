@@ -80,7 +80,10 @@ async def examples(request: Request):
 async def icons_search(request: Request, query: str = ""):
     icons = site_config.icons
     results = [
-        {"name": icon.name, "icon": catalog.render(icon.name, className="w-8 h-8")}
+        {
+            "name": icon.name,
+            "icon": catalog.render(f"{icon.name}Icon", className="w-8 h-8"),
+        }
         for icon in icons
         if query.lower() in icon.name.lower()
     ]

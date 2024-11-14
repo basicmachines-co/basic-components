@@ -15,16 +15,16 @@
         class="inline-flex {% if sorted %}opacity-100{% else %}opacity-25{% endif %} ml-2 flex-none rounded text-zinc-800 dark:text-zinc-200 group-hover:visible group-focus:visible"
     >
       {% if ascending is true %}
-        <ChevronUp className="h-4 w-4" />
+        <ChevronUpIcon className="h-4 w-4" />
       {% else %}
-        <ChevronDown className="h-4 w-4" />
+        <ChevronDownIcon className="h-4 w-4" />
       {% endif %}
     </span>
   {%- elif sortable -%}
     <span
         class="inline-flex opacity-25 ml-2 flex-none rounded text-zinc-800 dark:text-zinc-200 group-hover:visible group-focus:visible"
     >
-        <ChevronsUpDown className="h-4 w-4" />
+        <ChevronsUpDownIcon className="h-4 w-4" />
     </span>
   {%- endif -%}
 </th>

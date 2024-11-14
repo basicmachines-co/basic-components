@@ -1,0 +1,6126 @@
+[
+  {
+    "name": "HandHelping",
+    "file": "HandHelpingIcon.jinja"
+  },
+  {
+    "name": "Underline",
+    "file": "UnderlineIcon.jinja"
+  },
+  {
+    "name": "FilePlus2",
+    "file": "FilePlus2Icon.jinja"
+  },
+  {
+    "name": "Sigma",
+    "file": "SigmaIcon.jinja"
+  },
+  {
+    "name": "Clock9",
+    "file": "Clock9Icon.jinja"
+  },
+  {
+    "name": "TriangleAlert",
+    "file": "TriangleAlertIcon.jinja"
+  },
+  {
+    "name": "EthernetPort",
+    "file": "EthernetPortIcon.jinja"
+  },
+  {
+    "name": "Triangle",
+    "file": "TriangleIcon.jinja"
+  },
+  {
+    "name": "Hand",
+    "file": "HandIcon.jinja"
+  },
+  {
+    "name": "Search",
+    "file": "SearchIcon.jinja"
+  },
+  {
+    "name": "ChartScatter",
+    "file": "ChartScatterIcon.jinja"
+  },
+  {
+    "name": "SignpostBig",
+    "file": "SignpostBigIcon.jinja"
+  },
+  {
+    "name": "Volume2",
+    "file": "Volume2Icon.jinja"
+  },
+  {
+    "name": "HandHeart",
+    "file": "HandHeartIcon.jinja"
+  },
+  {
+    "name": "Contact",
+    "file": "ContactIcon.jinja"
+  },
+  {
+    "name": "BeerOff",
+    "file": "BeerOffIcon.jinja"
+  },
+  {
+    "name": "SendHorizontal",
+    "file": "SendHorizontalIcon.jinja"
+  },
+  {
+    "name": "MoveDown",
+    "file": "MoveDownIcon.jinja"
+  },
+  {
+    "name": "ClipboardPlus",
+    "file": "ClipboardPlusIcon.jinja"
+  },
+  {
+    "name": "Gamepad2",
+    "file": "Gamepad2Icon.jinja"
+  },
+  {
+    "name": "Lectern",
+    "file": "LecternIcon.jinja"
+  },
+  {
+    "name": "Lasso",
+    "file": "LassoIcon.jinja"
+  },
+  {
+    "name": "Eraser",
+    "file": "EraserIcon.jinja"
+  },
+  {
+    "name": "ChartLine",
+    "file": "ChartLineIcon.jinja"
+  },
+  {
+    "name": "Disc2",
+    "file": "Disc2Icon.jinja"
+  },
+  {
+    "name": "Receipt",
+    "file": "ReceiptIcon.jinja"
+  },
+  {
+    "name": "BedSingle",
+    "file": "BedSingleIcon.jinja"
+  },
+  {
+    "name": "Wine",
+    "file": "WineIcon.jinja"
+  },
+  {
+    "name": "BriefcaseMedical",
+    "file": "BriefcaseMedicalIcon.jinja"
+  },
+  {
+    "name": "IceCreamBowl",
+    "file": "IceCreamBowlIcon.jinja"
+  },
+  {
+    "name": "ParkingMeter",
+    "file": "ParkingMeterIcon.jinja"
+  },
+  {
+    "name": "FileSearch",
+    "file": "FileSearchIcon.jinja"
+  },
+  {
+    "name": "ArrowDown",
+    "file": "ArrowDownIcon.jinja"
+  },
+  {
+    "name": "Figma",
+    "file": "FigmaIcon.jinja"
+  },
+  {
+    "name": "CornerRightUp",
+    "file": "CornerRightUpIcon.jinja"
+  },
+  {
+    "name": "FileKey",
+    "file": "FileKeyIcon.jinja"
+  },
+  {
+    "name": "Earth",
+    "file": "EarthIcon.jinja"
+  },
+  {
+    "name": "ChevronsRight",
+    "file": "ChevronsRightIcon.jinja"
+  },
+  {
+    "name": "Beef",
+    "file": "BeefIcon.jinja"
+  },
+  {
+    "name": "Flashlight",
+    "file": "FlashlightIcon.jinja"
+  },
+  {
+    "name": "FilePen",
+    "file": "FilePenIcon.jinja"
+  },
+  {
+    "name": "Ghost",
+    "file": "GhostIcon.jinja"
+  },
+  {
+    "name": "List",
+    "file": "ListIcon.jinja"
+  },
+  {
+    "name": "BicepsFlexed",
+    "file": "BicepsFlexedIcon.jinja"
+  },
+  {
+    "name": "Cctv",
+    "file": "CctvIcon.jinja"
+  },
+  {
+    "name": "VolumeOff",
+    "file": "VolumeOffIcon.jinja"
+  },
+  {
+    "name": "TextCursorInput",
+    "file": "TextCursorInputIcon.jinja"
+  },
+  {
+    "name": "Megaphone",
+    "file": "MegaphoneIcon.jinja"
+  },
+  {
+    "name": "Croissant",
+    "file": "CroissantIcon.jinja"
+  },
+  {
+    "name": "ToyBrick",
+    "file": "ToyBrickIcon.jinja"
+  },
+  {
+    "name": "PencilOff",
+    "file": "PencilOffIcon.jinja"
+  },
+  {
+    "name": "RouteOff",
+    "file": "RouteOffIcon.jinja"
+  },
+  {
+    "name": "MessageCircleQuestion",
+    "file": "MessageCircleQuestionIcon.jinja"
+  },
+  {
+    "name": "SquareArrowRight",
+    "file": "SquareArrowRightIcon.jinja"
+  },
+  {
+    "name": "BriefcaseBusiness",
+    "file": "BriefcaseBusinessIcon.jinja"
+  },
+  {
+    "name": "House",
+    "file": "HouseIcon.jinja"
+  },
+  {
+    "name": "SwissFranc",
+    "file": "SwissFrancIcon.jinja"
+  },
+  {
+    "name": "Navigation2Off",
+    "file": "Navigation2OffIcon.jinja"
+  },
+  {
+    "name": "BluetoothOff",
+    "file": "BluetoothOffIcon.jinja"
+  },
+  {
+    "name": "Bed",
+    "file": "BedIcon.jinja"
+  },
+  {
+    "name": "PanelRightClose",
+    "file": "PanelRightCloseIcon.jinja"
+  },
+  {
+    "name": "SignalLow",
+    "file": "SignalLowIcon.jinja"
+  },
+  {
+    "name": "ChevronsDown",
+    "file": "ChevronsDownIcon.jinja"
+  },
+  {
+    "name": "MemoryStick",
+    "file": "MemoryStickIcon.jinja"
+  },
+  {
+    "name": "ClockArrowDown",
+    "file": "ClockArrowDownIcon.jinja"
+  },
+  {
+    "name": "Disc3",
+    "file": "Disc3Icon.jinja"
+  },
+  {
+    "name": "Wind",
+    "file": "WindIcon.jinja"
+  },
+  {
+    "name": "CornerUpRight",
+    "file": "CornerUpRightIcon.jinja"
+  },
+  {
+    "name": "Clapperboard",
+    "file": "ClapperboardIcon.jinja"
+  },
+  {
+    "name": "Subscript",
+    "file": "SubscriptIcon.jinja"
+  },
+  {
+    "name": "FileDigit",
+    "file": "FileDigitIcon.jinja"
+  },
+  {
+    "name": "ArrowBigDownDash",
+    "file": "ArrowBigDownDashIcon.jinja"
+  },
+  {
+    "name": "Grape",
+    "file": "GrapeIcon.jinja"
+  },
+  {
+    "name": "FlipVertical",
+    "file": "FlipVerticalIcon.jinja"
+  },
+  {
+    "name": "HdmiPort",
+    "file": "HdmiPortIcon.jinja"
+  },
+  {
+    "name": "Target",
+    "file": "TargetIcon.jinja"
+  },
+  {
+    "name": "UserCog",
+    "file": "UserCogIcon.jinja"
+  },
+  {
+    "name": "Scissors",
+    "file": "ScissorsIcon.jinja"
+  },
+  {
+    "name": "Minimize2",
+    "file": "Minimize2Icon.jinja"
+  },
+  {
+    "name": "Cog",
+    "file": "CogIcon.jinja"
+  },
+  {
+    "name": "Waypoints",
+    "file": "WaypointsIcon.jinja"
+  },
+  {
+    "name": "MegaphoneOff",
+    "file": "MegaphoneOffIcon.jinja"
+  },
+  {
+    "name": "ReceiptPoundSterling",
+    "file": "ReceiptPoundSterlingIcon.jinja"
+  },
+  {
+    "name": "Crosshair",
+    "file": "CrosshairIcon.jinja"
+  },
+  {
+    "name": "AlignVerticalDistributeEnd",
+    "file": "AlignVerticalDistributeEndIcon.jinja"
+  },
+  {
+    "name": "Pi",
+    "file": "PiIcon.jinja"
+  },
+  {
+    "name": "TableCellsMerge",
+    "file": "TableCellsMergeIcon.jinja"
+  },
+  {
+    "name": "SquareEqual",
+    "file": "SquareEqualIcon.jinja"
+  },
+  {
+    "name": "FileSliders",
+    "file": "FileSlidersIcon.jinja"
+  },
+  {
+    "name": "PackageOpen",
+    "file": "PackageOpenIcon.jinja"
+  },
+  {
+    "name": "Vegan",
+    "file": "VeganIcon.jinja"
+  },
+  {
+    "name": "Airplay",
+    "file": "AirplayIcon.jinja"
+  },
+  {
+    "name": "GalleryThumbnails",
+    "file": "GalleryThumbnailsIcon.jinja"
+  },
+  {
+    "name": "Clock8",
+    "file": "Clock8Icon.jinja"
+  },
+  {
+    "name": "Section",
+    "file": "SectionIcon.jinja"
+  },
+  {
+    "name": "MessageCircleWarning",
+    "file": "MessageCircleWarningIcon.jinja"
+  },
+  {
+    "name": "BadgeEuro",
+    "file": "BadgeEuroIcon.jinja"
+  },
+  {
+    "name": "Repeat",
+    "file": "RepeatIcon.jinja"
+  },
+  {
+    "name": "CircleUserRound",
+    "file": "CircleUserRoundIcon.jinja"
+  },
+  {
+    "name": "SquareChevronRight",
+    "file": "SquareChevronRightIcon.jinja"
+  },
+  {
+    "name": "ArrowRightLeft",
+    "file": "ArrowRightLeftIcon.jinja"
+  },
+  {
+    "name": "Grip",
+    "file": "GripIcon.jinja"
+  },
+  {
+    "name": "Luggage",
+    "file": "LuggageIcon.jinja"
+  },
+  {
+    "name": "Hourglass",
+    "file": "HourglassIcon.jinja"
+  },
+  {
+    "name": "RussianRuble",
+    "file": "RussianRubleIcon.jinja"
+  },
+  {
+    "name": "CircleChevronRight",
+    "file": "CircleChevronRightIcon.jinja"
+  },
+  {
+    "name": "Microwave",
+    "file": "MicrowaveIcon.jinja"
+  },
+  {
+    "name": "Volume1",
+    "file": "Volume1Icon.jinja"
+  },
+  {
+    "name": "PartyPopper",
+    "file": "PartyPopperIcon.jinja"
+  },
+  {
+    "name": "Boxes",
+    "file": "BoxesIcon.jinja"
+  },
+  {
+    "name": "FileHeart",
+    "file": "FileHeartIcon.jinja"
+  },
+  {
+    "name": "PrinterCheck",
+    "file": "PrinterCheckIcon.jinja"
+  },
+  {
+    "name": "Reply",
+    "file": "ReplyIcon.jinja"
+  },
+  {
+    "name": "BadgePercent",
+    "file": "BadgePercentIcon.jinja"
+  },
+  {
+    "name": "TypeOutline",
+    "file": "TypeOutlineIcon.jinja"
+  },
+  {
+    "name": "SquareDashedKanban",
+    "file": "SquareDashedKanbanIcon.jinja"
+  },
+  {
+    "name": "Sunrise",
+    "file": "SunriseIcon.jinja"
+  },
+  {
+    "name": "ToggleRight",
+    "file": "ToggleRightIcon.jinja"
+  },
+  {
+    "name": "MapPinPlusInside",
+    "file": "MapPinPlusInsideIcon.jinja"
+  },
+  {
+    "name": "BugOff",
+    "file": "BugOffIcon.jinja"
+  },
+  {
+    "name": "MessageSquareShare",
+    "file": "MessageSquareShareIcon.jinja"
+  },
+  {
+    "name": "Beer",
+    "file": "BeerIcon.jinja"
+  },
+  {
+    "name": "Pointer",
+    "file": "PointerIcon.jinja"
+  },
+  {
+    "name": "ReceiptIndianRupee",
+    "file": "ReceiptIndianRupeeIcon.jinja"
+  },
+  {
+    "name": "ChartBarStacked",
+    "file": "ChartBarStackedIcon.jinja"
+  },
+  {
+    "name": "Sheet",
+    "file": "SheetIcon.jinja"
+  },
+  {
+    "name": "SprayCan",
+    "file": "SprayCanIcon.jinja"
+  },
+  {
+    "name": "ScanLine",
+    "file": "ScanLineIcon.jinja"
+  },
+  {
+    "name": "CircleCheckBig",
+    "file": "CircleCheckBigIcon.jinja"
+  },
+  {
+    "name": "UnfoldVertical",
+    "file": "UnfoldVerticalIcon.jinja"
+  },
+  {
+    "name": "ChartCandlestick",
+    "file": "ChartCandlestickIcon.jinja"
+  },
+  {
+    "name": "GitPullRequestDraft",
+    "file": "GitPullRequestDraftIcon.jinja"
+  },
+  {
+    "name": "ChartNoAxesColumnIncreasing",
+    "file": "ChartNoAxesColumnIncreasingIcon.jinja"
+  },
+  {
+    "name": "LayoutList",
+    "file": "LayoutListIcon.jinja"
+  },
+  {
+    "name": "Umbrella",
+    "file": "UmbrellaIcon.jinja"
+  },
+  {
+    "name": "User",
+    "file": "UserIcon.jinja"
+  },
+  {
+    "name": "ListStart",
+    "file": "ListStartIcon.jinja"
+  },
+  {
+    "name": "FileChartColumnIncreasing",
+    "file": "FileChartColumnIncreasingIcon.jinja"
+  },
+  {
+    "name": "LassoSelect",
+    "file": "LassoSelectIcon.jinja"
+  },
+  {
+    "name": "ArrowBigDown",
+    "file": "ArrowBigDownIcon.jinja"
+  },
+  {
+    "name": "IterationCw",
+    "file": "IterationCwIcon.jinja"
+  },
+  {
+    "name": "Fullscreen",
+    "file": "FullscreenIcon.jinja"
+  },
+  {
+    "name": "MessageCircleHeart",
+    "file": "MessageCircleHeartIcon.jinja"
+  },
+  {
+    "name": "SunDim",
+    "file": "SunDimIcon.jinja"
+  },
+  {
+    "name": "ChartNetwork",
+    "file": "ChartNetworkIcon.jinja"
+  },
+  {
+    "name": "ReplaceAll",
+    "file": "ReplaceAllIcon.jinja"
+  },
+  {
+    "name": "SquareArrowOutDownLeft",
+    "file": "SquareArrowOutDownLeftIcon.jinja"
+  },
+  {
+    "name": "Cannabis",
+    "file": "CannabisIcon.jinja"
+  },
+  {
+    "name": "IterationCcw",
+    "file": "IterationCcwIcon.jinja"
+  },
+  {
+    "name": "MessageCircleMore",
+    "file": "MessageCircleMoreIcon.jinja"
+  },
+  {
+    "name": "FileMinus",
+    "file": "FileMinusIcon.jinja"
+  },
+  {
+    "name": "SquarePower",
+    "file": "SquarePowerIcon.jinja"
+  },
+  {
+    "name": "SquareChevronUp",
+    "file": "SquareChevronUpIcon.jinja"
+  },
+  {
+    "name": "AlignHorizontalJustifyStart",
+    "file": "AlignHorizontalJustifyStartIcon.jinja"
+  },
+  {
+    "name": "CopyPlus",
+    "file": "CopyPlusIcon.jinja"
+  },
+  {
+    "name": "TimerOff",
+    "file": "TimerOffIcon.jinja"
+  },
+  {
+    "name": "FolderCheck",
+    "file": "FolderCheckIcon.jinja"
+  },
+  {
+    "name": "ChartColumnDecreasing",
+    "file": "ChartColumnDecreasingIcon.jinja"
+  },
+  {
+    "name": "BadgeJapaneseYen",
+    "file": "BadgeJapaneseYenIcon.jinja"
+  },
+  {
+    "name": "ArrowUpFromLine",
+    "file": "ArrowUpFromLineIcon.jinja"
+  },
+  {
+    "name": "FlipVertical2",
+    "file": "FlipVertical2Icon.jinja"
+  },
+  {
+    "name": "Annoyed",
+    "file": "AnnoyedIcon.jinja"
+  },
+  {
+    "name": "Ligature",
+    "file": "LigatureIcon.jinja"
+  },
+  {
+    "name": "MessageSquareWarning",
+    "file": "MessageSquareWarningIcon.jinja"
+  },
+  {
+    "name": "LayoutGrid",
+    "file": "LayoutGridIcon.jinja"
+  },
+  {
+    "name": "RockingChair",
+    "file": "RockingChairIcon.jinja"
+  },
+  {
+    "name": "ChevronsUpDown",
+    "file": "ChevronsUpDownIcon.jinja"
+  },
+  {
+    "name": "BadgeMinus",
+    "file": "BadgeMinusIcon.jinja"
+  },
+  {
+    "name": "CalendarOff",
+    "file": "CalendarOffIcon.jinja"
+  },
+  {
+    "name": "Circle",
+    "file": "CircleIcon.jinja"
+  },
+  {
+    "name": "AirVent",
+    "file": "AirVentIcon.jinja"
+  },
+  {
+    "name": "PhoneMissed",
+    "file": "PhoneMissedIcon.jinja"
+  },
+  {
+    "name": "Scale3d",
+    "file": "Scale3dIcon.jinja"
+  },
+  {
+    "name": "CornerLeftUp",
+    "file": "CornerLeftUpIcon.jinja"
+  },
+  {
+    "name": "Milk",
+    "file": "MilkIcon.jinja"
+  },
+  {
+    "name": "ClipboardPen",
+    "file": "ClipboardPenIcon.jinja"
+  },
+  {
+    "name": "FileUp",
+    "file": "FileUpIcon.jinja"
+  },
+  {
+    "name": "Copyright",
+    "file": "CopyrightIcon.jinja"
+  },
+  {
+    "name": "PictureInPicture",
+    "file": "PictureInPictureIcon.jinja"
+  },
+  {
+    "name": "Vault",
+    "file": "VaultIcon.jinja"
+  },
+  {
+    "name": "CirclePower",
+    "file": "CirclePowerIcon.jinja"
+  },
+  {
+    "name": "Omega",
+    "file": "OmegaIcon.jinja"
+  },
+  {
+    "name": "Mailbox",
+    "file": "MailboxIcon.jinja"
+  },
+  {
+    "name": "Gitlab",
+    "file": "GitlabIcon.jinja"
+  },
+  {
+    "name": "Music",
+    "file": "MusicIcon.jinja"
+  },
+  {
+    "name": "RectangleEllipsis",
+    "file": "RectangleEllipsisIcon.jinja"
+  },
+  {
+    "name": "Smartphone",
+    "file": "SmartphoneIcon.jinja"
+  },
+  {
+    "name": "FileSymlink",
+    "file": "FileSymlinkIcon.jinja"
+  },
+  {
+    "name": "AlarmClockCheck",
+    "file": "AlarmClockCheckIcon.jinja"
+  },
+  {
+    "name": "CandyOff",
+    "file": "CandyOffIcon.jinja"
+  },
+  {
+    "name": "CircuitBoard",
+    "file": "CircuitBoardIcon.jinja"
+  },
+  {
+    "name": "FolderTree",
+    "file": "FolderTreeIcon.jinja"
+  },
+  {
+    "name": "ChartGantt",
+    "file": "ChartGanttIcon.jinja"
+  },
+  {
+    "name": "Equal",
+    "file": "EqualIcon.jinja"
+  },
+  {
+    "name": "Grid2x2Plus",
+    "file": "Grid2x2PlusIcon.jinja"
+  },
+  {
+    "name": "Recycle",
+    "file": "RecycleIcon.jinja"
+  },
+  {
+    "name": "ArrowUpLeft",
+    "file": "ArrowUpLeftIcon.jinja"
+  },
+  {
+    "name": "ClipboardType",
+    "file": "ClipboardTypeIcon.jinja"
+  },
+  {
+    "name": "Library",
+    "file": "LibraryIcon.jinja"
+  },
+  {
+    "name": "PanelTopClose",
+    "file": "PanelTopCloseIcon.jinja"
+  },
+  {
+    "name": "SquareArrowDown",
+    "file": "SquareArrowDownIcon.jinja"
+  },
+  {
+    "name": "ListPlus",
+    "file": "ListPlusIcon.jinja"
+  },
+  {
+    "name": "ChevronDown",
+    "file": "ChevronDownIcon.jinja"
+  },
+  {
+    "name": "Backpack",
+    "file": "BackpackIcon.jinja"
+  },
+  {
+    "name": "CalendarCheck2",
+    "file": "CalendarCheck2Icon.jinja"
+  },
+  {
+    "name": "Heading",
+    "file": "HeadingIcon.jinja"
+  },
+  {
+    "name": "Hexagon",
+    "file": "HexagonIcon.jinja"
+  },
+  {
+    "name": "Strikethrough",
+    "file": "StrikethroughIcon.jinja"
+  },
+  {
+    "name": "CalendarFold",
+    "file": "CalendarFoldIcon.jinja"
+  },
+  {
+    "name": "MessageSquareHeart",
+    "file": "MessageSquareHeartIcon.jinja"
+  },
+  {
+    "name": "Bird",
+    "file": "BirdIcon.jinja"
+  },
+  {
+    "name": "BotMessageSquare",
+    "file": "BotMessageSquareIcon.jinja"
+  },
+  {
+    "name": "SunMedium",
+    "file": "SunMediumIcon.jinja"
+  },
+  {
+    "name": "CalendarArrowDown",
+    "file": "CalendarArrowDownIcon.jinja"
+  },
+  {
+    "name": "BadgeInfo",
+    "file": "BadgeInfoIcon.jinja"
+  },
+  {
+    "name": "ShieldPlus",
+    "file": "ShieldPlusIcon.jinja"
+  },
+  {
+    "name": "Tickets",
+    "file": "TicketsIcon.jinja"
+  },
+  {
+    "name": "BookMarked",
+    "file": "BookMarkedIcon.jinja"
+  },
+  {
+    "name": "CreativeCommons",
+    "file": "CreativeCommonsIcon.jinja"
+  },
+  {
+    "name": "Shirt",
+    "file": "ShirtIcon.jinja"
+  },
+  {
+    "name": "Dock",
+    "file": "DockIcon.jinja"
+  },
+  {
+    "name": "Signpost",
+    "file": "SignpostIcon.jinja"
+  },
+  {
+    "name": "DoorClosed",
+    "file": "DoorClosedIcon.jinja"
+  },
+  {
+    "name": "Github",
+    "file": "GithubIcon.jinja"
+  },
+  {
+    "name": "FoldHorizontal",
+    "file": "FoldHorizontalIcon.jinja"
+  },
+  {
+    "name": "Nfc",
+    "file": "NfcIcon.jinja"
+  },
+  {
+    "name": "ClipboardPaste",
+    "file": "ClipboardPasteIcon.jinja"
+  },
+  {
+    "name": "Cone",
+    "file": "ConeIcon.jinja"
+  },
+  {
+    "name": "CookingPot",
+    "file": "CookingPotIcon.jinja"
+  },
+  {
+    "name": "Proportions",
+    "file": "ProportionsIcon.jinja"
+  },
+  {
+    "name": "BringToFront",
+    "file": "BringToFrontIcon.jinja"
+  },
+  {
+    "name": "Usb",
+    "file": "UsbIcon.jinja"
+  },
+  {
+    "name": "SeparatorVertical",
+    "file": "SeparatorVerticalIcon.jinja"
+  },
+  {
+    "name": "HardHat",
+    "file": "HardHatIcon.jinja"
+  },
+  {
+    "name": "CakeSlice",
+    "file": "CakeSliceIcon.jinja"
+  },
+  {
+    "name": "SunMoon",
+    "file": "SunMoonIcon.jinja"
+  },
+  {
+    "name": "Ticket",
+    "file": "TicketIcon.jinja"
+  },
+  {
+    "name": "CalendarPlus2",
+    "file": "CalendarPlus2Icon.jinja"
+  },
+  {
+    "name": "CaseLower",
+    "file": "CaseLowerIcon.jinja"
+  },
+  {
+    "name": "LayoutTemplate",
+    "file": "LayoutTemplateIcon.jinja"
+  },
+  {
+    "name": "PanelRightOpen",
+    "file": "PanelRightOpenIcon.jinja"
+  },
+  {
+    "name": "Brackets",
+    "file": "BracketsIcon.jinja"
+  },
+  {
+    "name": "StarOff",
+    "file": "StarOffIcon.jinja"
+  },
+  {
+    "name": "Shrink",
+    "file": "ShrinkIcon.jinja"
+  },
+  {
+    "name": "Church",
+    "file": "ChurchIcon.jinja"
+  },
+  {
+    "name": "CirclePercent",
+    "file": "CirclePercentIcon.jinja"
+  },
+  {
+    "name": "Crop",
+    "file": "CropIcon.jinja"
+  },
+  {
+    "name": "FlaskRound",
+    "file": "FlaskRoundIcon.jinja"
+  },
+  {
+    "name": "Cookie",
+    "file": "CookieIcon.jinja"
+  },
+  {
+    "name": "ChartColumnBig",
+    "file": "ChartColumnBigIcon.jinja"
+  },
+  {
+    "name": "Redo2",
+    "file": "Redo2Icon.jinja"
+  },
+  {
+    "name": "CircleSlash2",
+    "file": "CircleSlash2Icon.jinja"
+  },
+  {
+    "name": "Tag",
+    "file": "TagIcon.jinja"
+  },
+  {
+    "name": "BookCheck",
+    "file": "BookCheckIcon.jinja"
+  },
+  {
+    "name": "OctagonPause",
+    "file": "OctagonPauseIcon.jinja"
+  },
+  {
+    "name": "CupSoda",
+    "file": "CupSodaIcon.jinja"
+  },
+  {
+    "name": "Option",
+    "file": "OptionIcon.jinja"
+  },
+  {
+    "name": "Sparkle",
+    "file": "SparkleIcon.jinja"
+  },
+  {
+    "name": "Briefcase",
+    "file": "BriefcaseIcon.jinja"
+  },
+  {
+    "name": "CircleChevronDown",
+    "file": "CircleChevronDownIcon.jinja"
+  },
+  {
+    "name": "Presentation",
+    "file": "PresentationIcon.jinja"
+  },
+  {
+    "name": "SquareSigma",
+    "file": "SquareSigmaIcon.jinja"
+  },
+  {
+    "name": "RotateCw",
+    "file": "RotateCwIcon.jinja"
+  },
+  {
+    "name": "FileAudio",
+    "file": "FileAudioIcon.jinja"
+  },
+  {
+    "name": "EllipsisVertical",
+    "file": "EllipsisVerticalIcon.jinja"
+  },
+  {
+    "name": "BadgePlus",
+    "file": "BadgePlusIcon.jinja"
+  },
+  {
+    "name": "ScreenShareOff",
+    "file": "ScreenShareOffIcon.jinja"
+  },
+  {
+    "name": "SquarePlay",
+    "file": "SquarePlayIcon.jinja"
+  },
+  {
+    "name": "AlignHorizontalDistributeEnd",
+    "file": "AlignHorizontalDistributeEndIcon.jinja"
+  },
+  {
+    "name": "FileClock",
+    "file": "FileClockIcon.jinja"
+  },
+  {
+    "name": "CalendarSearch",
+    "file": "CalendarSearchIcon.jinja"
+  },
+  {
+    "name": "ImageDown",
+    "file": "ImageDownIcon.jinja"
+  },
+  {
+    "name": "SwatchBook",
+    "file": "SwatchBookIcon.jinja"
+  },
+  {
+    "name": "Radius",
+    "file": "RadiusIcon.jinja"
+  },
+  {
+    "name": "FolderSync",
+    "file": "FolderSyncIcon.jinja"
+  },
+  {
+    "name": "PanelsTopLeft",
+    "file": "PanelsTopLeftIcon.jinja"
+  },
+  {
+    "name": "Headset",
+    "file": "HeadsetIcon.jinja"
+  },
+  {
+    "name": "CircleEqual",
+    "file": "CircleEqualIcon.jinja"
+  },
+  {
+    "name": "Dessert",
+    "file": "DessertIcon.jinja"
+  },
+  {
+    "name": "Carrot",
+    "file": "CarrotIcon.jinja"
+  },
+  {
+    "name": "ReceiptEuro",
+    "file": "ReceiptEuroIcon.jinja"
+  },
+  {
+    "name": "Map",
+    "file": "MapIcon.jinja"
+  },
+  {
+    "name": "CheckCheck",
+    "file": "CheckCheckIcon.jinja"
+  },
+  {
+    "name": "Inbox",
+    "file": "InboxIcon.jinja"
+  },
+  {
+    "name": "CircleAlert",
+    "file": "CircleAlertIcon.jinja"
+  },
+  {
+    "name": "TvMinimal",
+    "file": "TvMinimalIcon.jinja"
+  },
+  {
+    "name": "AlignJustify",
+    "file": "AlignJustifyIcon.jinja"
+  },
+  {
+    "name": "Power",
+    "file": "PowerIcon.jinja"
+  },
+  {
+    "name": "ALargeSmall",
+    "file": "ALargeSmallIcon.jinja"
+  },
+  {
+    "name": "TentTree",
+    "file": "TentTreeIcon.jinja"
+  },
+  {
+    "name": "Database",
+    "file": "DatabaseIcon.jinja"
+  },
+  {
+    "name": "TicketsPlane",
+    "file": "TicketsPlaneIcon.jinja"
+  },
+  {
+    "name": "Captions",
+    "file": "CaptionsIcon.jinja"
+  },
+  {
+    "name": "Martini",
+    "file": "MartiniIcon.jinja"
+  },
+  {
+    "name": "ArrowUpToLine",
+    "file": "ArrowUpToLineIcon.jinja"
+  },
+  {
+    "name": "MonitorDown",
+    "file": "MonitorDownIcon.jinja"
+  },
+  {
+    "name": "BadgeIndianRupee",
+    "file": "BadgeIndianRupeeIcon.jinja"
+  },
+  {
+    "name": "CameraOff",
+    "file": "CameraOffIcon.jinja"
+  },
+  {
+    "name": "Fuel",
+    "file": "FuelIcon.jinja"
+  },
+  {
+    "name": "SatelliteDish",
+    "file": "SatelliteDishIcon.jinja"
+  },
+  {
+    "name": "Bike",
+    "file": "BikeIcon.jinja"
+  },
+  {
+    "name": "ChartNoAxesColumn",
+    "file": "ChartNoAxesColumnIcon.jinja"
+  },
+  {
+    "name": "Swords",
+    "file": "SwordsIcon.jinja"
+  },
+  {
+    "name": "MessageSquareOff",
+    "file": "MessageSquareOffIcon.jinja"
+  },
+  {
+    "name": "ScanText",
+    "file": "ScanTextIcon.jinja"
+  },
+  {
+    "name": "ArrowDownZA",
+    "file": "ArrowDownZAIcon.jinja"
+  },
+  {
+    "name": "Rat",
+    "file": "RatIcon.jinja"
+  },
+  {
+    "name": "Tornado",
+    "file": "TornadoIcon.jinja"
+  },
+  {
+    "name": "ToggleLeft",
+    "file": "ToggleLeftIcon.jinja"
+  },
+  {
+    "name": "File",
+    "file": "FileIcon.jinja"
+  },
+  {
+    "name": "Puzzle",
+    "file": "PuzzleIcon.jinja"
+  },
+  {
+    "name": "AlignVerticalDistributeCenter",
+    "file": "AlignVerticalDistributeCenterIcon.jinja"
+  },
+  {
+    "name": "Signal",
+    "file": "SignalIcon.jinja"
+  },
+  {
+    "name": "EggOff",
+    "file": "EggOffIcon.jinja"
+  },
+  {
+    "name": "ArrowUp10",
+    "file": "ArrowUp10Icon.jinja"
+  },
+  {
+    "name": "FileAudio2",
+    "file": "FileAudio2Icon.jinja"
+  },
+  {
+    "name": "Baseline",
+    "file": "BaselineIcon.jinja"
+  },
+  {
+    "name": "VibrateOff",
+    "file": "VibrateOffIcon.jinja"
+  },
+  {
+    "name": "GlassWater",
+    "file": "GlassWaterIcon.jinja"
+  },
+  {
+    "name": "Brain",
+    "file": "BrainIcon.jinja"
+  },
+  {
+    "name": "Files",
+    "file": "FilesIcon.jinja"
+  },
+  {
+    "name": "Torus",
+    "file": "TorusIcon.jinja"
+  },
+  {
+    "name": "ScanSearch",
+    "file": "ScanSearchIcon.jinja"
+  },
+  {
+    "name": "SquareDashedBottomCode",
+    "file": "SquareDashedBottomCodeIcon.jinja"
+  },
+  {
+    "name": "MessageCircle",
+    "file": "MessageCircleIcon.jinja"
+  },
+  {
+    "name": "MessageSquareDot",
+    "file": "MessageSquareDotIcon.jinja"
+  },
+  {
+    "name": "ReceiptJapaneseYen",
+    "file": "ReceiptJapaneseYenIcon.jinja"
+  },
+  {
+    "name": "Voicemail",
+    "file": "VoicemailIcon.jinja"
+  },
+  {
+    "name": "OctagonMinus",
+    "file": "OctagonMinusIcon.jinja"
+  },
+  {
+    "name": "MessagesSquare",
+    "file": "MessagesSquareIcon.jinja"
+  },
+  {
+    "name": "ShipWheel",
+    "file": "ShipWheelIcon.jinja"
+  },
+  {
+    "name": "MessageSquareQuote",
+    "file": "MessageSquareQuoteIcon.jinja"
+  },
+  {
+    "name": "Contrast",
+    "file": "ContrastIcon.jinja"
+  },
+  {
+    "name": "Cuboid",
+    "file": "CuboidIcon.jinja"
+  },
+  {
+    "name": "AlarmClockPlus",
+    "file": "AlarmClockPlusIcon.jinja"
+  },
+  {
+    "name": "MonitorPause",
+    "file": "MonitorPauseIcon.jinja"
+  },
+  {
+    "name": "FileVideo2",
+    "file": "FileVideo2Icon.jinja"
+  },
+  {
+    "name": "ArchiveX",
+    "file": "ArchiveXIcon.jinja"
+  },
+  {
+    "name": "Terminal",
+    "file": "TerminalIcon.jinja"
+  },
+  {
+    "name": "MoveDiagonal",
+    "file": "MoveDiagonalIcon.jinja"
+  },
+  {
+    "name": "FileScan",
+    "file": "FileScanIcon.jinja"
+  },
+  {
+    "name": "ArrowUpWideNarrow",
+    "file": "ArrowUpWideNarrowIcon.jinja"
+  },
+  {
+    "name": "Move",
+    "file": "MoveIcon.jinja"
+  },
+  {
+    "name": "Maximize",
+    "file": "MaximizeIcon.jinja"
+  },
+  {
+    "name": "BetweenVerticalStart",
+    "file": "BetweenVerticalStartIcon.jinja"
+  },
+  {
+    "name": "LaptopMinimal",
+    "file": "LaptopMinimalIcon.jinja"
+  },
+  {
+    "name": "Radar",
+    "file": "RadarIcon.jinja"
+  },
+  {
+    "name": "Logs",
+    "file": "LogsIcon.jinja"
+  },
+  {
+    "name": "Sparkles",
+    "file": "SparklesIcon.jinja"
+  },
+  {
+    "name": "LockKeyhole",
+    "file": "LockKeyholeIcon.jinja"
+  },
+  {
+    "name": "OctagonX",
+    "file": "OctagonXIcon.jinja"
+  },
+  {
+    "name": "FolderRoot",
+    "file": "FolderRootIcon.jinja"
+  },
+  {
+    "name": "ChevronUp",
+    "file": "ChevronUpIcon.jinja"
+  },
+  {
+    "name": "CircleHelp",
+    "file": "CircleHelpIcon.jinja"
+  },
+  {
+    "name": "SquarePercent",
+    "file": "SquarePercentIcon.jinja"
+  },
+  {
+    "name": "Haze",
+    "file": "HazeIcon.jinja"
+  },
+  {
+    "name": "FolderOutput",
+    "file": "FolderOutputIcon.jinja"
+  },
+  {
+    "name": "FolderSymlink",
+    "file": "FolderSymlinkIcon.jinja"
+  },
+  {
+    "name": "FileBadge2",
+    "file": "FileBadge2Icon.jinja"
+  },
+  {
+    "name": "Vibrate",
+    "file": "VibrateIcon.jinja"
+  },
+  {
+    "name": "Laugh",
+    "file": "LaughIcon.jinja"
+  },
+  {
+    "name": "ScanEye",
+    "file": "ScanEyeIcon.jinja"
+  },
+  {
+    "name": "Spade",
+    "file": "SpadeIcon.jinja"
+  },
+  {
+    "name": "CloudRainWind",
+    "file": "CloudRainWindIcon.jinja"
+  },
+  {
+    "name": "SlidersVertical",
+    "file": "SlidersVerticalIcon.jinja"
+  },
+  {
+    "name": "Undo2",
+    "file": "Undo2Icon.jinja"
+  },
+  {
+    "name": "FileVideo",
+    "file": "FileVideoIcon.jinja"
+  },
+  {
+    "name": "StepBack",
+    "file": "StepBackIcon.jinja"
+  },
+  {
+    "name": "FlaskConicalOff",
+    "file": "FlaskConicalOffIcon.jinja"
+  },
+  {
+    "name": "ArrowDownLeft",
+    "file": "ArrowDownLeftIcon.jinja"
+  },
+  {
+    "name": "FileText",
+    "file": "FileTextIcon.jinja"
+  },
+  {
+    "name": "FileStack",
+    "file": "FileStackIcon.jinja"
+  },
+  {
+    "name": "FolderOpen",
+    "file": "FolderOpenIcon.jinja"
+  },
+  {
+    "name": "PackageMinus",
+    "file": "PackageMinusIcon.jinja"
+  },
+  {
+    "name": "Droplet",
+    "file": "DropletIcon.jinja"
+  },
+  {
+    "name": "WholeWord",
+    "file": "WholeWordIcon.jinja"
+  },
+  {
+    "name": "PaintRoller",
+    "file": "PaintRollerIcon.jinja"
+  },
+  {
+    "name": "ZapOff",
+    "file": "ZapOffIcon.jinja"
+  },
+  {
+    "name": "SquareKanban",
+    "file": "SquareKanbanIcon.jinja"
+  },
+  {
+    "name": "Keyboard",
+    "file": "KeyboardIcon.jinja"
+  },
+  {
+    "name": "X",
+    "file": "XIcon.jinja"
+  },
+  {
+    "name": "ChevronsRightLeft",
+    "file": "ChevronsRightLeftIcon.jinja"
+  },
+  {
+    "name": "Joystick",
+    "file": "JoystickIcon.jinja"
+  },
+  {
+    "name": "Cigarette",
+    "file": "CigaretteIcon.jinja"
+  },
+  {
+    "name": "Bath",
+    "file": "BathIcon.jinja"
+  },
+  {
+    "name": "QrCode",
+    "file": "QrCodeIcon.jinja"
+  },
+  {
+    "name": "Dot",
+    "file": "DotIcon.jinja"
+  },
+  {
+    "name": "IceCreamCone",
+    "file": "IceCreamConeIcon.jinja"
+  },
+  {
+    "name": "Languages",
+    "file": "LanguagesIcon.jinja"
+  },
+  {
+    "name": "Ampersands",
+    "file": "AmpersandsIcon.jinja"
+  },
+  {
+    "name": "Amphora",
+    "file": "AmphoraIcon.jinja"
+  },
+  {
+    "name": "ArrowLeftFromLine",
+    "file": "ArrowLeftFromLineIcon.jinja"
+  },
+  {
+    "name": "BellMinus",
+    "file": "BellMinusIcon.jinja"
+  },
+  {
+    "name": "FileCog",
+    "file": "FileCogIcon.jinja"
+  },
+  {
+    "name": "Wheat",
+    "file": "WheatIcon.jinja"
+  },
+  {
+    "name": "CableCar",
+    "file": "CableCarIcon.jinja"
+  },
+  {
+    "name": "ArrowUpNarrowWide",
+    "file": "ArrowUpNarrowWideIcon.jinja"
+  },
+  {
+    "name": "Lock",
+    "file": "LockIcon.jinja"
+  },
+  {
+    "name": "Dice2",
+    "file": "Dice2Icon.jinja"
+  },
+  {
+    "name": "LogIn",
+    "file": "LogInIcon.jinja"
+  },
+  {
+    "name": "Squircle",
+    "file": "SquircleIcon.jinja"
+  },
+  {
+    "name": "CloudUpload",
+    "file": "CloudUploadIcon.jinja"
+  },
+  {
+    "name": "ShieldEllipsis",
+    "file": "ShieldEllipsisIcon.jinja"
+  },
+  {
+    "name": "Ban",
+    "file": "BanIcon.jinja"
+  },
+  {
+    "name": "SmartphoneNfc",
+    "file": "SmartphoneNfcIcon.jinja"
+  },
+  {
+    "name": "ListVideo",
+    "file": "ListVideoIcon.jinja"
+  },
+  {
+    "name": "TextSelect",
+    "file": "TextSelectIcon.jinja"
+  },
+  {
+    "name": "ShoppingBag",
+    "file": "ShoppingBagIcon.jinja"
+  },
+  {
+    "name": "Divide",
+    "file": "DivideIcon.jinja"
+  },
+  {
+    "name": "PiggyBank",
+    "file": "PiggyBankIcon.jinja"
+  },
+  {
+    "name": "BatteryWarning",
+    "file": "BatteryWarningIcon.jinja"
+  },
+  {
+    "name": "WalletMinimal",
+    "file": "WalletMinimalIcon.jinja"
+  },
+  {
+    "name": "CircleDollarSign",
+    "file": "CircleDollarSignIcon.jinja"
+  },
+  {
+    "name": "MilkOff",
+    "file": "MilkOffIcon.jinja"
+  },
+  {
+    "name": "SquareParking",
+    "file": "SquareParkingIcon.jinja"
+  },
+  {
+    "name": "RefreshCcwDot",
+    "file": "RefreshCcwDotIcon.jinja"
+  },
+  {
+    "name": "Tally2",
+    "file": "Tally2Icon.jinja"
+  },
+  {
+    "name": "Shell",
+    "file": "ShellIcon.jinja"
+  },
+  {
+    "name": "Repeat2",
+    "file": "Repeat2Icon.jinja"
+  },
+  {
+    "name": "Pilcrow",
+    "file": "PilcrowIcon.jinja"
+  },
+  {
+    "name": "CircleDotDashed",
+    "file": "CircleDotDashedIcon.jinja"
+  },
+  {
+    "name": "MailQuestion",
+    "file": "MailQuestionIcon.jinja"
+  },
+  {
+    "name": "CloudDrizzle",
+    "file": "CloudDrizzleIcon.jinja"
+  },
+  {
+    "name": "CopyMinus",
+    "file": "CopyMinusIcon.jinja"
+  },
+  {
+    "name": "Spline",
+    "file": "SplineIcon.jinja"
+  },
+  {
+    "name": "RefreshCw",
+    "file": "RefreshCwIcon.jinja"
+  },
+  {
+    "name": "Pen",
+    "file": "PenIcon.jinja"
+  },
+  {
+    "name": "UserPen",
+    "file": "UserPenIcon.jinja"
+  },
+  {
+    "name": "Plane",
+    "file": "PlaneIcon.jinja"
+  },
+  {
+    "name": "AlignVerticalSpaceBetween",
+    "file": "AlignVerticalSpaceBetweenIcon.jinja"
+  },
+  {
+    "name": "ChevronRight",
+    "file": "ChevronRightIcon.jinja"
+  },
+  {
+    "name": "Tally3",
+    "file": "Tally3Icon.jinja"
+  },
+  {
+    "name": "Clipboard",
+    "file": "ClipboardIcon.jinja"
+  },
+  {
+    "name": "EqualNot",
+    "file": "EqualNotIcon.jinja"
+  },
+  {
+    "name": "Package",
+    "file": "PackageIcon.jinja"
+  },
+  {
+    "name": "Instagram",
+    "file": "InstagramIcon.jinja"
+  },
+  {
+    "name": "MailWarning",
+    "file": "MailWarningIcon.jinja"
+  },
+  {
+    "name": "Euro",
+    "file": "EuroIcon.jinja"
+  },
+  {
+    "name": "Link",
+    "file": "LinkIcon.jinja"
+  },
+  {
+    "name": "SquareChevronLeft",
+    "file": "SquareChevronLeftIcon.jinja"
+  },
+  {
+    "name": "GlobeLock",
+    "file": "GlobeLockIcon.jinja"
+  },
+  {
+    "name": "Dice3",
+    "file": "Dice3Icon.jinja"
+  },
+  {
+    "name": "HandPlatter",
+    "file": "HandPlatterIcon.jinja"
+  },
+  {
+    "name": "VideoOff",
+    "file": "VideoOffIcon.jinja"
+  },
+  {
+    "name": "UserRoundPlus",
+    "file": "UserRoundPlusIcon.jinja"
+  },
+  {
+    "name": "Key",
+    "file": "KeyIcon.jinja"
+  },
+  {
+    "name": "SquareActivity",
+    "file": "SquareActivityIcon.jinja"
+  },
+  {
+    "name": "Shrub",
+    "file": "ShrubIcon.jinja"
+  },
+  {
+    "name": "Sailboat",
+    "file": "SailboatIcon.jinja"
+  },
+  {
+    "name": "FileX2",
+    "file": "FileX2Icon.jinja"
+  },
+  {
+    "name": "SquareSlash",
+    "file": "SquareSlashIcon.jinja"
+  },
+  {
+    "name": "BrainCog",
+    "file": "BrainCogIcon.jinja"
+  },
+  {
+    "name": "Meh",
+    "file": "MehIcon.jinja"
+  },
+  {
+    "name": "SlidersHorizontal",
+    "file": "SlidersHorizontalIcon.jinja"
+  },
+  {
+    "name": "DoorOpen",
+    "file": "DoorOpenIcon.jinja"
+  },
+  {
+    "name": "CornerDownRight",
+    "file": "CornerDownRightIcon.jinja"
+  },
+  {
+    "name": "Beaker",
+    "file": "BeakerIcon.jinja"
+  },
+  {
+    "name": "ListTodo",
+    "file": "ListTodoIcon.jinja"
+  },
+  {
+    "name": "CloudSun",
+    "file": "CloudSunIcon.jinja"
+  },
+  {
+    "name": "ArrowRight",
+    "file": "ArrowRightIcon.jinja"
+  },
+  {
+    "name": "Store",
+    "file": "StoreIcon.jinja"
+  },
+  {
+    "name": "Antenna",
+    "file": "AntennaIcon.jinja"
+  },
+  {
+    "name": "ChevronFirst",
+    "file": "ChevronFirstIcon.jinja"
+  },
+  {
+    "name": "WheatOff",
+    "file": "WheatOffIcon.jinja"
+  },
+  {
+    "name": "Aperture",
+    "file": "ApertureIcon.jinja"
+  },
+  {
+    "name": "CalendarPlus",
+    "file": "CalendarPlusIcon.jinja"
+  },
+  {
+    "name": "Brush",
+    "file": "BrushIcon.jinja"
+  },
+  {
+    "name": "ThermometerSnowflake",
+    "file": "ThermometerSnowflakeIcon.jinja"
+  },
+  {
+    "name": "Clover",
+    "file": "CloverIcon.jinja"
+  },
+  {
+    "name": "ConciergeBell",
+    "file": "ConciergeBellIcon.jinja"
+  },
+  {
+    "name": "LogOut",
+    "file": "LogOutIcon.jinja"
+  },
+  {
+    "name": "UnfoldHorizontal",
+    "file": "UnfoldHorizontalIcon.jinja"
+  },
+  {
+    "name": "FileSpreadsheet",
+    "file": "FileSpreadsheetIcon.jinja"
+  },
+  {
+    "name": "SquareRadical",
+    "file": "SquareRadicalIcon.jinja"
+  },
+  {
+    "name": "CirclePlay",
+    "file": "CirclePlayIcon.jinja"
+  },
+  {
+    "name": "SquareArrowUp",
+    "file": "SquareArrowUpIcon.jinja"
+  },
+  {
+    "name": "FileCode2",
+    "file": "FileCode2Icon.jinja"
+  },
+  {
+    "name": "Telescope",
+    "file": "TelescopeIcon.jinja"
+  },
+  {
+    "name": "Ship",
+    "file": "ShipIcon.jinja"
+  },
+  {
+    "name": "EarOff",
+    "file": "EarOffIcon.jinja"
+  },
+  {
+    "name": "Worm",
+    "file": "WormIcon.jinja"
+  },
+  {
+    "name": "Wallpaper",
+    "file": "WallpaperIcon.jinja"
+  },
+  {
+    "name": "Ambulance",
+    "file": "AmbulanceIcon.jinja"
+  },
+  {
+    "name": "Space",
+    "file": "SpaceIcon.jinja"
+  },
+  {
+    "name": "FileInput",
+    "file": "FileInputIcon.jinja"
+  },
+  {
+    "name": "BookDashed",
+    "file": "BookDashedIcon.jinja"
+  },
+  {
+    "name": "StretchVertical",
+    "file": "StretchVerticalIcon.jinja"
+  },
+  {
+    "name": "CalendarCheck",
+    "file": "CalendarCheckIcon.jinja"
+  },
+  {
+    "name": "Diff",
+    "file": "DiffIcon.jinja"
+  },
+  {
+    "name": "ShowerHead",
+    "file": "ShowerHeadIcon.jinja"
+  },
+  {
+    "name": "SquarePen",
+    "file": "SquarePenIcon.jinja"
+  },
+  {
+    "name": "ArrowDownUp",
+    "file": "ArrowDownUpIcon.jinja"
+  },
+  {
+    "name": "GitPullRequest",
+    "file": "GitPullRequestIcon.jinja"
+  },
+  {
+    "name": "Minimize",
+    "file": "MinimizeIcon.jinja"
+  },
+  {
+    "name": "Group",
+    "file": "GroupIcon.jinja"
+  },
+  {
+    "name": "Settings",
+    "file": "SettingsIcon.jinja"
+  },
+  {
+    "name": "CloudSnow",
+    "file": "CloudSnowIcon.jinja"
+  },
+  {
+    "name": "NotepadTextDashed",
+    "file": "NotepadTextDashedIcon.jinja"
+  },
+  {
+    "name": "CalendarX2",
+    "file": "CalendarX2Icon.jinja"
+  },
+  {
+    "name": "CassetteTape",
+    "file": "CassetteTapeIcon.jinja"
+  },
+  {
+    "name": "ThumbsDown",
+    "file": "ThumbsDownIcon.jinja"
+  },
+  {
+    "name": "Dice1",
+    "file": "Dice1Icon.jinja"
+  },
+  {
+    "name": "MoveDownLeft",
+    "file": "MoveDownLeftIcon.jinja"
+  },
+  {
+    "name": "Vote",
+    "file": "VoteIcon.jinja"
+  },
+  {
+    "name": "BotOff",
+    "file": "BotOffIcon.jinja"
+  },
+  {
+    "name": "Type",
+    "file": "TypeIcon.jinja"
+  },
+  {
+    "name": "SquareDashedMousePointer",
+    "file": "SquareDashedMousePointerIcon.jinja"
+  },
+  {
+    "name": "SquareMenu",
+    "file": "SquareMenuIcon.jinja"
+  },
+  {
+    "name": "MousePointerClick",
+    "file": "MousePointerClickIcon.jinja"
+  },
+  {
+    "name": "Regex",
+    "file": "RegexIcon.jinja"
+  },
+  {
+    "name": "SquareCheckBig",
+    "file": "SquareCheckBigIcon.jinja"
+  },
+  {
+    "name": "LoaderCircle",
+    "file": "LoaderCircleIcon.jinja"
+  },
+  {
+    "name": "Popsicle",
+    "file": "PopsicleIcon.jinja"
+  },
+  {
+    "name": "LampFloor",
+    "file": "LampFloorIcon.jinja"
+  },
+  {
+    "name": "Utensils",
+    "file": "UtensilsIcon.jinja"
+  },
+  {
+    "name": "MapPinMinus",
+    "file": "MapPinMinusIcon.jinja"
+  },
+  {
+    "name": "Archive",
+    "file": "ArchiveIcon.jinja"
+  },
+  {
+    "name": "Bean",
+    "file": "BeanIcon.jinja"
+  },
+  {
+    "name": "PanelsRightBottom",
+    "file": "PanelsRightBottomIcon.jinja"
+  },
+  {
+    "name": "MessageSquareText",
+    "file": "MessageSquareTextIcon.jinja"
+  },
+  {
+    "name": "RefreshCwOff",
+    "file": "RefreshCwOffIcon.jinja"
+  },
+  {
+    "name": "PhoneOutgoing",
+    "file": "PhoneOutgoingIcon.jinja"
+  },
+  {
+    "name": "Tally1",
+    "file": "Tally1Icon.jinja"
+  },
+  {
+    "name": "ArrowUpFromDot",
+    "file": "ArrowUpFromDotIcon.jinja"
+  },
+  {
+    "name": "Candy",
+    "file": "CandyIcon.jinja"
+  },
+  {
+    "name": "Pocket",
+    "file": "PocketIcon.jinja"
+  },
+  {
+    "name": "Repeat1",
+    "file": "Repeat1Icon.jinja"
+  },
+  {
+    "name": "Magnet",
+    "file": "MagnetIcon.jinja"
+  },
+  {
+    "name": "CircleParking",
+    "file": "CircleParkingIcon.jinja"
+  },
+  {
+    "name": "Mail",
+    "file": "MailIcon.jinja"
+  },
+  {
+    "name": "School",
+    "file": "SchoolIcon.jinja"
+  },
+  {
+    "name": "ChartSpline",
+    "file": "ChartSplineIcon.jinja"
+  },
+  {
+    "name": "ArrowBigRight",
+    "file": "ArrowBigRightIcon.jinja"
+  },
+  {
+    "name": "Shield",
+    "file": "ShieldIcon.jinja"
+  },
+  {
+    "name": "Download",
+    "file": "DownloadIcon.jinja"
+  },
+  {
+    "name": "Kanban",
+    "file": "KanbanIcon.jinja"
+  },
+  {
+    "name": "FileVolume",
+    "file": "FileVolumeIcon.jinja"
+  },
+  {
+    "name": "Expand",
+    "file": "ExpandIcon.jinja"
+  },
+  {
+    "name": "GalleryVerticalEnd",
+    "file": "GalleryVerticalEndIcon.jinja"
+  },
+  {
+    "name": "FileWarning",
+    "file": "FileWarningIcon.jinja"
+  },
+  {
+    "name": "DiscAlbum",
+    "file": "DiscAlbumIcon.jinja"
+  },
+  {
+    "name": "Pin",
+    "file": "PinIcon.jinja"
+  },
+  {
+    "name": "ArrowUpAZ",
+    "file": "ArrowUpAZIcon.jinja"
+  },
+  {
+    "name": "Bandage",
+    "file": "BandageIcon.jinja"
+  },
+  {
+    "name": "SquareCheck",
+    "file": "SquareCheckIcon.jinja"
+  },
+  {
+    "name": "Import",
+    "file": "ImportIcon.jinja"
+  },
+  {
+    "name": "Webcam",
+    "file": "WebcamIcon.jinja"
+  },
+  {
+    "name": "PhoneForwarded",
+    "file": "PhoneForwardedIcon.jinja"
+  },
+  {
+    "name": "BellPlus",
+    "file": "BellPlusIcon.jinja"
+  },
+  {
+    "name": "SquareDot",
+    "file": "SquareDotIcon.jinja"
+  },
+  {
+    "name": "CornerRightDown",
+    "file": "CornerRightDownIcon.jinja"
+  },
+  {
+    "name": "SquareDivide",
+    "file": "SquareDivideIcon.jinja"
+  },
+  {
+    "name": "BookOpen",
+    "file": "BookOpenIcon.jinja"
+  },
+  {
+    "name": "Forklift",
+    "file": "ForkliftIcon.jinja"
+  },
+  {
+    "name": "CalendarCog",
+    "file": "CalendarCogIcon.jinja"
+  },
+  {
+    "name": "Castle",
+    "file": "CastleIcon.jinja"
+  },
+  {
+    "name": "Orbit",
+    "file": "OrbitIcon.jinja"
+  },
+  {
+    "name": "Parentheses",
+    "file": "ParenthesesIcon.jinja"
+  },
+  {
+    "name": "Projector",
+    "file": "ProjectorIcon.jinja"
+  },
+  {
+    "name": "PilcrowRight",
+    "file": "PilcrowRightIcon.jinja"
+  },
+  {
+    "name": "Server",
+    "file": "ServerIcon.jinja"
+  },
+  {
+    "name": "UserRoundCheck",
+    "file": "UserRoundCheckIcon.jinja"
+  },
+  {
+    "name": "Bolt",
+    "file": "BoltIcon.jinja"
+  },
+  {
+    "name": "Tv",
+    "file": "TvIcon.jinja"
+  },
+  {
+    "name": "MessageSquareDashed",
+    "file": "MessageSquareDashedIcon.jinja"
+  },
+  {
+    "name": "Droplets",
+    "file": "DropletsIcon.jinja"
+  },
+  {
+    "name": "SkipForward",
+    "file": "SkipForwardIcon.jinja"
+  },
+  {
+    "name": "ArchiveRestore",
+    "file": "ArchiveRestoreIcon.jinja"
+  },
+  {
+    "name": "Volume",
+    "file": "VolumeIcon.jinja"
+  },
+  {
+    "name": "LampWallUp",
+    "file": "LampWallUpIcon.jinja"
+  },
+  {
+    "name": "Drumstick",
+    "file": "DrumstickIcon.jinja"
+  },
+  {
+    "name": "UserPlus",
+    "file": "UserPlusIcon.jinja"
+  },
+  {
+    "name": "WifiZero",
+    "file": "WifiZeroIcon.jinja"
+  },
+  {
+    "name": "BatteryMedium",
+    "file": "BatteryMediumIcon.jinja"
+  },
+  {
+    "name": "BookA",
+    "file": "BookAIcon.jinja"
+  },
+  {
+    "name": "BatteryCharging",
+    "file": "BatteryChargingIcon.jinja"
+  },
+  {
+    "name": "Shapes",
+    "file": "ShapesIcon.jinja"
+  },
+  {
+    "name": "Folders",
+    "file": "FoldersIcon.jinja"
+  },
+  {
+    "name": "Satellite",
+    "file": "SatelliteIcon.jinja"
+  },
+  {
+    "name": "ListMinus",
+    "file": "ListMinusIcon.jinja"
+  },
+  {
+    "name": "CircleArrowLeft",
+    "file": "CircleArrowLeftIcon.jinja"
+  },
+  {
+    "name": "BookmarkMinus",
+    "file": "BookmarkMinusIcon.jinja"
+  },
+  {
+    "name": "Heater",
+    "file": "HeaterIcon.jinja"
+  },
+  {
+    "name": "Layers",
+    "file": "LayersIcon.jinja"
+  },
+  {
+    "name": "EarthLock",
+    "file": "EarthLockIcon.jinja"
+  },
+  {
+    "name": "SquareParkingOff",
+    "file": "SquareParkingOffIcon.jinja"
+  },
+  {
+    "name": "Dna",
+    "file": "DnaIcon.jinja"
+  },
+  {
+    "name": "MouseOff",
+    "file": "MouseOffIcon.jinja"
+  },
+  {
+    "name": "FileCheck2",
+    "file": "FileCheck2Icon.jinja"
+  },
+  {
+    "name": "Slash",
+    "file": "SlashIcon.jinja"
+  },
+  {
+    "name": "Radio",
+    "file": "RadioIcon.jinja"
+  },
+  {
+    "name": "AlignCenterVertical",
+    "file": "AlignCenterVerticalIcon.jinja"
+  },
+  {
+    "name": "AlarmClock",
+    "file": "AlarmClockIcon.jinja"
+  },
+  {
+    "name": "AlarmClockOff",
+    "file": "AlarmClockOffIcon.jinja"
+  },
+  {
+    "name": "Book",
+    "file": "BookIcon.jinja"
+  },
+  {
+    "name": "KeyboardMusic",
+    "file": "KeyboardMusicIcon.jinja"
+  },
+  {
+    "name": "Hotel",
+    "file": "HotelIcon.jinja"
+  },
+  {
+    "name": "BookText",
+    "file": "BookTextIcon.jinja"
+  },
+  {
+    "name": "Variable",
+    "file": "VariableIcon.jinja"
+  },
+  {
+    "name": "TouchpadOff",
+    "file": "TouchpadOffIcon.jinja"
+  },
+  {
+    "name": "Bitcoin",
+    "file": "BitcoinIcon.jinja"
+  },
+  {
+    "name": "MessageSquareX",
+    "file": "MessageSquareXIcon.jinja"
+  },
+  {
+    "name": "CarFront",
+    "file": "CarFrontIcon.jinja"
+  },
+  {
+    "name": "AlarmSmoke",
+    "file": "AlarmSmokeIcon.jinja"
+  },
+  {
+    "name": "Dice4",
+    "file": "Dice4Icon.jinja"
+  },
+  {
+    "name": "Skull",
+    "file": "SkullIcon.jinja"
+  },
+  {
+    "name": "MailMinus",
+    "file": "MailMinusIcon.jinja"
+  },
+  {
+    "name": "Bot",
+    "file": "BotIcon.jinja"
+  },
+  {
+    "name": "Plug",
+    "file": "PlugIcon.jinja"
+  },
+  {
+    "name": "ShieldX",
+    "file": "ShieldXIcon.jinja"
+  },
+  {
+    "name": "TrainTrack",
+    "file": "TrainTrackIcon.jinja"
+  },
+  {
+    "name": "Goal",
+    "file": "GoalIcon.jinja"
+  },
+  {
+    "name": "SquareChartGantt",
+    "file": "SquareChartGanttIcon.jinja"
+  },
+  {
+    "name": "FileChartColumn",
+    "file": "FileChartColumnIcon.jinja"
+  },
+  {
+    "name": "FolderArchive",
+    "file": "FolderArchiveIcon.jinja"
+  },
+  {
+    "name": "SignalHigh",
+    "file": "SignalHighIcon.jinja"
+  },
+  {
+    "name": "UserMinus",
+    "file": "UserMinusIcon.jinja"
+  },
+  {
+    "name": "PlaneLanding",
+    "file": "PlaneLandingIcon.jinja"
+  },
+  {
+    "name": "Wallet",
+    "file": "WalletIcon.jinja"
+  },
+  {
+    "name": "CircleCheck",
+    "file": "CircleCheckIcon.jinja"
+  },
+  {
+    "name": "Tally4",
+    "file": "Tally4Icon.jinja"
+  },
+  {
+    "name": "FileImage",
+    "file": "FileImageIcon.jinja"
+  },
+  {
+    "name": "SquareDashedBottom",
+    "file": "SquareDashedBottomIcon.jinja"
+  },
+  {
+    "name": "PanelTopOpen",
+    "file": "PanelTopOpenIcon.jinja"
+  },
+  {
+    "name": "Bell",
+    "file": "BellIcon.jinja"
+  },
+  {
+    "name": "GitBranch",
+    "file": "GitBranchIcon.jinja"
+  },
+  {
+    "name": "SquareM",
+    "file": "SquareMIcon.jinja"
+  },
+  {
+    "name": "Coffee",
+    "file": "CoffeeIcon.jinja"
+  },
+  {
+    "name": "PanelLeftDashed",
+    "file": "PanelLeftDashedIcon.jinja"
+  },
+  {
+    "name": "Code",
+    "file": "CodeIcon.jinja"
+  },
+  {
+    "name": "RailSymbol",
+    "file": "RailSymbolIcon.jinja"
+  },
+  {
+    "name": "CircleDivide",
+    "file": "CircleDivideIcon.jinja"
+  },
+  {
+    "name": "Cake",
+    "file": "CakeIcon.jinja"
+  },
+  {
+    "name": "SpellCheck2",
+    "file": "SpellCheck2Icon.jinja"
+  },
+  {
+    "name": "Settings2",
+    "file": "Settings2Icon.jinja"
+  },
+  {
+    "name": "Tally5",
+    "file": "Tally5Icon.jinja"
+  },
+  {
+    "name": "ChartBarDecreasing",
+    "file": "ChartBarDecreasingIcon.jinja"
+  },
+  {
+    "name": "MessageCircleDashed",
+    "file": "MessageCircleDashedIcon.jinja"
+  },
+  {
+    "name": "CloudMoonRain",
+    "file": "CloudMoonRainIcon.jinja"
+  },
+  {
+    "name": "RadioTower",
+    "file": "RadioTowerIcon.jinja"
+  },
+  {
+    "name": "Thermometer",
+    "file": "ThermometerIcon.jinja"
+  },
+  {
+    "name": "Cast",
+    "file": "CastIcon.jinja"
+  },
+  {
+    "name": "Milestone",
+    "file": "MilestoneIcon.jinja"
+  },
+  {
+    "name": "Move3d",
+    "file": "Move3dIcon.jinja"
+  },
+  {
+    "name": "Flag",
+    "file": "FlagIcon.jinja"
+  },
+  {
+    "name": "Podcast",
+    "file": "PodcastIcon.jinja"
+  },
+  {
+    "name": "TvMinimalPlay",
+    "file": "TvMinimalPlayIcon.jinja"
+  },
+  {
+    "name": "GitFork",
+    "file": "GitForkIcon.jinja"
+  },
+  {
+    "name": "EyeOff",
+    "file": "EyeOffIcon.jinja"
+  },
+  {
+    "name": "Dice5",
+    "file": "Dice5Icon.jinja"
+  },
+  {
+    "name": "TramFront",
+    "file": "TramFrontIcon.jinja"
+  },
+  {
+    "name": "Battery",
+    "file": "BatteryIcon.jinja"
+  },
+  {
+    "name": "Blinds",
+    "file": "BlindsIcon.jinja"
+  },
+  {
+    "name": "ArrowLeftToLine",
+    "file": "ArrowLeftToLineIcon.jinja"
+  },
+  {
+    "name": "Newspaper",
+    "file": "NewspaperIcon.jinja"
+  },
+  {
+    "name": "ClipboardPenLine",
+    "file": "ClipboardPenLineIcon.jinja"
+  },
+  {
+    "name": "Snowflake",
+    "file": "SnowflakeIcon.jinja"
+  },
+  {
+    "name": "Disc",
+    "file": "DiscIcon.jinja"
+  },
+  {
+    "name": "StepForward",
+    "file": "StepForwardIcon.jinja"
+  },
+  {
+    "name": "Bomb",
+    "file": "BombIcon.jinja"
+  },
+  {
+    "name": "Piano",
+    "file": "PianoIcon.jinja"
+  },
+  {
+    "name": "BookCopy",
+    "file": "BookCopyIcon.jinja"
+  },
+  {
+    "name": "MapPinPlus",
+    "file": "MapPinPlusIcon.jinja"
+  },
+  {
+    "name": "ArrowUp01",
+    "file": "ArrowUp01Icon.jinja"
+  },
+  {
+    "name": "DatabaseZap",
+    "file": "DatabaseZapIcon.jinja"
+  },
+  {
+    "name": "Rotate3d",
+    "file": "Rotate3dIcon.jinja"
+  },
+  {
+    "name": "StarHalf",
+    "file": "StarHalfIcon.jinja"
+  },
+  {
+    "name": "SwitchCamera",
+    "file": "SwitchCameraIcon.jinja"
+  },
+  {
+    "name": "ImagePlus",
+    "file": "ImagePlusIcon.jinja"
+  },
+  {
+    "name": "PencilRuler",
+    "file": "PencilRulerIcon.jinja"
+  },
+  {
+    "name": "Container",
+    "file": "ContainerIcon.jinja"
+  },
+  {
+    "name": "Ruler",
+    "file": "RulerIcon.jinja"
+  },
+  {
+    "name": "Turtle",
+    "file": "TurtleIcon.jinja"
+  },
+  {
+    "name": "Frown",
+    "file": "FrownIcon.jinja"
+  },
+  {
+    "name": "TreePine",
+    "file": "TreePineIcon.jinja"
+  },
+  {
+    "name": "AudioLines",
+    "file": "AudioLinesIcon.jinja"
+  },
+  {
+    "name": "CircleSlash",
+    "file": "CircleSlashIcon.jinja"
+  },
+  {
+    "name": "NotebookText",
+    "file": "NotebookTextIcon.jinja"
+  },
+  {
+    "name": "LayoutDashboard",
+    "file": "LayoutDashboardIcon.jinja"
+  },
+  {
+    "name": "Cpu",
+    "file": "CpuIcon.jinja"
+  },
+  {
+    "name": "AlignEndHorizontal",
+    "file": "AlignEndHorizontalIcon.jinja"
+  },
+  {
+    "name": "FlameKindling",
+    "file": "FlameKindlingIcon.jinja"
+  },
+  {
+    "name": "ClipboardList",
+    "file": "ClipboardListIcon.jinja"
+  },
+  {
+    "name": "Biohazard",
+    "file": "BiohazardIcon.jinja"
+  },
+  {
+    "name": "LetterText",
+    "file": "LetterTextIcon.jinja"
+  },
+  {
+    "name": "FolderX",
+    "file": "FolderXIcon.jinja"
+  },
+  {
+    "name": "BookOpenCheck",
+    "file": "BookOpenCheckIcon.jinja"
+  },
+  {
+    "name": "ListOrdered",
+    "file": "ListOrderedIcon.jinja"
+  },
+  {
+    "name": "Factory",
+    "file": "FactoryIcon.jinja"
+  },
+  {
+    "name": "Bold",
+    "file": "BoldIcon.jinja"
+  },
+  {
+    "name": "Tablets",
+    "file": "TabletsIcon.jinja"
+  },
+  {
+    "name": "WifiLow",
+    "file": "WifiLowIcon.jinja"
+  },
+  {
+    "name": "Fence",
+    "file": "FenceIcon.jinja"
+  },
+  {
+    "name": "Trophy",
+    "file": "TrophyIcon.jinja"
+  },
+  {
+    "name": "ScanQrCode",
+    "file": "ScanQrCodeIcon.jinja"
+  },
+  {
+    "name": "Hash",
+    "file": "HashIcon.jinja"
+  },
+  {
+    "name": "ShieldMinus",
+    "file": "ShieldMinusIcon.jinja"
+  },
+  {
+    "name": "Link2Off",
+    "file": "Link2OffIcon.jinja"
+  },
+  {
+    "name": "Dam",
+    "file": "DamIcon.jinja"
+  },
+  {
+    "name": "Share2",
+    "file": "Share2Icon.jinja"
+  },
+  {
+    "name": "BatteryFull",
+    "file": "BatteryFullIcon.jinja"
+  },
+  {
+    "name": "Plus",
+    "file": "PlusIcon.jinja"
+  },
+  {
+    "name": "MonitorStop",
+    "file": "MonitorStopIcon.jinja"
+  },
+  {
+    "name": "PanelBottom",
+    "file": "PanelBottomIcon.jinja"
+  },
+  {
+    "name": "ClipboardMinus",
+    "file": "ClipboardMinusIcon.jinja"
+  },
+  {
+    "name": "Check",
+    "file": "CheckIcon.jinja"
+  },
+  {
+    "name": "AlignVerticalJustifyEnd",
+    "file": "AlignVerticalJustifyEndIcon.jinja"
+  },
+  {
+    "name": "Rabbit",
+    "file": "RabbitIcon.jinja"
+  },
+  {
+    "name": "PlugZap",
+    "file": "PlugZapIcon.jinja"
+  },
+  {
+    "name": "Nut",
+    "file": "NutIcon.jinja"
+  },
+  {
+    "name": "MailPlus",
+    "file": "MailPlusIcon.jinja"
+  },
+  {
+    "name": "MoveDownRight",
+    "file": "MoveDownRightIcon.jinja"
+  },
+  {
+    "name": "RotateCcw",
+    "file": "RotateCcwIcon.jinja"
+  },
+  {
+    "name": "HeartCrack",
+    "file": "HeartCrackIcon.jinja"
+  },
+  {
+    "name": "FlipHorizontal2",
+    "file": "FlipHorizontal2Icon.jinja"
+  },
+  {
+    "name": "HardDrive",
+    "file": "HardDriveIcon.jinja"
+  },
+  {
+    "name": "BetweenHorizontalEnd",
+    "file": "BetweenHorizontalEndIcon.jinja"
+  },
+  {
+    "name": "Tent",
+    "file": "TentIcon.jinja"
+  },
+  {
+    "name": "TrendingUpDown",
+    "file": "TrendingUpDownIcon.jinja"
+  },
+  {
+    "name": "HardDriveDownload",
+    "file": "HardDriveDownloadIcon.jinja"
+  },
+  {
+    "name": "CircleFadingPlus",
+    "file": "CircleFadingPlusIcon.jinja"
+  },
+  {
+    "name": "PenLine",
+    "file": "PenLineIcon.jinja"
+  },
+  {
+    "name": "AlignVerticalSpaceAround",
+    "file": "AlignVerticalSpaceAroundIcon.jinja"
+  },
+  {
+    "name": "Hospital",
+    "file": "HospitalIcon.jinja"
+  },
+  {
+    "name": "CaseSensitive",
+    "file": "CaseSensitiveIcon.jinja"
+  },
+  {
+    "name": "Focus",
+    "file": "FocusIcon.jinja"
+  },
+  {
+    "name": "Bluetooth",
+    "file": "BluetoothIcon.jinja"
+  },
+  {
+    "name": "AlignEndVertical",
+    "file": "AlignEndVerticalIcon.jinja"
+  },
+  {
+    "name": "SquareSplitVertical",
+    "file": "SquareSplitVerticalIcon.jinja"
+  },
+  {
+    "name": "Headphones",
+    "file": "HeadphonesIcon.jinja"
+  },
+  {
+    "name": "MapPinX",
+    "file": "MapPinXIcon.jinja"
+  },
+  {
+    "name": "TableProperties",
+    "file": "TablePropertiesIcon.jinja"
+  },
+  {
+    "name": "GitPullRequestCreateArrow",
+    "file": "GitPullRequestCreateArrowIcon.jinja"
+  },
+  {
+    "name": "FolderGit2",
+    "file": "FolderGit2Icon.jinja"
+  },
+  {
+    "name": "SquareX",
+    "file": "SquareXIcon.jinja"
+  },
+  {
+    "name": "SquareAsterisk",
+    "file": "SquareAsteriskIcon.jinja"
+  },
+  {
+    "name": "Rss",
+    "file": "RssIcon.jinja"
+  },
+  {
+    "name": "TableCellsSplit",
+    "file": "TableCellsSplitIcon.jinja"
+  },
+  {
+    "name": "Flower2",
+    "file": "Flower2Icon.jinja"
+  },
+  {
+    "name": "Landmark",
+    "file": "LandmarkIcon.jinja"
+  },
+  {
+    "name": "Wifi",
+    "file": "WifiIcon.jinja"
+  },
+  {
+    "name": "CornerUpLeft",
+    "file": "CornerUpLeftIcon.jinja"
+  },
+  {
+    "name": "FileArchive",
+    "file": "FileArchiveIcon.jinja"
+  },
+  {
+    "name": "SquareArrowUpLeft",
+    "file": "SquareArrowUpLeftIcon.jinja"
+  },
+  {
+    "name": "ArrowDownFromLine",
+    "file": "ArrowDownFromLineIcon.jinja"
+  },
+  {
+    "name": "Watch",
+    "file": "WatchIcon.jinja"
+  },
+  {
+    "name": "SquareArrowDownRight",
+    "file": "SquareArrowDownRightIcon.jinja"
+  },
+  {
+    "name": "Scale",
+    "file": "ScaleIcon.jinja"
+  },
+  {
+    "name": "Dice6",
+    "file": "Dice6Icon.jinja"
+  },
+  {
+    "name": "MessageSquareMore",
+    "file": "MessageSquareMoreIcon.jinja"
+  },
+  {
+    "name": "Ampersand",
+    "file": "AmpersandIcon.jinja"
+  },
+  {
+    "name": "DnaOff",
+    "file": "DnaOffIcon.jinja"
+  },
+  {
+    "name": "SquareArrowOutUpRight",
+    "file": "SquareArrowOutUpRightIcon.jinja"
+  },
+  {
+    "name": "HandCoins",
+    "file": "HandCoinsIcon.jinja"
+  },
+  {
+    "name": "RollerCoaster",
+    "file": "RollerCoasterIcon.jinja"
+  },
+  {
+    "name": "MonitorSmartphone",
+    "file": "MonitorSmartphoneIcon.jinja"
+  },
+  {
+    "name": "GitCommitVertical",
+    "file": "GitCommitVerticalIcon.jinja"
+  },
+  {
+    "name": "Info",
+    "file": "InfoIcon.jinja"
+  },
+  {
+    "name": "Blocks",
+    "file": "BlocksIcon.jinja"
+  },
+  {
+    "name": "Popcorn",
+    "file": "PopcornIcon.jinja"
+  },
+  {
+    "name": "FileBadge",
+    "file": "FileBadgeIcon.jinja"
+  },
+  {
+    "name": "BadgeDollarSign",
+    "file": "BadgeDollarSignIcon.jinja"
+  },
+  {
+    "name": "UserX",
+    "file": "UserXIcon.jinja"
+  },
+  {
+    "name": "NavigationOff",
+    "file": "NavigationOffIcon.jinja"
+  },
+  {
+    "name": "KeySquare",
+    "file": "KeySquareIcon.jinja"
+  },
+  {
+    "name": "TicketMinus",
+    "file": "TicketMinusIcon.jinja"
+  },
+  {
+    "name": "Dog",
+    "file": "DogIcon.jinja"
+  },
+  {
+    "name": "LayoutPanelLeft",
+    "file": "LayoutPanelLeftIcon.jinja"
+  },
+  {
+    "name": "Fan",
+    "file": "FanIcon.jinja"
+  },
+  {
+    "name": "RadioReceiver",
+    "file": "RadioReceiverIcon.jinja"
+  },
+  {
+    "name": "Loader",
+    "file": "LoaderIcon.jinja"
+  },
+  {
+    "name": "Palette",
+    "file": "PaletteIcon.jinja"
+  },
+  {
+    "name": "PilcrowLeft",
+    "file": "PilcrowLeftIcon.jinja"
+  },
+  {
+    "name": "DiamondPlus",
+    "file": "DiamondPlusIcon.jinja"
+  },
+  {
+    "name": "CircleArrowOutDownLeft",
+    "file": "CircleArrowOutDownLeftIcon.jinja"
+  },
+  {
+    "name": "ReceiptSwissFranc",
+    "file": "ReceiptSwissFrancIcon.jinja"
+  },
+  {
+    "name": "Package2",
+    "file": "Package2Icon.jinja"
+  },
+  {
+    "name": "ChartNoAxesCombined",
+    "file": "ChartNoAxesCombinedIcon.jinja"
+  },
+  {
+    "name": "CaseUpper",
+    "file": "CaseUpperIcon.jinja"
+  },
+  {
+    "name": "RefreshCcw",
+    "file": "RefreshCcwIcon.jinja"
+  },
+  {
+    "name": "CloudFog",
+    "file": "CloudFogIcon.jinja"
+  },
+  {
+    "name": "GitBranchPlus",
+    "file": "GitBranchPlusIcon.jinja"
+  },
+  {
+    "name": "FileX",
+    "file": "FileXIcon.jinja"
+  },
+  {
+    "name": "Heading1",
+    "file": "Heading1Icon.jinja"
+  },
+  {
+    "name": "Hop",
+    "file": "HopIcon.jinja"
+  },
+  {
+    "name": "FolderUp",
+    "file": "FolderUpIcon.jinja"
+  },
+  {
+    "name": "Soup",
+    "file": "SoupIcon.jinja"
+  },
+  {
+    "name": "FolderPlus",
+    "file": "FolderPlusIcon.jinja"
+  },
+  {
+    "name": "BadgeRussianRuble",
+    "file": "BadgeRussianRubleIcon.jinja"
+  },
+  {
+    "name": "GitMerge",
+    "file": "GitMergeIcon.jinja"
+  },
+  {
+    "name": "JapaneseYen",
+    "file": "JapaneseYenIcon.jinja"
+  },
+  {
+    "name": "GripHorizontal",
+    "file": "GripHorizontalIcon.jinja"
+  },
+  {
+    "name": "ListX",
+    "file": "ListXIcon.jinja"
+  },
+  {
+    "name": "ShieldHalf",
+    "file": "ShieldHalfIcon.jinja"
+  },
+  {
+    "name": "Mic",
+    "file": "MicIcon.jinja"
+  },
+  {
+    "name": "VenetianMask",
+    "file": "VenetianMaskIcon.jinja"
+  },
+  {
+    "name": "Rainbow",
+    "file": "RainbowIcon.jinja"
+  },
+  {
+    "name": "GitPullRequestArrow",
+    "file": "GitPullRequestArrowIcon.jinja"
+  },
+  {
+    "name": "Copy",
+    "file": "CopyIcon.jinja"
+  },
+  {
+    "name": "SmilePlus",
+    "file": "SmilePlusIcon.jinja"
+  },
+  {
+    "name": "Fish",
+    "file": "FishIcon.jinja"
+  },
+  {
+    "name": "MoveUpLeft",
+    "file": "MoveUpLeftIcon.jinja"
+  },
+  {
+    "name": "ListTree",
+    "file": "ListTreeIcon.jinja"
+  },
+  {
+    "name": "ZoomIn",
+    "file": "ZoomInIcon.jinja"
+  },
+  {
+    "name": "CircleChevronUp",
+    "file": "CircleChevronUpIcon.jinja"
+  },
+  {
+    "name": "CircleArrowOutDownRight",
+    "file": "CircleArrowOutDownRightIcon.jinja"
+  },
+  {
+    "name": "SearchCheck",
+    "file": "SearchCheckIcon.jinja"
+  },
+  {
+    "name": "Signature",
+    "file": "SignatureIcon.jinja"
+  },
+  {
+    "name": "ArrowDownToLine",
+    "file": "ArrowDownToLineIcon.jinja"
+  },
+  {
+    "name": "Glasses",
+    "file": "GlassesIcon.jinja"
+  },
+  {
+    "name": "Coins",
+    "file": "CoinsIcon.jinja"
+  },
+  {
+    "name": "AlignStartVertical",
+    "file": "AlignStartVerticalIcon.jinja"
+  },
+  {
+    "name": "ArrowsUpFromLine",
+    "file": "ArrowsUpFromLineIcon.jinja"
+  },
+  {
+    "name": "Snail",
+    "file": "SnailIcon.jinja"
+  },
+  {
+    "name": "LibraryBig",
+    "file": "LibraryBigIcon.jinja"
+  },
+  {
+    "name": "BookmarkX",
+    "file": "BookmarkXIcon.jinja"
+  },
+  {
+    "name": "BookKey",
+    "file": "BookKeyIcon.jinja"
+  },
+  {
+    "name": "PanelLeft",
+    "file": "PanelLeftIcon.jinja"
+  },
+  {
+    "name": "TestTubeDiagonal",
+    "file": "TestTubeDiagonalIcon.jinja"
+  },
+  {
+    "name": "Origami",
+    "file": "OrigamiIcon.jinja"
+  },
+  {
+    "name": "SquareLibrary",
+    "file": "SquareLibraryIcon.jinja"
+  },
+  {
+    "name": "MessageCircleOff",
+    "file": "MessageCircleOffIcon.jinja"
+  },
+  {
+    "name": "SquareUserRound",
+    "file": "SquareUserRoundIcon.jinja"
+  },
+  {
+    "name": "WandSparkles",
+    "file": "WandSparklesIcon.jinja"
+  },
+  {
+    "name": "FileType2",
+    "file": "FileType2Icon.jinja"
+  },
+  {
+    "name": "TextQuote",
+    "file": "TextQuoteIcon.jinja"
+  },
+  {
+    "name": "Caravan",
+    "file": "CaravanIcon.jinja"
+  },
+  {
+    "name": "BadgeCent",
+    "file": "BadgeCentIcon.jinja"
+  },
+  {
+    "name": "PanelTopDashed",
+    "file": "PanelTopDashedIcon.jinja"
+  },
+  {
+    "name": "NotebookTabs",
+    "file": "NotebookTabsIcon.jinja"
+  },
+  {
+    "name": "Text",
+    "file": "TextIcon.jinja"
+  },
+  {
+    "name": "TestTubes",
+    "file": "TestTubesIcon.jinja"
+  },
+  {
+    "name": "FireExtinguisher",
+    "file": "FireExtinguisherIcon.jinja"
+  },
+  {
+    "name": "EggFried",
+    "file": "EggFriedIcon.jinja"
+  },
+  {
+    "name": "FlagTriangleLeft",
+    "file": "FlagTriangleLeftIcon.jinja"
+  },
+  {
+    "name": "AlignRight",
+    "file": "AlignRightIcon.jinja"
+  },
+  {
+    "name": "TextCursor",
+    "file": "TextCursorIcon.jinja"
+  },
+  {
+    "name": "Image",
+    "file": "ImageIcon.jinja"
+  },
+  {
+    "name": "PanelBottomOpen",
+    "file": "PanelBottomOpenIcon.jinja"
+  },
+  {
+    "name": "Maximize2",
+    "file": "Maximize2Icon.jinja"
+  },
+  {
+    "name": "Lightbulb",
+    "file": "LightbulbIcon.jinja"
+  },
+  {
+    "name": "ServerOff",
+    "file": "ServerOffIcon.jinja"
+  },
+  {
+    "name": "ArrowBigLeftDash",
+    "file": "ArrowBigLeftDashIcon.jinja"
+  },
+  {
+    "name": "ImagePlay",
+    "file": "ImagePlayIcon.jinja"
+  },
+  {
+    "name": "Sunset",
+    "file": "SunsetIcon.jinja"
+  },
+  {
+    "name": "Save",
+    "file": "SaveIcon.jinja"
+  },
+  {
+    "name": "Smile",
+    "file": "SmileIcon.jinja"
+  },
+  {
+    "name": "SearchCode",
+    "file": "SearchCodeIcon.jinja"
+  },
+  {
+    "name": "Lamp",
+    "file": "LampIcon.jinja"
+  },
+  {
+    "name": "Siren",
+    "file": "SirenIcon.jinja"
+  },
+  {
+    "name": "Images",
+    "file": "ImagesIcon.jinja"
+  },
+  {
+    "name": "Scan",
+    "file": "ScanIcon.jinja"
+  },
+  {
+    "name": "Navigation",
+    "file": "NavigationIcon.jinja"
+  },
+  {
+    "name": "CloudLightning",
+    "file": "CloudLightningIcon.jinja"
+  },
+  {
+    "name": "UserRoundPen",
+    "file": "UserRoundPenIcon.jinja"
+  },
+  {
+    "name": "Citrus",
+    "file": "CitrusIcon.jinja"
+  },
+  {
+    "name": "MessageSquareDiff",
+    "file": "MessageSquareDiffIcon.jinja"
+  },
+  {
+    "name": "BellElectric",
+    "file": "BellElectricIcon.jinja"
+  },
+  {
+    "name": "Ham",
+    "file": "HamIcon.jinja"
+  },
+  {
+    "name": "SquareSquare",
+    "file": "SquareSquareIcon.jinja"
+  },
+  {
+    "name": "MonitorPlay",
+    "file": "MonitorPlayIcon.jinja"
+  },
+  {
+    "name": "BadgePoundSterling",
+    "file": "BadgePoundSterlingIcon.jinja"
+  },
+  {
+    "name": "HardDriveUpload",
+    "file": "HardDriveUploadIcon.jinja"
+  },
+  {
+    "name": "AppWindow",
+    "file": "AppWindowIcon.jinja"
+  },
+  {
+    "name": "Badge",
+    "file": "BadgeIcon.jinja"
+  },
+  {
+    "name": "Theater",
+    "file": "TheaterIcon.jinja"
+  },
+  {
+    "name": "Paperclip",
+    "file": "PaperclipIcon.jinja"
+  },
+  {
+    "name": "Heading2",
+    "file": "Heading2Icon.jinja"
+  },
+  {
+    "name": "SquareScissors",
+    "file": "SquareScissorsIcon.jinja"
+  },
+  {
+    "name": "FastForward",
+    "file": "FastForwardIcon.jinja"
+  },
+  {
+    "name": "FlagTriangleRight",
+    "file": "FlagTriangleRightIcon.jinja"
+  },
+  {
+    "name": "CalendarRange",
+    "file": "CalendarRangeIcon.jinja"
+  },
+  {
+    "name": "ContactRound",
+    "file": "ContactRoundIcon.jinja"
+  },
+  {
+    "name": "Syringe",
+    "file": "SyringeIcon.jinja"
+  },
+  {
+    "name": "SearchSlash",
+    "file": "SearchSlashIcon.jinja"
+  },
+  {
+    "name": "FileQuestion",
+    "file": "FileQuestionIcon.jinja"
+  },
+  {
+    "name": "Sticker",
+    "file": "StickerIcon.jinja"
+  },
+  {
+    "name": "Award",
+    "file": "AwardIcon.jinja"
+  },
+  {
+    "name": "PanelRightDashed",
+    "file": "PanelRightDashedIcon.jinja"
+  },
+  {
+    "name": "ZoomOut",
+    "file": "ZoomOutIcon.jinja"
+  },
+  {
+    "name": "SquareArrowOutUpLeft",
+    "file": "SquareArrowOutUpLeftIcon.jinja"
+  },
+  {
+    "name": "Box",
+    "file": "BoxIcon.jinja"
+  },
+  {
+    "name": "ThumbsUp",
+    "file": "ThumbsUpIcon.jinja"
+  },
+  {
+    "name": "Superscript",
+    "file": "SuperscriptIcon.jinja"
+  },
+  {
+    "name": "TicketPercent",
+    "file": "TicketPercentIcon.jinja"
+  },
+  {
+    "name": "BatteryLow",
+    "file": "BatteryLowIcon.jinja"
+  },
+  {
+    "name": "Touchpad",
+    "file": "TouchpadIcon.jinja"
+  },
+  {
+    "name": "Speech",
+    "file": "SpeechIcon.jinja"
+  },
+  {
+    "name": "Percent",
+    "file": "PercentIcon.jinja"
+  },
+  {
+    "name": "SquareChevronDown",
+    "file": "SquareChevronDownIcon.jinja"
+  },
+  {
+    "name": "Square",
+    "file": "SquareIcon.jinja"
+  },
+  {
+    "name": "Crown",
+    "file": "CrownIcon.jinja"
+  },
+  {
+    "name": "BluetoothSearching",
+    "file": "BluetoothSearchingIcon.jinja"
+  },
+  {
+    "name": "TimerReset",
+    "file": "TimerResetIcon.jinja"
+  },
+  {
+    "name": "Stethoscope",
+    "file": "StethoscopeIcon.jinja"
+  },
+  {
+    "name": "Eclipse",
+    "file": "EclipseIcon.jinja"
+  },
+  {
+    "name": "Donut",
+    "file": "DonutIcon.jinja"
+  },
+  {
+    "name": "CandyCane",
+    "file": "CandyCaneIcon.jinja"
+  },
+  {
+    "name": "Play",
+    "file": "PlayIcon.jinja"
+  },
+  {
+    "name": "FolderHeart",
+    "file": "FolderHeartIcon.jinja"
+  },
+  {
+    "name": "PenOff",
+    "file": "PenOffIcon.jinja"
+  },
+  {
+    "name": "FileCheck",
+    "file": "FileCheckIcon.jinja"
+  },
+  {
+    "name": "LeafyGreen",
+    "file": "LeafyGreenIcon.jinja"
+  },
+  {
+    "name": "Tangent",
+    "file": "TangentIcon.jinja"
+  },
+  {
+    "name": "BookAudio",
+    "file": "BookAudioIcon.jinja"
+  },
+  {
+    "name": "Table",
+    "file": "TableIcon.jinja"
+  },
+  {
+    "name": "Split",
+    "file": "SplitIcon.jinja"
+  },
+  {
+    "name": "Send",
+    "file": "SendIcon.jinja"
+  },
+  {
+    "name": "Barcode",
+    "file": "BarcodeIcon.jinja"
+  },
+  {
+    "name": "Videotape",
+    "file": "VideotapeIcon.jinja"
+  },
+  {
+    "name": "Scroll",
+    "file": "ScrollIcon.jinja"
+  },
+  {
+    "name": "PhoneCall",
+    "file": "PhoneCallIcon.jinja"
+  },
+  {
+    "name": "Columns4",
+    "file": "Columns4Icon.jinja"
+  },
+  {
+    "name": "BaggageClaim",
+    "file": "BaggageClaimIcon.jinja"
+  },
+  {
+    "name": "MessageSquareLock",
+    "file": "MessageSquareLockIcon.jinja"
+  },
+  {
+    "name": "CircleArrowOutUpRight",
+    "file": "CircleArrowOutUpRightIcon.jinja"
+  },
+  {
+    "name": "Radiation",
+    "file": "RadiationIcon.jinja"
+  },
+  {
+    "name": "Speaker",
+    "file": "SpeakerIcon.jinja"
+  },
+  {
+    "name": "UserRoundSearch",
+    "file": "UserRoundSearchIcon.jinja"
+  },
+  {
+    "name": "UndoDot",
+    "file": "UndoDotIcon.jinja"
+  },
+  {
+    "name": "Facebook",
+    "file": "FacebookIcon.jinja"
+  },
+  {
+    "name": "Codesandbox",
+    "file": "CodesandboxIcon.jinja"
+  },
+  {
+    "name": "FileDown",
+    "file": "FileDownIcon.jinja"
+  },
+  {
+    "name": "BadgeCheck",
+    "file": "BadgeCheckIcon.jinja"
+  },
+  {
+    "name": "Baby",
+    "file": "BabyIcon.jinja"
+  },
+  {
+    "name": "SmartphoneCharging",
+    "file": "SmartphoneChargingIcon.jinja"
+  },
+  {
+    "name": "BookPlus",
+    "file": "BookPlusIcon.jinja"
+  },
+  {
+    "name": "Unplug",
+    "file": "UnplugIcon.jinja"
+  },
+  {
+    "name": "Heading3",
+    "file": "Heading3Icon.jinja"
+  },
+  {
+    "name": "FolderCode",
+    "file": "FolderCodeIcon.jinja"
+  },
+  {
+    "name": "BluetoothConnected",
+    "file": "BluetoothConnectedIcon.jinja"
+  },
+  {
+    "name": "TableOfContents",
+    "file": "TableOfContentsIcon.jinja"
+  },
+  {
+    "name": "Camera",
+    "file": "CameraIcon.jinja"
+  },
+  {
+    "name": "Link2",
+    "file": "Link2Icon.jinja"
+  },
+  {
+    "name": "Printer",
+    "file": "PrinterIcon.jinja"
+  },
+  {
+    "name": "ListCollapse",
+    "file": "ListCollapseIcon.jinja"
+  },
+  {
+    "name": "Workflow",
+    "file": "WorkflowIcon.jinja"
+  },
+  {
+    "name": "Trees",
+    "file": "TreesIcon.jinja"
+  },
+  {
+    "name": "PanelLeftClose",
+    "file": "PanelLeftCloseIcon.jinja"
+  },
+  {
+    "name": "GitGraph",
+    "file": "GitGraphIcon.jinja"
+  },
+  {
+    "name": "Redo",
+    "file": "RedoIcon.jinja"
+  },
+  {
+    "name": "CaptionsOff",
+    "file": "CaptionsOffIcon.jinja"
+  },
+  {
+    "name": "Club",
+    "file": "ClubIcon.jinja"
+  },
+  {
+    "name": "FolderMinus",
+    "file": "FolderMinusIcon.jinja"
+  },
+  {
+    "name": "MoveDiagonal2",
+    "file": "MoveDiagonal2Icon.jinja"
+  },
+  {
+    "name": "Combine",
+    "file": "CombineIcon.jinja"
+  },
+  {
+    "name": "ArrowUpRight",
+    "file": "ArrowUpRightIcon.jinja"
+  },
+  {
+    "name": "Truck",
+    "file": "TruckIcon.jinja"
+  },
+  {
+    "name": "LayoutPanelTop",
+    "file": "LayoutPanelTopIcon.jinja"
+  },
+  {
+    "name": "LifeBuoy",
+    "file": "LifeBuoyIcon.jinja"
+  },
+  {
+    "name": "UserSearch",
+    "file": "UserSearchIcon.jinja"
+  },
+  {
+    "name": "SquareUser",
+    "file": "SquareUserIcon.jinja"
+  },
+  {
+    "name": "TableColumnsSplit",
+    "file": "TableColumnsSplitIcon.jinja"
+  },
+  {
+    "name": "BetweenHorizontalStart",
+    "file": "BetweenHorizontalStartIcon.jinja"
+  },
+  {
+    "name": "Pickaxe",
+    "file": "PickaxeIcon.jinja"
+  },
+  {
+    "name": "MapPinXInside",
+    "file": "MapPinXInsideIcon.jinja"
+  },
+  {
+    "name": "PackageX",
+    "file": "PackageXIcon.jinja"
+  },
+  {
+    "name": "PenTool",
+    "file": "PenToolIcon.jinja"
+  },
+  {
+    "name": "AlarmClockMinus",
+    "file": "AlarmClockMinusIcon.jinja"
+  },
+  {
+    "name": "PanelsLeftBottom",
+    "file": "PanelsLeftBottomIcon.jinja"
+  },
+  {
+    "name": "CircleGauge",
+    "file": "CircleGaugeIcon.jinja"
+  },
+  {
+    "name": "FolderCog",
+    "file": "FolderCogIcon.jinja"
+  },
+  {
+    "name": "AtSign",
+    "file": "AtSignIcon.jinja"
+  },
+  {
+    "name": "RotateCcwSquare",
+    "file": "RotateCcwSquareIcon.jinja"
+  },
+  {
+    "name": "CircleArrowRight",
+    "file": "CircleArrowRightIcon.jinja"
+  },
+  {
+    "name": "ShieldAlert",
+    "file": "ShieldAlertIcon.jinja"
+  },
+  {
+    "name": "MapPinOff",
+    "file": "MapPinOffIcon.jinja"
+  },
+  {
+    "name": "ListRestart",
+    "file": "ListRestartIcon.jinja"
+  },
+  {
+    "name": "HandMetal",
+    "file": "HandMetalIcon.jinja"
+  },
+  {
+    "name": "Egg",
+    "file": "EggIcon.jinja"
+  },
+  {
+    "name": "CarTaxiFront",
+    "file": "CarTaxiFrontIcon.jinja"
+  },
+  {
+    "name": "SquareMousePointer",
+    "file": "SquareMousePointerIcon.jinja"
+  },
+  {
+    "name": "MonitorX",
+    "file": "MonitorXIcon.jinja"
+  },
+  {
+    "name": "SquareTerminal",
+    "file": "SquareTerminalIcon.jinja"
+  },
+  {
+    "name": "Grid2x2Check",
+    "file": "Grid2x2CheckIcon.jinja"
+  },
+  {
+    "name": "Bus",
+    "file": "BusIcon.jinja"
+  },
+  {
+    "name": "FilePenLine",
+    "file": "FilePenLineIcon.jinja"
+  },
+  {
+    "name": "BookHeart",
+    "file": "BookHeartIcon.jinja"
+  },
+  {
+    "name": "Infinity",
+    "file": "InfinityIcon.jinja"
+  },
+  {
+    "name": "Gem",
+    "file": "GemIcon.jinja"
+  },
+  {
+    "name": "FilterX",
+    "file": "FilterXIcon.jinja"
+  },
+  {
+    "name": "GitCompare",
+    "file": "GitCompareIcon.jinja"
+  },
+  {
+    "name": "ReceiptCent",
+    "file": "ReceiptCentIcon.jinja"
+  },
+  {
+    "name": "Feather",
+    "file": "FeatherIcon.jinja"
+  },
+  {
+    "name": "WebhookOff",
+    "file": "WebhookOffIcon.jinja"
+  },
+  {
+    "name": "Trash",
+    "file": "TrashIcon.jinja"
+  },
+  {
+    "name": "MonitorCog",
+    "file": "MonitorCogIcon.jinja"
+  },
+  {
+    "name": "TreePalm",
+    "file": "TreePalmIcon.jinja"
+  },
+  {
+    "name": "ChartBar",
+    "file": "ChartBarIcon.jinja"
+  },
+  {
+    "name": "ArrowDown10",
+    "file": "ArrowDown10Icon.jinja"
+  },
+  {
+    "name": "DatabaseBackup",
+    "file": "DatabaseBackupIcon.jinja"
+  },
+  {
+    "name": "Armchair",
+    "file": "ArmchairIcon.jinja"
+  },
+  {
+    "name": "WifiOff",
+    "file": "WifiOffIcon.jinja"
+  },
+  {
+    "name": "UserRound",
+    "file": "UserRoundIcon.jinja"
+  },
+  {
+    "name": "Ungroup",
+    "file": "UngroupIcon.jinja"
+  },
+  {
+    "name": "BookLock",
+    "file": "BookLockIcon.jinja"
+  },
+  {
+    "name": "Leaf",
+    "file": "LeafIcon.jinja"
+  },
+  {
+    "name": "ArrowDownWideNarrow",
+    "file": "ArrowDownWideNarrowIcon.jinja"
+  },
+  {
+    "name": "Network",
+    "file": "NetworkIcon.jinja"
+  },
+  {
+    "name": "FileLock2",
+    "file": "FileLock2Icon.jinja"
+  },
+  {
+    "name": "AppWindowMac",
+    "file": "AppWindowMacIcon.jinja"
+  },
+  {
+    "name": "ArrowUpZA",
+    "file": "ArrowUpZAIcon.jinja"
+  },
+  {
+    "name": "ScanBarcode",
+    "file": "ScanBarcodeIcon.jinja"
+  },
+  {
+    "name": "HousePlus",
+    "file": "HousePlusIcon.jinja"
+  },
+  {
+    "name": "CornerLeftDown",
+    "file": "CornerLeftDownIcon.jinja"
+  },
+  {
+    "name": "MapPinMinusInside",
+    "file": "MapPinMinusInsideIcon.jinja"
+  },
+  {
+    "name": "MessageSquarePlus",
+    "file": "MessageSquarePlusIcon.jinja"
+  },
+  {
+    "name": "FolderClock",
+    "file": "FolderClockIcon.jinja"
+  },
+  {
+    "name": "MapPinHouse",
+    "file": "MapPinHouseIcon.jinja"
+  },
+  {
+    "name": "PaintbrushVertical",
+    "file": "PaintbrushVerticalIcon.jinja"
+  },
+  {
+    "name": "DollarSign",
+    "file": "DollarSignIcon.jinja"
+  },
+  {
+    "name": "TriangleRight",
+    "file": "TriangleRightIcon.jinja"
+  },
+  {
+    "name": "IndianRupee",
+    "file": "IndianRupeeIcon.jinja"
+  },
+  {
+    "name": "Construction",
+    "file": "ConstructionIcon.jinja"
+  },
+  {
+    "name": "CirclePlus",
+    "file": "CirclePlusIcon.jinja"
+  },
+  {
+    "name": "GraduationCap",
+    "file": "GraduationCapIcon.jinja"
+  },
+  {
+    "name": "ScanFace",
+    "file": "ScanFaceIcon.jinja"
+  },
+  {
+    "name": "FishSymbol",
+    "file": "FishSymbolIcon.jinja"
+  },
+  {
+    "name": "MonitorSpeaker",
+    "file": "MonitorSpeakerIcon.jinja"
+  },
+  {
+    "name": "Guitar",
+    "file": "GuitarIcon.jinja"
+  },
+  {
+    "name": "Star",
+    "file": "StarIcon.jinja"
+  },
+  {
+    "name": "LockKeyholeOpen",
+    "file": "LockKeyholeOpenIcon.jinja"
+  },
+  {
+    "name": "MonitorCheck",
+    "file": "MonitorCheckIcon.jinja"
+  },
+  {
+    "name": "Sandwich",
+    "file": "SandwichIcon.jinja"
+  },
+  {
+    "name": "ChefHat",
+    "file": "ChefHatIcon.jinja"
+  },
+  {
+    "name": "Heading6",
+    "file": "Heading6Icon.jinja"
+  },
+  {
+    "name": "CloudOff",
+    "file": "CloudOffIcon.jinja"
+  },
+  {
+    "name": "SaveAll",
+    "file": "SaveAllIcon.jinja"
+  },
+  {
+    "name": "FileUser",
+    "file": "FileUserIcon.jinja"
+  },
+  {
+    "name": "Sun",
+    "file": "SunIcon.jinja"
+  },
+  {
+    "name": "Wrench",
+    "file": "WrenchIcon.jinja"
+  },
+  {
+    "name": "SignalMedium",
+    "file": "SignalMediumIcon.jinja"
+  },
+  {
+    "name": "Grab",
+    "file": "GrabIcon.jinja"
+  },
+  {
+    "name": "Pyramid",
+    "file": "PyramidIcon.jinja"
+  },
+  {
+    "name": "BookMinus",
+    "file": "BookMinusIcon.jinja"
+  },
+  {
+    "name": "Gauge",
+    "file": "GaugeIcon.jinja"
+  },
+  {
+    "name": "ChartColumn",
+    "file": "ChartColumnIcon.jinja"
+  },
+  {
+    "name": "MessageSquare",
+    "file": "MessageSquareIcon.jinja"
+  },
+  {
+    "name": "BugPlay",
+    "file": "BugPlayIcon.jinja"
+  },
+  {
+    "name": "BookX",
+    "file": "BookXIcon.jinja"
+  },
+  {
+    "name": "Heading4",
+    "file": "Heading4Icon.jinja"
+  },
+  {
+    "name": "ChartColumnIncreasing",
+    "file": "ChartColumnIncreasingIcon.jinja"
+  },
+  {
+    "name": "Pizza",
+    "file": "PizzaIcon.jinja"
+  },
+  {
+    "name": "Unlink",
+    "file": "UnlinkIcon.jinja"
+  },
+  {
+    "name": "PhilippinePeso",
+    "file": "PhilippinePesoIcon.jinja"
+  },
+  {
+    "name": "ChevronsDownUp",
+    "file": "ChevronsDownUpIcon.jinja"
+  },
+  {
+    "name": "Bone",
+    "file": "BoneIcon.jinja"
+  },
+  {
+    "name": "FlashlightOff",
+    "file": "FlashlightOffIcon.jinja"
+  },
+  {
+    "name": "FileJson2",
+    "file": "FileJson2Icon.jinja"
+  },
+  {
+    "name": "Anchor",
+    "file": "AnchorIcon.jinja"
+  },
+  {
+    "name": "Hammer",
+    "file": "HammerIcon.jinja"
+  },
+  {
+    "name": "ChevronsLeftRightEllipsis",
+    "file": "ChevronsLeftRightEllipsisIcon.jinja"
+  },
+  {
+    "name": "Plug2",
+    "file": "Plug2Icon.jinja"
+  },
+  {
+    "name": "NotebookPen",
+    "file": "NotebookPenIcon.jinja"
+  },
+  {
+    "name": "ChevronsUp",
+    "file": "ChevronsUpIcon.jinja"
+  },
+  {
+    "name": "Columns3",
+    "file": "Columns3Icon.jinja"
+  },
+  {
+    "name": "MoveHorizontal",
+    "file": "MoveHorizontalIcon.jinja"
+  },
+  {
+    "name": "Highlighter",
+    "file": "HighlighterIcon.jinja"
+  },
+  {
+    "name": "SquareArrowUpRight",
+    "file": "SquareArrowUpRightIcon.jinja"
+  },
+  {
+    "name": "TabletSmartphone",
+    "file": "TabletSmartphoneIcon.jinja"
+  },
+  {
+    "name": "CircleStop",
+    "file": "CircleStopIcon.jinja"
+  },
+  {
+    "name": "Twitch",
+    "file": "TwitchIcon.jinja"
+  },
+  {
+    "name": "ChartNoAxesColumnDecreasing",
+    "file": "ChartNoAxesColumnDecreasingIcon.jinja"
+  },
+  {
+    "name": "ChartPie",
+    "file": "ChartPieIcon.jinja"
+  },
+  {
+    "name": "Banana",
+    "file": "BananaIcon.jinja"
+  },
+  {
+    "name": "TreeDeciduous",
+    "file": "TreeDeciduousIcon.jinja"
+  },
+  {
+    "name": "FolderLock",
+    "file": "FolderLockIcon.jinja"
+  },
+  {
+    "name": "Locate",
+    "file": "LocateIcon.jinja"
+  },
+  {
+    "name": "ListMusic",
+    "file": "ListMusicIcon.jinja"
+  },
+  {
+    "name": "Bug",
+    "file": "BugIcon.jinja"
+  },
+  {
+    "name": "PanelTop",
+    "file": "PanelTopIcon.jinja"
+  },
+  {
+    "name": "MessageSquareCode",
+    "file": "MessageSquareCodeIcon.jinja"
+  },
+  {
+    "name": "MailOpen",
+    "file": "MailOpenIcon.jinja"
+  },
+  {
+    "name": "Youtube",
+    "file": "YoutubeIcon.jinja"
+  },
+  {
+    "name": "FileChartLine",
+    "file": "FileChartLineIcon.jinja"
+  },
+  {
+    "name": "ChevronsLeftRight",
+    "file": "ChevronsLeftRightIcon.jinja"
+  },
+  {
+    "name": "BookmarkPlus",
+    "file": "BookmarkPlusIcon.jinja"
+  },
+  {
+    "name": "AArrowUp",
+    "file": "AArrowUpIcon.jinja"
+  },
+  {
+    "name": "TowerControl",
+    "file": "TowerControlIcon.jinja"
+  },
+  {
+    "name": "BookUp",
+    "file": "BookUpIcon.jinja"
+  },
+  {
+    "name": "PocketKnife",
+    "file": "PocketKnifeIcon.jinja"
+  },
+  {
+    "name": "Shovel",
+    "file": "ShovelIcon.jinja"
+  },
+  {
+    "name": "Compass",
+    "file": "CompassIcon.jinja"
+  },
+  {
+    "name": "FileMinus2",
+    "file": "FileMinus2Icon.jinja"
+  },
+  {
+    "name": "AlignHorizontalJustifyEnd",
+    "file": "AlignHorizontalJustifyEndIcon.jinja"
+  },
+  {
+    "name": "ServerCrash",
+    "file": "ServerCrashIcon.jinja"
+  },
+  {
+    "name": "TrafficCone",
+    "file": "TrafficConeIcon.jinja"
+  },
+  {
+    "name": "PlaneTakeoff",
+    "file": "PlaneTakeoffIcon.jinja"
+  },
+  {
+    "name": "HousePlug",
+    "file": "HousePlugIcon.jinja"
+  },
+  {
+    "name": "FolderKanban",
+    "file": "FolderKanbanIcon.jinja"
+  },
+  {
+    "name": "MailSearch",
+    "file": "MailSearchIcon.jinja"
+  },
+  {
+    "name": "ImageUp",
+    "file": "ImageUpIcon.jinja"
+  },
+  {
+    "name": "CloudMoon",
+    "file": "CloudMoonIcon.jinja"
+  },
+  {
+    "name": "Columns2",
+    "file": "Columns2Icon.jinja"
+  },
+  {
+    "name": "Warehouse",
+    "file": "WarehouseIcon.jinja"
+  },
+  {
+    "name": "CalendarArrowUp",
+    "file": "CalendarArrowUpIcon.jinja"
+  },
+  {
+    "name": "RotateCwSquare",
+    "file": "RotateCwSquareIcon.jinja"
+  },
+  {
+    "name": "SquareFunction",
+    "file": "SquareFunctionIcon.jinja"
+  },
+  {
+    "name": "Frame",
+    "file": "FrameIcon.jinja"
+  },
+  {
+    "name": "CreditCard",
+    "file": "CreditCardIcon.jinja"
+  },
+  {
+    "name": "CircleArrowDown",
+    "file": "CircleArrowDownIcon.jinja"
+  },
+  {
+    "name": "Table2",
+    "file": "Table2Icon.jinja"
+  },
+  {
+    "name": "FileKey2",
+    "file": "FileKey2Icon.jinja"
+  },
+  {
+    "name": "Copyleft",
+    "file": "CopyleftIcon.jinja"
+  },
+  {
+    "name": "Grid3x3",
+    "file": "Grid3x3Icon.jinja"
+  },
+  {
+    "name": "TicketX",
+    "file": "TicketXIcon.jinja"
+  },
+  {
+    "name": "AlignVerticalJustifyStart",
+    "file": "AlignVerticalJustifyStartIcon.jinja"
+  },
+  {
+    "name": "HeartOff",
+    "file": "HeartOffIcon.jinja"
+  },
+  {
+    "name": "Cylinder",
+    "file": "CylinderIcon.jinja"
+  },
+  {
+    "name": "Computer",
+    "file": "ComputerIcon.jinja"
+  },
+  {
+    "name": "BookType",
+    "file": "BookTypeIcon.jinja"
+  },
+  {
+    "name": "PillBottle",
+    "file": "PillBottleIcon.jinja"
+  },
+  {
+    "name": "Heading5",
+    "file": "Heading5Icon.jinja"
+  },
+  {
+    "name": "ThermometerSun",
+    "file": "ThermometerSunIcon.jinja"
+  },
+  {
+    "name": "BadgeHelp",
+    "file": "BadgeHelpIcon.jinja"
+  },
+  {
+    "name": "LocateOff",
+    "file": "LocateOffIcon.jinja"
+  },
+  {
+    "name": "ReplyAll",
+    "file": "ReplyAllIcon.jinja"
+  },
+  {
+    "name": "Pencil",
+    "file": "PencilIcon.jinja"
+  },
+  {
+    "name": "CloudRain",
+    "file": "CloudRainIcon.jinja"
+  },
+  {
+    "name": "SendToBack",
+    "file": "SendToBackIcon.jinja"
+  },
+  {
+    "name": "GitPullRequestClosed",
+    "file": "GitPullRequestClosedIcon.jinja"
+  },
+  {
+    "name": "ArrowBigRightDash",
+    "file": "ArrowBigRightDashIcon.jinja"
+  },
+  {
+    "name": "AlignVerticalDistributeStart",
+    "file": "AlignVerticalDistributeStartIcon.jinja"
+  },
+  {
+    "name": "BookDown",
+    "file": "BookDownIcon.jinja"
+  },
+  {
+    "name": "PoundSterling",
+    "file": "PoundSterlingIcon.jinja"
+  },
+  {
+    "name": "MonitorUp",
+    "file": "MonitorUpIcon.jinja"
+  },
+  {
+    "name": "BeanOff",
+    "file": "BeanOffIcon.jinja"
+  },
+  {
+    "name": "Trash2",
+    "file": "Trash2Icon.jinja"
+  },
+  {
+    "name": "CircleUser",
+    "file": "CircleUserIcon.jinja"
+  },
+  {
+    "name": "SkipBack",
+    "file": "SkipBackIcon.jinja"
+  },
+  {
+    "name": "FilePlus",
+    "file": "FilePlusIcon.jinja"
+  },
+  {
+    "name": "ScrollText",
+    "file": "ScrollTextIcon.jinja"
+  },
+  {
+    "name": "Diamond",
+    "file": "DiamondIcon.jinja"
+  },
+  {
+    "name": "Delete",
+    "file": "DeleteIcon.jinja"
+  },
+  {
+    "name": "Command",
+    "file": "CommandIcon.jinja"
+  },
+  {
+    "name": "PackageCheck",
+    "file": "PackageCheckIcon.jinja"
+  },
+  {
+    "name": "AlignCenterHorizontal",
+    "file": "AlignCenterHorizontalIcon.jinja"
+  },
+  {
+    "name": "Clock",
+    "file": "ClockIcon.jinja"
+  },
+  {
+    "name": "BellRing",
+    "file": "BellRingIcon.jinja"
+  },
+  {
+    "name": "RemoveFormatting",
+    "file": "RemoveFormattingIcon.jinja"
+  },
+  {
+    "name": "Router",
+    "file": "RouterIcon.jinja"
+  },
+  {
+    "name": "Footprints",
+    "file": "FootprintsIcon.jinja"
+  },
+  {
+    "name": "Octagon",
+    "file": "OctagonIcon.jinja"
+  },
+  {
+    "name": "ArrowBigLeft",
+    "file": "ArrowBigLeftIcon.jinja"
+  },
+  {
+    "name": "TableRowsSplit",
+    "file": "TableRowsSplitIcon.jinja"
+  },
+  {
+    "name": "Phone",
+    "file": "PhoneIcon.jinja"
+  },
+  {
+    "name": "CircleX",
+    "file": "CircleXIcon.jinja"
+  },
+  {
+    "name": "LandPlot",
+    "file": "LandPlotIcon.jinja"
+  },
+  {
+    "name": "AlignHorizontalJustifyCenter",
+    "file": "AlignHorizontalJustifyCenterIcon.jinja"
+  },
+  {
+    "name": "SunSnow",
+    "file": "SunSnowIcon.jinja"
+  },
+  {
+    "name": "ChartBarIncreasing",
+    "file": "ChartBarIncreasingIcon.jinja"
+  },
+  {
+    "name": "ImageOff",
+    "file": "ImageOffIcon.jinja"
+  },
+  {
+    "name": "ClockAlert",
+    "file": "ClockAlertIcon.jinja"
+  },
+  {
+    "name": "UmbrellaOff",
+    "file": "UmbrellaOffIcon.jinja"
+  },
+  {
+    "name": "ArrowDownAZ",
+    "file": "ArrowDownAZIcon.jinja"
+  },
+  {
+    "name": "PanelLeftOpen",
+    "file": "PanelLeftOpenIcon.jinja"
+  },
+  {
+    "name": "BrainCircuit",
+    "file": "BrainCircuitIcon.jinja"
+  },
+  {
+    "name": "MoveVertical",
+    "file": "MoveVerticalIcon.jinja"
+  },
+  {
+    "name": "UsersRound",
+    "file": "UsersRoundIcon.jinja"
+  },
+  {
+    "name": "Salad",
+    "file": "SaladIcon.jinja"
+  },
+  {
+    "name": "Dumbbell",
+    "file": "DumbbellIcon.jinja"
+  },
+  {
+    "name": "Tractor",
+    "file": "TractorIcon.jinja"
+  },
+  {
+    "name": "Waves",
+    "file": "WavesIcon.jinja"
+  },
+  {
+    "name": "FolderClosed",
+    "file": "FolderClosedIcon.jinja"
+  },
+  {
+    "name": "Eye",
+    "file": "EyeIcon.jinja"
+  },
+  {
+    "name": "UserRoundCog",
+    "file": "UserRoundCogIcon.jinja"
+  },
+  {
+    "name": "IndentIncrease",
+    "file": "IndentIncreaseIcon.jinja"
+  },
+  {
+    "name": "MousePointerBan",
+    "file": "MousePointerBanIcon.jinja"
+  },
+  {
+    "name": "HeadphoneOff",
+    "file": "HeadphoneOffIcon.jinja"
+  },
+  {
+    "name": "BadgeAlert",
+    "file": "BadgeAlertIcon.jinja"
+  },
+  {
+    "name": "ServerCog",
+    "file": "ServerCogIcon.jinja"
+  },
+  {
+    "name": "Pipette",
+    "file": "PipetteIcon.jinja"
+  },
+  {
+    "name": "PhoneOff",
+    "file": "PhoneOffIcon.jinja"
+  },
+  {
+    "name": "Flower",
+    "file": "FlowerIcon.jinja"
+  },
+  {
+    "name": "Banknote",
+    "file": "BanknoteIcon.jinja"
+  },
+  {
+    "name": "Sprout",
+    "file": "SproutIcon.jinja"
+  },
+  {
+    "name": "BrickWall",
+    "file": "BrickWallIcon.jinja"
+  },
+  {
+    "name": "CopyCheck",
+    "file": "CopyCheckIcon.jinja"
+  },
+  {
+    "name": "RectangleVertical",
+    "file": "RectangleVerticalIcon.jinja"
+  },
+  {
+    "name": "Pill",
+    "file": "PillIcon.jinja"
+  },
+  {
+    "name": "Codepen",
+    "file": "CodepenIcon.jinja"
+  },
+  {
+    "name": "Dribbble",
+    "file": "DribbbleIcon.jinja"
+  },
+  {
+    "name": "ChartBarBig",
+    "file": "ChartBarBigIcon.jinja"
+  },
+  {
+    "name": "MessageCirclePlus",
+    "file": "MessageCirclePlusIcon.jinja"
+  },
+  {
+    "name": "Axe",
+    "file": "AxeIcon.jinja"
+  },
+  {
+    "name": "SquarePlus",
+    "file": "SquarePlusIcon.jinja"
+  },
+  {
+    "name": "Gift",
+    "file": "GiftIcon.jinja"
+  },
+  {
+    "name": "ReceiptRussianRuble",
+    "file": "ReceiptRussianRubleIcon.jinja"
+  },
+  {
+    "name": "PackagePlus",
+    "file": "PackagePlusIcon.jinja"
+  },
+  {
+    "name": "ExternalLink",
+    "file": "ExternalLinkIcon.jinja"
+  },
+  {
+    "name": "Currency",
+    "file": "CurrencyIcon.jinja"
+  },
+  {
+    "name": "Wand",
+    "file": "WandIcon.jinja"
+  },
+  {
+    "name": "FileMusic",
+    "file": "FileMusicIcon.jinja"
+  },
+  {
+    "name": "Car",
+    "file": "CarIcon.jinja"
+  },
+  {
+    "name": "Zap",
+    "file": "ZapIcon.jinja"
+  },
+  {
+    "name": "Trello",
+    "file": "TrelloIcon.jinja"
+  },
+  {
+    "name": "ListChecks",
+    "file": "ListChecksIcon.jinja"
+  },
+  {
+    "name": "MessageSquareReply",
+    "file": "MessageSquareReplyIcon.jinja"
+  },
+  {
+    "name": "BadgeX",
+    "file": "BadgeXIcon.jinja"
+  },
+  {
+    "name": "Building2",
+    "file": "Building2Icon.jinja"
+  },
+  {
+    "name": "ChartNoAxesGantt",
+    "file": "ChartNoAxesGanttIcon.jinja"
+  },
+  {
+    "name": "MoonStar",
+    "file": "MoonStarIcon.jinja"
+  },
+  {
+    "name": "Clock1",
+    "file": "Clock1Icon.jinja"
+  },
+  {
+    "name": "CigaretteOff",
+    "file": "CigaretteOffIcon.jinja"
+  },
+  {
+    "name": "Binary",
+    "file": "BinaryIcon.jinja"
+  },
+  {
+    "name": "ChevronLast",
+    "file": "ChevronLastIcon.jinja"
+  },
+  {
+    "name": "PointerOff",
+    "file": "PointerOffIcon.jinja"
+  },
+  {
+    "name": "MousePointer2",
+    "file": "MousePointer2Icon.jinja"
+  },
+  {
+    "name": "PackageSearch",
+    "file": "PackageSearchIcon.jinja"
+  },
+  {
+    "name": "MicOff",
+    "file": "MicOffIcon.jinja"
+  },
+  {
+    "name": "LampDesk",
+    "file": "LampDeskIcon.jinja"
+  },
+  {
+    "name": "Share",
+    "file": "ShareIcon.jinja"
+  },
+  {
+    "name": "CircleParkingOff",
+    "file": "CircleParkingOffIcon.jinja"
+  },
+  {
+    "name": "Tags",
+    "file": "TagsIcon.jinja"
+  },
+  {
+    "name": "SquareBottomDashedScissors",
+    "file": "SquareBottomDashedScissorsIcon.jinja"
+  },
+  {
+    "name": "Album",
+    "file": "AlbumIcon.jinja"
+  },
+  {
+    "name": "KeyRound",
+    "file": "KeyRoundIcon.jinja"
+  },
+  {
+    "name": "SquareCode",
+    "file": "SquareCodeIcon.jinja"
+  },
+  {
+    "name": "FolderSearch2",
+    "file": "FolderSearch2Icon.jinja"
+  },
+  {
+    "name": "ArrowUp",
+    "file": "ArrowUpIcon.jinja"
+  },
+  {
+    "name": "CircleArrowOutUpLeft",
+    "file": "CircleArrowOutUpLeftIcon.jinja"
+  },
+  {
+    "name": "WifiHigh",
+    "file": "WifiHighIcon.jinja"
+  },
+  {
+    "name": "Microscope",
+    "file": "MicroscopeIcon.jinja"
+  },
+  {
+    "name": "TestTube",
+    "file": "TestTubeIcon.jinja"
+  },
+  {
+    "name": "BellOff",
+    "file": "BellOffIcon.jinja"
+  },
+  {
+    "name": "Linkedin",
+    "file": "LinkedinIcon.jinja"
+  },
+  {
+    "name": "ArrowDownNarrowWide",
+    "file": "ArrowDownNarrowWideIcon.jinja"
+  },
+  {
+    "name": "Clock3",
+    "file": "Clock3Icon.jinja"
+  },
+  {
+    "name": "PanelRight",
+    "file": "PanelRightIcon.jinja"
+  },
+  {
+    "name": "Drum",
+    "file": "DrumIcon.jinja"
+  },
+  {
+    "name": "View",
+    "file": "ViewIcon.jinja"
+  },
+  {
+    "name": "Music2",
+    "file": "Music2Icon.jinja"
+  },
+  {
+    "name": "WrapText",
+    "file": "WrapTextIcon.jinja"
+  },
+  {
+    "name": "GitCompareArrows",
+    "file": "GitCompareArrowsIcon.jinja"
+  },
+  {
+    "name": "CalendarMinus",
+    "file": "CalendarMinusIcon.jinja"
+  },
+  {
+    "name": "BookImage",
+    "file": "BookImageIcon.jinja"
+  },
+  {
+    "name": "FileVolume2",
+    "file": "FileVolume2Icon.jinja"
+  },
+  {
+    "name": "UserRoundX",
+    "file": "UserRoundXIcon.jinja"
+  },
+  {
+    "name": "Undo",
+    "file": "UndoIcon.jinja"
+  },
+  {
+    "name": "Video",
+    "file": "VideoIcon.jinja"
+  },
+  {
+    "name": "CircleEllipsis",
+    "file": "CircleEllipsisIcon.jinja"
+  },
+  {
+    "name": "IdCard",
+    "file": "IdCardIcon.jinja"
+  },
+  {
+    "name": "Activity",
+    "file": "ActivityIcon.jinja"
+  },
+  {
+    "name": "PencilLine",
+    "file": "PencilLineIcon.jinja"
+  },
+  {
+    "name": "PersonStanding",
+    "file": "PersonStandingIcon.jinja"
+  },
+  {
+    "name": "Twitter",
+    "file": "TwitterIcon.jinja"
+  },
+  {
+    "name": "MapPin",
+    "file": "MapPinIcon.jinja"
+  },
+  {
+    "name": "FolderInput",
+    "file": "FolderInputIcon.jinja"
+  },
+  {
+    "name": "Filter",
+    "file": "FilterIcon.jinja"
+  },
+  {
+    "name": "ClockArrowUp",
+    "file": "ClockArrowUpIcon.jinja"
+  },
+  {
+    "name": "LightbulbOff",
+    "file": "LightbulbOffIcon.jinja"
+  },
+  {
+    "name": "PhoneIncoming",
+    "file": "PhoneIncomingIcon.jinja"
+  },
+  {
+    "name": "Refrigerator",
+    "file": "RefrigeratorIcon.jinja"
+  },
+  {
+    "name": "Italic",
+    "file": "ItalicIcon.jinja"
+  },
+  {
+    "name": "ListEnd",
+    "file": "ListEndIcon.jinja"
+  },
+  {
+    "name": "Handshake",
+    "file": "HandshakeIcon.jinja"
+  },
+  {
+    "name": "MapPinCheck",
+    "file": "MapPinCheckIcon.jinja"
+  },
+  {
+    "name": "ChevronsLeft",
+    "file": "ChevronsLeftIcon.jinja"
+  },
+  {
+    "name": "Rows2",
+    "file": "Rows2Icon.jinja"
+  },
+  {
+    "name": "MailX",
+    "file": "MailXIcon.jinja"
+  },
+  {
+    "name": "Medal",
+    "file": "MedalIcon.jinja"
+  },
+  {
+    "name": "MessageCircleCode",
+    "file": "MessageCircleCodeIcon.jinja"
+  },
+  {
+    "name": "Calendar",
+    "file": "CalendarIcon.jinja"
+  },
+  {
+    "name": "InspectionPanel",
+    "file": "InspectionPanelIcon.jinja"
+  },
+  {
+    "name": "NotepadText",
+    "file": "NotepadTextIcon.jinja"
+  },
+  {
+    "name": "MessageCircleX",
+    "file": "MessageCircleXIcon.jinja"
+  },
+  {
+    "name": "ArrowRightFromLine",
+    "file": "ArrowRightFromLineIcon.jinja"
+  },
+  {
+    "name": "Globe",
+    "file": "GlobeIcon.jinja"
+  },
+  {
+    "name": "ArrowLeft",
+    "file": "ArrowLeftIcon.jinja"
+  },
+  {
+    "name": "Paintbrush",
+    "file": "PaintbrushIcon.jinja"
+  },
+  {
+    "name": "Rows3",
+    "file": "Rows3Icon.jinja"
+  },
+  {
+    "name": "AlignCenter",
+    "file": "AlignCenterIcon.jinja"
+  },
+  {
+    "name": "BadgeSwissFranc",
+    "file": "BadgeSwissFrancIcon.jinja"
+  },
+  {
+    "name": "Cross",
+    "file": "CrossIcon.jinja"
+  },
+  {
+    "name": "SquareMinus",
+    "file": "SquareMinusIcon.jinja"
+  },
+  {
+    "name": "University",
+    "file": "UniversityIcon.jinja"
+  },
+  {
+    "name": "Route",
+    "file": "RouteIcon.jinja"
+  },
+  {
+    "name": "CircleArrowUp",
+    "file": "CircleArrowUpIcon.jinja"
+  },
+  {
+    "name": "Diameter",
+    "file": "DiameterIcon.jinja"
+  },
+  {
+    "name": "PcCase",
+    "file": "PcCaseIcon.jinja"
+  },
+  {
+    "name": "Ellipsis",
+    "file": "EllipsisIcon.jinja"
+  },
+  {
+    "name": "CalendarHeart",
+    "file": "CalendarHeartIcon.jinja"
+  },
+  {
+    "name": "BookHeadphones",
+    "file": "BookHeadphonesIcon.jinja"
+  },
+  {
+    "name": "Microchip",
+    "file": "MicrochipIcon.jinja"
+  },
+  {
+    "name": "ArrowDownRight",
+    "file": "ArrowDownRightIcon.jinja"
+  },
+  {
+    "name": "FileBox",
+    "file": "FileBoxIcon.jinja"
+  },
+  {
+    "name": "PawPrint",
+    "file": "PawPrintIcon.jinja"
+  },
+  {
+    "name": "Laptop",
+    "file": "LaptopIcon.jinja"
+  },
+  {
+    "name": "PowerOff",
+    "file": "PowerOffIcon.jinja"
+  },
+  {
+    "name": "RedoDot",
+    "file": "RedoDotIcon.jinja"
+  },
+  {
+    "name": "Axis3d",
+    "file": "Axis3dIcon.jinja"
+  },
+  {
+    "name": "ChartArea",
+    "file": "ChartAreaIcon.jinja"
+  },
+  {
+    "name": "ArrowBigUp",
+    "file": "ArrowBigUpIcon.jinja"
+  },
+  {
+    "name": "Framer",
+    "file": "FramerIcon.jinja"
+  },
+  {
+    "name": "KeyboardOff",
+    "file": "KeyboardOffIcon.jinja"
+  },
+  {
+    "name": "Mountain",
+    "file": "MountainIcon.jinja"
+  },
+  {
+    "name": "StretchHorizontal",
+    "file": "StretchHorizontalIcon.jinja"
+  },
+  {
+    "name": "BellDot",
+    "file": "BellDotIcon.jinja"
+  },
+  {
+    "name": "ClipboardX",
+    "file": "ClipboardXIcon.jinja"
+  },
+  {
+    "name": "FolderDown",
+    "file": "FolderDownIcon.jinja"
+  },
+  {
+    "name": "ShieldQuestion",
+    "file": "ShieldQuestionIcon.jinja"
+  },
+  {
+    "name": "PanelBottomDashed",
+    "file": "PanelBottomDashedIcon.jinja"
+  },
+  {
+    "name": "VolumeX",
+    "file": "VolumeXIcon.jinja"
+  },
+  {
+    "name": "Music3",
+    "file": "Music3Icon.jinja"
+  },
+  {
+    "name": "CopySlash",
+    "file": "CopySlashIcon.jinja"
+  },
+  {
+    "name": "FileCode",
+    "file": "FileCodeIcon.jinja"
+  },
+  {
+    "name": "SaveOff",
+    "file": "SaveOffIcon.jinja"
+  },
+  {
+    "name": "MoveLeft",
+    "file": "MoveLeftIcon.jinja"
+  },
+  {
+    "name": "Slack",
+    "file": "SlackIcon.jinja"
+  },
+  {
+    "name": "CircleDashed",
+    "file": "CircleDashedIcon.jinja"
+  },
+  {
+    "name": "Clock2",
+    "file": "Clock2Icon.jinja"
+  },
+  {
+    "name": "UserRoundMinus",
+    "file": "UserRoundMinusIcon.jinja"
+  },
+  {
+    "name": "ScissorsLineDashed",
+    "file": "ScissorsLineDashedIcon.jinja"
+  },
+  {
+    "name": "FileOutput",
+    "file": "FileOutputIcon.jinja"
+  },
+  {
+    "name": "Cloud",
+    "file": "CloudIcon.jinja"
+  },
+  {
+    "name": "HopOff",
+    "file": "HopOffIcon.jinja"
+  },
+  {
+    "name": "Clock11",
+    "file": "Clock11Icon.jinja"
+  },
+  {
+    "name": "Shuffle",
+    "file": "ShuffleIcon.jinja"
+  },
+  {
+    "name": "Quote",
+    "file": "QuoteIcon.jinja"
+  },
+  {
+    "name": "Anvil",
+    "file": "AnvilIcon.jinja"
+  },
+  {
+    "name": "WashingMachine",
+    "file": "WashingMachineIcon.jinja"
+  },
+  {
+    "name": "GripVertical",
+    "file": "GripVerticalIcon.jinja"
+  },
+  {
+    "name": "Clock6",
+    "file": "Clock6Icon.jinja"
+  },
+  {
+    "name": "Drill",
+    "file": "DrillIcon.jinja"
+  },
+  {
+    "name": "AlignHorizontalDistributeStart",
+    "file": "AlignHorizontalDistributeStartIcon.jinja"
+  },
+  {
+    "name": "ListCheck",
+    "file": "ListCheckIcon.jinja"
+  },
+  {
+    "name": "FileType",
+    "file": "FileTypeIcon.jinja"
+  },
+  {
+    "name": "Rewind",
+    "file": "RewindIcon.jinja"
+  },
+  {
+    "name": "WineOff",
+    "file": "WineOffIcon.jinja"
+  },
+  {
+    "name": "CircleFadingArrowUp",
+    "file": "CircleFadingArrowUpIcon.jinja"
+  },
+  {
+    "name": "Upload",
+    "file": "UploadIcon.jinja"
+  },
+  {
+    "name": "TrendingDown",
+    "file": "TrendingDownIcon.jinja"
+  },
+  {
+    "name": "BookmarkCheck",
+    "file": "BookmarkCheckIcon.jinja"
+  },
+  {
+    "name": "FoldVertical",
+    "file": "FoldVerticalIcon.jinja"
+  },
+  {
+    "name": "CalendarX",
+    "file": "CalendarXIcon.jinja"
+  },
+  {
+    "name": "Pause",
+    "file": "PauseIcon.jinja"
+  },
+  {
+    "name": "Radical",
+    "file": "RadicalIcon.jinja"
+  },
+  {
+    "name": "ArrowBigUpDash",
+    "file": "ArrowBigUpDashIcon.jinja"
+  },
+  {
+    "name": "FolderKey",
+    "file": "FolderKeyIcon.jinja"
+  },
+  {
+    "name": "Grid2x2",
+    "file": "Grid2x2Icon.jinja"
+  },
+  {
+    "name": "CloudHail",
+    "file": "CloudHailIcon.jinja"
+  },
+  {
+    "name": "SearchX",
+    "file": "SearchXIcon.jinja"
+  },
+  {
+    "name": "Cloudy",
+    "file": "CloudyIcon.jinja"
+  },
+  {
+    "name": "Replace",
+    "file": "ReplaceIcon.jinja"
+  },
+  {
+    "name": "Forward",
+    "file": "ForwardIcon.jinja"
+  },
+  {
+    "name": "MountainSnow",
+    "file": "MountainSnowIcon.jinja"
+  },
+  {
+    "name": "IndentDecrease",
+    "file": "IndentDecreaseIcon.jinja"
+  },
+  {
+    "name": "CircleMinus",
+    "file": "CircleMinusIcon.jinja"
+  },
+  {
+    "name": "Dices",
+    "file": "DicesIcon.jinja"
+  },
+  {
+    "name": "Blend",
+    "file": "BlendIcon.jinja"
+  },
+  {
+    "name": "Bookmark",
+    "file": "BookmarkIcon.jinja"
+  },
+  {
+    "name": "Braces",
+    "file": "BracesIcon.jinja"
+  },
+  {
+    "name": "Rocket",
+    "file": "RocketIcon.jinja"
+  },
+  {
+    "name": "CircleDot",
+    "file": "CircleDotIcon.jinja"
+  },
+  {
+    "name": "MoveRight",
+    "file": "MoveRightIcon.jinja"
+  },
+  {
+    "name": "Drama",
+    "file": "DramaIcon.jinja"
+  },
+  {
+    "name": "Asterisk",
+    "file": "AsteriskIcon.jinja"
+  },
+  {
+    "name": "UserCheck",
+    "file": "UserCheckIcon.jinja"
+  },
+  {
+    "name": "CalendarClock",
+    "file": "CalendarClockIcon.jinja"
+  },
+  {
+    "name": "FishOff",
+    "file": "FishOffIcon.jinja"
+  },
+  {
+    "name": "FolderSearch",
+    "file": "FolderSearchIcon.jinja"
+  },
+  {
+    "name": "FolderPen",
+    "file": "FolderPenIcon.jinja"
+  },
+  {
+    "name": "CloudSunRain",
+    "file": "CloudSunRainIcon.jinja"
+  },
+  {
+    "name": "FileChartPie",
+    "file": "FileChartPieIcon.jinja"
+  },
+  {
+    "name": "GitPullRequestCreate",
+    "file": "GitPullRequestCreateIcon.jinja"
+  },
+  {
+    "name": "Tablet",
+    "file": "TabletIcon.jinja"
+  },
+  {
+    "name": "MailCheck",
+    "file": "MailCheckIcon.jinja"
+  },
+  {
+    "name": "AlignVerticalJustifyCenter",
+    "file": "AlignVerticalJustifyCenterIcon.jinja"
+  },
+  {
+    "name": "FileDiff",
+    "file": "FileDiffIcon.jinja"
+  },
+  {
+    "name": "MonitorDot",
+    "file": "MonitorDotIcon.jinja"
+  },
+  {
+    "name": "TicketSlash",
+    "file": "TicketSlashIcon.jinja"
+  },
+  {
+    "name": "AlignHorizontalSpaceBetween",
+    "file": "AlignHorizontalSpaceBetweenIcon.jinja"
+  },
+  {
+    "name": "Webhook",
+    "file": "WebhookIcon.jinja"
+  },
+  {
+    "name": "BriefcaseConveyorBelt",
+    "file": "BriefcaseConveyorBeltIcon.jinja"
+  },
+  {
+    "name": "DiamondPercent",
+    "file": "DiamondPercentIcon.jinja"
+  },
+  {
+    "name": "FolderOpenDot",
+    "file": "FolderOpenDotIcon.jinja"
+  },
+  {
+    "name": "ArrowLeftRight",
+    "file": "ArrowLeftRightIcon.jinja"
+  },
+  {
+    "name": "CodeXml",
+    "file": "CodeXmlIcon.jinja"
+  },
+  {
+    "name": "CloudDownload",
+    "file": "CloudDownloadIcon.jinja"
+  },
+  {
+    "name": "UtilityPole",
+    "file": "UtilityPoleIcon.jinja"
+  },
+  {
+    "name": "SquareDashed",
+    "file": "SquareDashedIcon.jinja"
+  },
+  {
+    "name": "SignalZero",
+    "file": "SignalZeroIcon.jinja"
+  },
+  {
+    "name": "BookUp2",
+    "file": "BookUp2Icon.jinja"
+  },
+  {
+    "name": "MonitorOff",
+    "file": "MonitorOffIcon.jinja"
+  },
+  {
+    "name": "Ear",
+    "file": "EarIcon.jinja"
+  },
+  {
+    "name": "SpellCheck",
+    "file": "SpellCheckIcon.jinja"
+  },
+  {
+    "name": "FileTerminal",
+    "file": "FileTerminalIcon.jinja"
+  },
+  {
+    "name": "Flame",
+    "file": "FlameIcon.jinja"
+  },
+  {
+    "name": "GalleryHorizontalEnd",
+    "file": "GalleryHorizontalEndIcon.jinja"
+  },
+  {
+    "name": "NutOff",
+    "file": "NutOffIcon.jinja"
+  },
+  {
+    "name": "Component",
+    "file": "ComponentIcon.jinja"
+  },
+  {
+    "name": "CircleOff",
+    "file": "CircleOffIcon.jinja"
+  },
+  {
+    "name": "FileSearch2",
+    "file": "FileSearch2Icon.jinja"
+  },
+  {
+    "name": "AlignStartHorizontal",
+    "file": "AlignStartHorizontalIcon.jinja"
+  },
+  {
+    "name": "LocateFixed",
+    "file": "LocateFixedIcon.jinja"
+  },
+  {
+    "name": "LockOpen",
+    "file": "LockOpenIcon.jinja"
+  },
+  {
+    "name": "LoaderPinwheel",
+    "file": "LoaderPinwheelIcon.jinja"
+  },
+  {
+    "name": "Atom",
+    "file": "AtomIcon.jinja"
+  },
+  {
+    "name": "Cat",
+    "file": "CatIcon.jinja"
+  },
+  {
+    "name": "CloudCog",
+    "file": "CloudCogIcon.jinja"
+  },
+  {
+    "name": "Sword",
+    "file": "SwordIcon.jinja"
+  },
+  {
+    "name": "SquarePilcrow",
+    "file": "SquarePilcrowIcon.jinja"
+  },
+  {
+    "name": "Squirrel",
+    "file": "SquirrelIcon.jinja"
+  },
+  {
+    "name": "Menu",
+    "file": "MenuIcon.jinja"
+  },
+  {
+    "name": "PinOff",
+    "file": "PinOffIcon.jinja"
+  },
+  {
+    "name": "LampCeiling",
+    "file": "LampCeilingIcon.jinja"
+  },
+  {
+    "name": "FolderDot",
+    "file": "FolderDotIcon.jinja"
+  },
+  {
+    "name": "UtensilsCrossed",
+    "file": "UtensilsCrossedIcon.jinja"
+  },
+  {
+    "name": "Ratio",
+    "file": "RatioIcon.jinja"
+  },
+  {
+    "name": "SquareArrowDownLeft",
+    "file": "SquareArrowDownLeftIcon.jinja"
+  },
+  {
+    "name": "Grid2x2X",
+    "file": "Grid2x2XIcon.jinja"
+  },
+  {
+    "name": "OctagonAlert",
+    "file": "OctagonAlertIcon.jinja"
+  },
+  {
+    "name": "GalleryVertical",
+    "file": "GalleryVerticalIcon.jinja"
+  },
+  {
+    "name": "ImageMinus",
+    "file": "ImageMinusIcon.jinja"
+  },
+  {
+    "name": "Clock7",
+    "file": "Clock7Icon.jinja"
+  },
+  {
+    "name": "ArrowRightToLine",
+    "file": "ArrowRightToLineIcon.jinja"
+  },
+  {
+    "name": "AArrowDown",
+    "file": "AArrowDownIcon.jinja"
+  },
+  {
+    "name": "Merge",
+    "file": "MergeIcon.jinja"
+  },
+  {
+    "name": "MapPinned",
+    "file": "MapPinnedIcon.jinja"
+  },
+  {
+    "name": "SquarePi",
+    "file": "SquarePiIcon.jinja"
+  },
+  {
+    "name": "AlignHorizontalSpaceAround",
+    "file": "AlignHorizontalSpaceAroundIcon.jinja"
+  },
+  {
+    "name": "Chrome",
+    "file": "ChromeIcon.jinja"
+  },
+  {
+    "name": "StickyNote",
+    "file": "StickyNoteIcon.jinja"
+  },
+  {
+    "name": "TicketPlus",
+    "file": "TicketPlusIcon.jinja"
+  },
+  {
+    "name": "ShoppingCart",
+    "file": "ShoppingCartIcon.jinja"
+  },
+  {
+    "name": "CopyX",
+    "file": "CopyXIcon.jinja"
+  },
+  {
+    "name": "Calculator",
+    "file": "CalculatorIcon.jinja"
+  },
+  {
+    "name": "Clock10",
+    "file": "Clock10Icon.jinja"
+  },
+  {
+    "name": "TrainFrontTunnel",
+    "file": "TrainFrontTunnelIcon.jinja"
+  },
+  {
+    "name": "Clock12",
+    "file": "Clock12Icon.jinja"
+  },
+  {
+    "name": "Apple",
+    "file": "AppleIcon.jinja"
+  },
+  {
+    "name": "CircleChevronLeft",
+    "file": "CircleChevronLeftIcon.jinja"
+  },
+  {
+    "name": "Mouse",
+    "file": "MouseIcon.jinja"
+  },
+  {
+    "name": "FlaskConical",
+    "file": "FlaskConicalIcon.jinja"
+  },
+  {
+    "name": "PictureInPicture2",
+    "file": "PictureInPicture2Icon.jinja"
+  },
+  {
+    "name": "Pentagon",
+    "file": "PentagonIcon.jinja"
+  },
+  {
+    "name": "DiamondMinus",
+    "file": "DiamondMinusIcon.jinja"
+  },
+  {
+    "name": "ShieldCheck",
+    "file": "ShieldCheckIcon.jinja"
+  },
+  {
+    "name": "ArrowDown01",
+    "file": "ArrowDown01Icon.jinja"
+  },
+  {
+    "name": "MessageCircleReply",
+    "file": "MessageCircleReplyIcon.jinja"
+  },
+  {
+    "name": "CirclePause",
+    "file": "CirclePauseIcon.jinja"
+  },
+  {
+    "name": "Mails",
+    "file": "MailsIcon.jinja"
+  },
+  {
+    "name": "Clock5",
+    "file": "Clock5Icon.jinja"
+  },
+  {
+    "name": "RectangleHorizontal",
+    "file": "RectangleHorizontalIcon.jinja"
+  },
+  {
+    "name": "ShoppingBasket",
+    "file": "ShoppingBasketIcon.jinja"
+  },
+  {
+    "name": "ListFilter",
+    "file": "ListFilterIcon.jinja"
+  },
+  {
+    "name": "ReceiptText",
+    "file": "ReceiptTextIcon.jinja"
+  },
+  {
+    "name": "Music4",
+    "file": "Music4Icon.jinja"
+  },
+  {
+    "name": "BookUser",
+    "file": "BookUserIcon.jinja"
+  },
+  {
+    "name": "ShieldBan",
+    "file": "ShieldBanIcon.jinja"
+  },
+  {
+    "name": "ArrowDownToDot",
+    "file": "ArrowDownToDotIcon.jinja"
+  },
+  {
+    "name": "Building",
+    "file": "BuildingIcon.jinja"
+  },
+  {
+    "name": "ClipboardCopy",
+    "file": "ClipboardCopyIcon.jinja"
+  },
+  {
+    "name": "Binoculars",
+    "file": "BinocularsIcon.jinja"
+  },
+  {
+    "name": "Angry",
+    "file": "AngryIcon.jinja"
+  },
+  {
+    "name": "Lollipop",
+    "file": "LollipopIcon.jinja"
+  },
+  {
+    "name": "BetweenVerticalEnd",
+    "file": "BetweenVerticalEndIcon.jinja"
+  },
+  {
+    "name": "History",
+    "file": "HistoryIcon.jinja"
+  },
+  {
+    "name": "Gavel",
+    "file": "GavelIcon.jinja"
+  },
+  {
+    "name": "Folder",
+    "file": "FolderIcon.jinja"
+  },
+  {
+    "name": "DraftingCompass",
+    "file": "DraftingCompassIcon.jinja"
+  },
+  {
+    "name": "AlignHorizontalDistributeCenter",
+    "file": "AlignHorizontalDistributeCenterIcon.jinja"
+  },
+  {
+    "name": "FileLock",
+    "file": "FileLockIcon.jinja"
+  },
+  {
+    "name": "Layers2",
+    "file": "Layers2Icon.jinja"
+  },
+  {
+    "name": "Users",
+    "file": "UsersIcon.jinja"
+  },
+  {
+    "name": "ChartColumnStacked",
+    "file": "ChartColumnStackedIcon.jinja"
+  },
+  {
+    "name": "BoomBox",
+    "file": "BoomBoxIcon.jinja"
+  },
+  {
+    "name": "Slice",
+    "file": "SliceIcon.jinja"
+  },
+  {
+    "name": "FolderGit",
+    "file": "FolderGitIcon.jinja"
+  },
+  {
+    "name": "Fingerprint",
+    "file": "FingerprintIcon.jinja"
+  },
+  {
+    "name": "FlagOff",
+    "file": "FlagOffIcon.jinja"
+  },
+  {
+    "name": "MicVocal",
+    "file": "MicVocalIcon.jinja"
+  },
+  {
+    "name": "CornerDownLeft",
+    "file": "CornerDownLeftIcon.jinja"
+  },
+  {
+    "name": "FileAxis3d",
+    "file": "FileAxis3dIcon.jinja"
+  },
+  {
+    "name": "BookOpenText",
+    "file": "BookOpenTextIcon.jinja"
+  },
+  {
+    "name": "Timer",
+    "file": "TimerIcon.jinja"
+  },
+  {
+    "name": "Gamepad",
+    "file": "GamepadIcon.jinja"
+  },
+  {
+    "name": "GitCommitHorizontal",
+    "file": "GitCommitHorizontalIcon.jinja"
+  },
+  {
+    "name": "Monitor",
+    "file": "MonitorIcon.jinja"
+  },
+  {
+    "name": "ClipboardCheck",
+    "file": "ClipboardCheckIcon.jinja"
+  },
+  {
+    "name": "Unlink2",
+    "file": "Unlink2Icon.jinja"
+  },
+  {
+    "name": "SquareArrowOutDownRight",
+    "file": "SquareArrowOutDownRightIcon.jinja"
+  },
+  {
+    "name": "Minus",
+    "file": "MinusIcon.jinja"
+  },
+  {
+    "name": "HeartPulse",
+    "file": "HeartPulseIcon.jinja"
+  },
+  {
+    "name": "Rows4",
+    "file": "Rows4Icon.jinja"
+  },
+  {
+    "name": "HeartHandshake",
+    "file": "HeartHandshakeIcon.jinja"
+  },
+  {
+    "name": "BedDouble",
+    "file": "BedDoubleIcon.jinja"
+  },
+  {
+    "name": "TextSearch",
+    "file": "TextSearchIcon.jinja"
+  },
+  {
+    "name": "AudioWaveform",
+    "file": "AudioWaveformIcon.jinja"
+  },
+  {
+    "name": "Navigation2",
+    "file": "Navigation2Icon.jinja"
+  },
+  {
+    "name": "PaintBucket",
+    "file": "PaintBucketIcon.jinja"
+  },
+  {
+    "name": "ChevronLeft",
+    "file": "ChevronLeftIcon.jinja"
+  },
+  {
+    "name": "MoveUp",
+    "file": "MoveUpIcon.jinja"
+  },
+  {
+    "name": "Film",
+    "file": "FilmIcon.jinja"
+  },
+  {
+    "name": "Moon",
+    "file": "MoonIcon.jinja"
+  },
+  {
+    "name": "SquareArrowLeft",
+    "file": "SquareArrowLeftIcon.jinja"
+  },
+  {
+    "name": "PanelBottomClose",
+    "file": "PanelBottomCloseIcon.jinja"
+  },
+  {
+    "name": "Weight",
+    "file": "WeightIcon.jinja"
+  },
+  {
+    "name": "ShieldOff",
+    "file": "ShieldOffIcon.jinja"
+  },
+  {
+    "name": "Layers3",
+    "file": "Layers3Icon.jinja"
+  },
+  {
+    "name": "Scaling",
+    "file": "ScalingIcon.jinja"
+  },
+  {
+    "name": "Cable",
+    "file": "CableIcon.jinja"
+  },
+  {
+    "name": "Accessibility",
+    "file": "AccessibilityIcon.jinja"
+  },
+  {
+    "name": "MoveUpRight",
+    "file": "MoveUpRightIcon.jinja"
+  },
+  {
+    "name": "WalletCards",
+    "file": "WalletCardsIcon.jinja"
+  },
+  {
+    "name": "BusFront",
+    "file": "BusFrontIcon.jinja"
+  },
+  {
+    "name": "LampWallDown",
+    "file": "LampWallDownIcon.jinja"
+  },
+  {
+    "name": "MousePointer",
+    "file": "MousePointerIcon.jinja"
+  },
+  {
+    "name": "FileJson",
+    "file": "FileJsonIcon.jinja"
+  },
+  {
+    "name": "TrainFront",
+    "file": "TrainFrontIcon.jinja"
+  },
+  {
+    "name": "CalendarMinus2",
+    "file": "CalendarMinus2Icon.jinja"
+  },
+  {
+    "name": "Ribbon",
+    "file": "RibbonIcon.jinja"
+  },
+  {
+    "name": "SquareStack",
+    "file": "SquareStackIcon.jinja"
+  },
+  {
+    "name": "FlipHorizontal",
+    "file": "FlipHorizontalIcon.jinja"
+  },
+  {
+    "name": "MapPinCheckInside",
+    "file": "MapPinCheckInsideIcon.jinja"
+  },
+  {
+    "name": "GalleryHorizontal",
+    "file": "GalleryHorizontalIcon.jinja"
+  },
+  {
+    "name": "Notebook",
+    "file": "NotebookIcon.jinja"
+  },
+  {
+    "name": "Stamp",
+    "file": "StampIcon.jinja"
+  },
+  {
+    "name": "SquareSplitHorizontal",
+    "file": "SquareSplitHorizontalIcon.jinja"
+  },
+  {
+    "name": "ArrowUpDown",
+    "file": "ArrowUpDownIcon.jinja"
+  },
+  {
+    "name": "ScreenShare",
+    "file": "ScreenShareIcon.jinja"
+  },
+  {
+    "name": "CalendarDays",
+    "file": "CalendarDaysIcon.jinja"
+  },
+  {
+    "name": "AlignLeft",
+    "file": "AlignLeftIcon.jinja"
+  },
+  {
+    "name": "SeparatorHorizontal",
+    "file": "SeparatorHorizontalIcon.jinja"
+  },
+  {
+    "name": "FerrisWheel",
+    "file": "FerrisWheelIcon.jinja"
+  },
+  {
+    "name": "Sofa",
+    "file": "SofaIcon.jinja"
+  },
+  {
+    "name": "Clock4",
+    "file": "Clock4Icon.jinja"
+  },
+  {
+    "name": "TicketCheck",
+    "file": "TicketCheckIcon.jinja"
+  },
+  {
+    "name": "Cherry",
+    "file": "CherryIcon.jinja"
+  },
+  {
+    "name": "Heart",
+    "file": "HeartIcon.jinja"
+  },
+  {
+    "name": "TrendingUp",
+    "file": "TrendingUpIcon.jinja"
+  }
+]

@@ -116,5 +116,5 @@ config = {
 }
 
 site_config = SiteConfig.model_validate(
-    config | {"icons": load_icons(f"{BASE_DIR}/components/icons/icons.json")}
+    config | {"icons": load_icons(f"{BASE_DIR}/components/ui/icons/icons.json")}
 )
