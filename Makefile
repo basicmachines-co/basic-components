@@ -29,7 +29,6 @@ docs-dev:
 docs-run:
 	$(UV) run fastapi run docs/app.py --port 10000
 
-
 create-icons:
 	$(UV) run tools/create_svg_icons.py ../shadcn-ui/node_modules/lucide-static/icons components/ui/icons
 

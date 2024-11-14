@@ -36,7 +36,7 @@ dependencies = [
 ]
 
 [project.scripts]
-components = "basic_components.cli:main"
+components = "basic_components.cli:app"
 
 [project.urls]
 Homepage = "https://github.com/basicmachines-co/basic-components"
@@ -50,7 +50,7 @@ build-backend = "hatchling.build"
 packages = ["basic_components"]
 
 [tool.hatch.build.targets.wheel.scripts]
-components = "basic_components.cli:main"
+components = "basic_components.cli:app"
 
 [tool.hatch.build]
 include = [

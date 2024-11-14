@@ -1,11 +1,9 @@
-import asyncio
+import os
 from pathlib import Path
 import typer
 from rich.console import Console
 from rich.panel import Panel
-from rich.progress import Progress, SpinnerColumn, TextColumn
 import copier
-import tomli
 
 app = typer.Typer(
     name="components",
@@ -19,55 +17,33 @@ console = Console()
 REPO_URL = "https://github.com/basicmachines-co/basic-components.git"
 DEFAULT_BRANCH = "main"
 
-
-def get_components_dir() -> Path:
-    """Get the components directory from pyproject.toml or use default."""
-    try:
-        with open("pyproject.toml", "rb") as f:
-            config = tomli.load(f)
-            return Path(
-                config.get("tool", {})
-                .get("basic-components", {})
-                .get("components_dir", "components")
-            )
-    except FileNotFoundError:
-        return Path("components")
+# Use environment variable if set, otherwise use default
+COMPONENTS_DIR = Path(os.getenv("COMPONENTS_DIR", "components/ui"))
 
 
-async def install_or_update_component(
-    component: str, dest_dir: Path, branch: str = DEFAULT_BRANCH, force: bool = False
+def add_component(
+    component: str,
+    dest_dir: Path,
+    branch: str = DEFAULT_BRANCH,
+    force: bool = False,
 ) -> None:
-    """Install or update a component using copier."""
-
-    # Prepare copier answers
-    data = {
-        "components": [component],  # Only copy specific component
-        "components_dir": str(dest_dir),
-        "style": "default",
-    }
-
+    """Add a specific component to the project."""
     try:
-        # Check if this is an update
-        is_update = (dest_dir / ".copier-answers.yml").exists()
+        console.print(f"[green]Installing {component}...[/green]")
 
-        if is_update:
-            console.print("[yellow]Updating existing component...[/yellow]")
-            await copier.run_update(
-                dst_path=str(dest_dir),
-                data=data,
-                defaults=force,
-                unsafe=True,
-            )
-        else:
-            console.print("[green]Installing new component...[/green]")
-            await copier.run_copy(
-                src_path=REPO_URL,  # Use base URL
-                vcs_ref=branch,  # Specify branch separately
-                dst_path=str(dest_dir),
-                data=data,
-                defaults=force,
-                unsafe=True,
-            )
+        data = {
+            "component": component,  # Pass the component name to copier.yml
+        }
+
+        copier.run_copy(
+            src_path=REPO_URL,
+            dst_path=str(dest_dir),
+            data=data,
+            vcs_ref=branch,
+            defaults=True,
+            unsafe=True,
+            answers_file=None,
+        )
 
     except copier.errors.UserMessageError as e:
         console.print(f"[red]Error: {str(e)}[/red]")
@@ -84,68 +60,55 @@ def add(
         False, "--force", "-f", help="Skip prompts and use defaults"
     ),
 ) -> None:
-    """Add or update a component in your project."""
-    components_dir = get_components_dir()
-    components_dir.mkdir(parents=True, exist_ok=True)
+    """Add a component to your project."""
+    try:
+        add_component(component, COMPONENTS_DIR, branch, force)
 
-    with Progress(
-        SpinnerColumn(),
-        TextColumn("[progress.description]{task.description}"),
-        console=console,
-    ) as progress:
-        task = progress.add_task(f"Installing {component}...", total=None)
-
-        try:
-            asyncio.run(
-                install_or_update_component(component, components_dir, branch, force)
+        console.print(
+            Panel(
+                f"[green]✓[/green] Added {component} component\n\n"
+                f"Use in your templates:\n"
+                f'[cyan]<{component.capitalize()} variant="primary">Content</{component.capitalize()}>[/cyan]',
+                title="Installation Complete",
+                border_style="green",
             )
-
-            console.print(
-                Panel(
-                    f"[green]✓[/green] Component {component} has been installed/updated in {components_dir}\n\n"
-                    f"Use the component in your templates:\n"
-                    f'[cyan]<{component} variant="primary">Content</{component}>[/cyan]',
-                    title="Installation Complete",
-                    border_style="green",
-                )
-            )
-
-        except Exception as e:
-            console.print(f"[red]Error processing component: {str(e)}[/red]")
-            raise typer.Exit(1)
+        )
+    except Exception as e:
+        console.print(f"[red]Error: {str(e)}[/red]")
+        raise typer.Exit(1)
 
 
 @app.command()
 def init() -> None:
-    """Initialize basic-components in your project."""
-    if not Path("pyproject.toml").exists():
-        config = {
-            "tool": {
-                "basic-components": {"components_dir": "components", "style": "default"}
-            }
-        }
-        with open("pyproject.toml", "wb") as f:
-            tomli.dump(config, f)
+    """Initialize project for basic-components."""
+    # Create components directory structure
+    COMPONENTS_DIR.mkdir(parents=True, exist_ok=True)
 
-    components_dir = get_components_dir()
-    components_dir.mkdir(parents=True, exist_ok=True)
+    # Show the actual path being used
+    components_path = (
+        "[dim](using default)[/dim]"
+        if os.getenv("COMPONENTS_DIR") is None
+        else "[dim](from COMPONENTS_DIR)[/dim]"
+    )
 
     console.print(
         Panel(
             "[green]✓[/green] Initialized basic-components\n\n"
-            "Next steps:\n"
-            "Add components to your project:\n"
-            "   [cyan]components add button[/cyan]\n"
-            "To update components later:\n"
-            "   [cyan]components add button --force[/cyan]",
+            "Directory structure created:\n"
+            f"   [cyan]{COMPONENTS_DIR}[/cyan] {components_path}\n\n"
+            "Next steps:\n\n"
+            "1. Add the cn() utility function:\n"
+            "   [cyan]components.basicmachines.co/docs/utilities#cn[/cyan]\n\n"
+            "2. Configure JinjaX to use the components directory:\n"
+            "   [cyan]components.basicmachines.co/docs/utilities#jinjax[/cyan]\n\n"
+            "3. Start adding components:\n"
+            "   [cyan]components add button[/cyan]\n\n"
+            "View all available components:\n"
+            "   [cyan]components.basicmachines.co/docs/components[/cyan]",
             title="Setup Complete",
             border_style="green",
         )
     )
-
-
-def main():
-    app()
 
 
 if __name__ == "__main__":

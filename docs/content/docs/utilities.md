@@ -5,10 +5,10 @@ description: Helper functions for setting up components and merging Tailwind cla
 
 <Prose>
 
-## Tailwind Class Merging
+## cn()
 
 Basic Components provides a utility function `cn()` for merging Tailwind CSS classes while handling conflicts properly. 
-This is available in all Jinja templates if it is added to the Jinja environment. 
+This needs to be added as a global in the Jinja environment so it is available in all templates.  
 
 ```python
 from starlette.templating import Jinja2Templates
@@ -51,21 +51,18 @@ The `cn()` function is then globally available in templates.
 - Preserves non-conflicting classes
 
 
-## Setup JinjaX Catalog 
+## JinjaX 
 
 Basic Components includes a `setup_component_catalog()` helper function to include all components in subdirectories. 
 
 Each component is assumed to be packaged in a subdirectory within the `components` root directory. Components are under the 
-`components/ui` top level directory. Icon components are under `components/icons`.
+`components/ui` top level directory. 
 
 ```bash
 project-root
 ├── components
     ├── custom
     │   ├── CustomComponent.jinja
-    ├── icons
-    │   ├── AArrowDown.jinja
-    │   ├── ...
     └── ui
         ├── ...
         ├── button
@@ -97,7 +94,7 @@ catalog = jinjax.Catalog(jinja_env=templates.env)
 # include subdirectories in the JinjaX catalog. 
 # optionally include icons 
 catalog = setup_component_catalog(
-    catalog, components_dir=COMPONENT_DIR, include_icons=True
+    catalog, components_dir=COMPONENT_DIR
 )
 
 # add any extra dirs to the catalog with custom components
