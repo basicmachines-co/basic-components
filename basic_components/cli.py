@@ -13,12 +13,15 @@ app = typer.Typer(
 
 console = Console()
 
-# Base repo URL without branch
-REPO_URL = "https://github.com/basicmachines-co/basic-components.git"
-DEFAULT_BRANCH = "main"
+# Base REPO_URL, or default to git remp
+REPO_URL = os.getenv(
+    "REPO_URL", "https://github.com/basicmachines-co/basic-components.git"
+)
 
 # Use environment variable if set, otherwise use default
-COMPONENTS_DIR = Path(os.getenv("COMPONENTS_DIR", "components/ui"))
+COMPONENTS_DIR = Path(os.getenv("COMPONENTS_DIR", "components"))
+
+DEFAULT_BRANCH = "main"
 
 
 def add_component(
@@ -31,18 +34,14 @@ def add_component(
     try:
         console.print(f"[green]Installing {component}...[/green]")
 
-        data = {
-            "component": component,  # Pass the component name to copier.yml
-        }
-
         copier.run_copy(
             src_path=REPO_URL,
             dst_path=str(dest_dir),
-            data=data,
+            exclude=[
+                "*",
+                f"!{component}",
+            ],
             vcs_ref=branch,
-            defaults=True,
-            unsafe=True,
-            answers_file=None,
         )
 
     except copier.errors.UserMessageError as e:
@@ -56,19 +55,15 @@ def add(
     branch: str = typer.Option(
         DEFAULT_BRANCH, "--branch", "-b", help="Branch, tag, or commit to install from"
     ),
-    force: bool = typer.Option(
-        False, "--force", "-f", help="Skip prompts and use defaults"
-    ),
 ) -> None:
     """Add a component to your project."""
     try:
-        add_component(component, COMPONENTS_DIR, branch, force)
+        add_component(component, COMPONENTS_DIR, branch)
 
         console.print(
             Panel(
                 f"[green]✓[/green] Added {component} component\n\n"
-                f"Use in your templates:\n"
-                f'[cyan]<{component.capitalize()} variant="primary">Content</{component.capitalize()}>[/cyan]',
+                f"[cyan] COMPONENTS_DIR={COMPONENTS_DIR}[/cyan]",
                 title="Installation Complete",
                 border_style="green",
             )

@@ -4,15 +4,3 @@ _min_copier_version: "9.0.0"
 # Copier configuration
 _templates_suffix: ".not_used"
 _subdirectory: "components/ui/"
-
-# Add any specific instructions or information for users
-_message_after_copy: |
-  basic-components have been vendored into your project.
-  
-  To use these components:
-  1. Ensure JinjaX is installed in your project.
-  2. Update your templates to import components from the directory you specified.
-  
-  Copier has preserved your existing files. Please review any changes or conflicts manually.
-  
-  Thanks for using basic-components in your project!
