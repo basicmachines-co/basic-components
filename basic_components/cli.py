@@ -1,4 +1,4 @@
-# basic_components/cli.py
+import asyncio
 from pathlib import Path
 import typer
 from rich.console import Console
@@ -6,7 +6,6 @@ from rich.panel import Panel
 from rich.progress import Progress, SpinnerColumn, TextColumn
 import copier
 import tomli
-from copier.main import Worker
 
 app = typer.Typer(
     name="components",
@@ -16,6 +15,7 @@ app = typer.Typer(
 
 console = Console()
 
+# Base repo URL without branch
 REPO_URL = "https://github.com/basicmachines-co/basic-components.git"
 DEFAULT_BRANCH = "main"
 
@@ -27,9 +27,7 @@ def get_components_dir() -> Path:
             config = tomli.load(f)
             return Path(
                 config.get("tool", {})
-                .get(
-                    "basic-components", {}
-                )  # Changed from "components" to "basic-components"
+                .get("basic-components", {})
                 .get("components_dir", "components")
             )
     except FileNotFoundError:
@@ -39,7 +37,7 @@ def get_components_dir() -> Path:
 async def install_or_update_component(
     component: str, dest_dir: Path, branch: str = DEFAULT_BRANCH, force: bool = False
 ) -> None:
-    """Install or update a component using copier's built-in update mechanism."""
+    """Install or update a component using copier."""
 
     # Prepare copier answers
     data = {
@@ -49,23 +47,27 @@ async def install_or_update_component(
     }
 
     try:
-        # Use copier's worker directly for better control
-        worker = await Worker.get_worker(
-            src_path=f"{REPO_URL}@{branch}",
-            dst_path=str(dest_dir),
-            data=data,
-            vcs_ref=branch,
-            force=force,
-            unsafe=True,  # Needed to skip questions in answers file
-        )
+        # Check if this is an update
+        is_update = (dest_dir / ".copier-answers.yml").exists()
 
-        # Check if it's an update or new installation
-        if worker.is_update:
+        if is_update:
             console.print("[yellow]Updating existing component...[/yellow]")
-            await worker.run_update()
+            await copier.run_update(
+                dst_path=str(dest_dir),
+                data=data,
+                defaults=force,
+                unsafe=True,
+            )
         else:
             console.print("[green]Installing new component...[/green]")
-            await worker.run_copy()
+            await copier.run_copy(
+                src_path=REPO_URL,  # Use base URL
+                vcs_ref=branch,  # Specify branch separately
+                dst_path=str(dest_dir),
+                data=data,
+                defaults=force,
+                unsafe=True,
+            )
 
     except copier.errors.UserMessageError as e:
         console.print(f"[red]Error: {str(e)}[/red]")
@@ -79,7 +81,7 @@ def add(
         DEFAULT_BRANCH, "--branch", "-b", help="Branch, tag, or commit to install from"
     ),
     force: bool = typer.Option(
-        False, "--force", "-f", help="Force update without asking"
+        False, "--force", "-f", help="Skip prompts and use defaults"
     ),
 ) -> None:
     """Add or update a component in your project."""
@@ -94,8 +96,6 @@ def add(
         task = progress.add_task(f"Installing {component}...", total=None)
 
         try:
-            import asyncio
-
             asyncio.run(
                 install_or_update_component(component, components_dir, branch, force)
             )
@@ -121,10 +121,7 @@ def init() -> None:
     if not Path("pyproject.toml").exists():
         config = {
             "tool": {
-                "basic-components": {  # Changed from "components" to "basic-components"
-                    "components_dir": "components",
-                    "style": "default",
-                }
+                "basic-components": {"components_dir": "components", "style": "default"}
             }
         }
         with open("pyproject.toml", "wb") as f:
@@ -137,12 +134,10 @@ def init() -> None:
         Panel(
             "[green]✓[/green] Initialized basic-components\n\n"
             "Next steps:\n"
-            "1. Add components to your project:\n"
-            "   [cyan]components add button[/cyan]\n"  # Updated command example
-            "2. Import and use components in your templates:\n"
-            '[cyan]<Button variant="primary">Click me</Button>[/cyan]\n\n'
+            "Add components to your project:\n"
+            "   [cyan]components add button[/cyan]\n"
             "To update components later:\n"
-            "   [cyan]components add button --force[/cyan]",  # Updated command example
+            "   [cyan]components add button --force[/cyan]",
             title="Setup Complete",
             border_style="green",
         )
