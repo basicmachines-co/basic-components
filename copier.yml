@@ -1,15 +1,9 @@
 # copier.yml
 _min_copier_version: "9.0.0"
 
-# Prompt for which components to copy
-component:
-  type: str
-  help: Which component to copy
-
 # Copier configuration
 _templates_suffix: ".not_used"
 _subdirectory: "components/ui/"
-_exclude: "!{{ component }}"
 
 # Add any specific instructions or information for users
 _message_after_copy: |
